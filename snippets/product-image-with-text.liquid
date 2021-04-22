@@ -1,0 +1,225 @@
+{% comment %}
+  Snippet can be used in section or block
+  eg. {% include 'include-one-image-with-text' %}
+{% endcomment %}
+
+{% comment %}Assign object as block or section{% endcomment %}
+{% if type == 'block' %}
+  {% assign object = block %}
+{% else %}
+  {% assign object = section %}
+{% endif %}
+
+{% assign id = object.id %}
+{% assign image_position = object.settings.image_position %}
+{% assign image_crop = object.settings.image_crop %}
+{% comment %} Layout {% endcomment %}
+{% assign show_gutter = object.settings.show_gutter %}
+{% assign width = object.settings.width %}
+{% assign padding_top = object.settings.padding_top %}
+{% assign padding_bottom = object.settings.padding_bottom %}
+{% assign animation = object.settings.animation %}
+{% comment %}Is the color set to transparent?{% endcomment %}
+{% assign text_color = object.settings.text_color%}
+{% assign background_color =  object.settings.background %}
+{% comment %} Advanced {% endcomment %}
+{% assign css_class = object.settings.css_class %}
+{% assign custom_css = object.settings.custom_css %}
+
+{% comment %} Is the color set to transparent? {% endcomment %}
+{% assign background_alpha = background_color | color_extract: 'alpha' %}
+{% assign text_alpha = text_color | color_extract: 'alpha' %}
+
+{% comment %}Section specific CSS{% endcomment %}
+{% capture section_css -%}
+  .image-with-text__text-column {
+    background-color: {{ background_color }};
+  }
+
+  .image-with-text__heading {
+    color: {% if text_alpha != 0 %}{{ text_color }}{% else %}{{ settings.heading_color }}{% endif %};
+  }
+
+  .image-with-text__text {
+    color: {% if text_alpha != 0 %}{{ text_color }}{% else %}{{ settings.regular_color }}{% endif %};
+  }
+{%- endcapture -%}
+
+{% comment %} Section specific CSS {% endcomment %}
+{% style %}
+  #shopify-section-{{ id }} {
+position:relative;
+    padding-top: {{ padding_top }}px;
+    padding-bottom: {{ padding_bottom }}px;
+    {% if width == 'wide' %}
+      width: 100%;
+    {% endif %}
+  }
+
+  #shopify-section-{{ id }}::after {
+content:"";
+background:url('{{'pinkgreen.svg' | asset_url}}');
+background-size:contain;
+background-repeat:no-repeat;
+background-position:bottom;
+position:absolute;
+left:0;
+    top: 196px;
+width:534px;
+height:529px;
+
+}
+           @media only screen and (max-width:768px) {
+
+ #shopify-section-{{ id }}::after {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    position: absolute;
+      left: 0;
+    top: 92%;
+    width: 50px;
+    height: 50px;
+}
+}
+  {% render 'css-loop',
+          css: section_css,
+          id: id
+  %}
+  {% render 'css-loop',
+          css: custom_css,
+          id: id
+  %}
+{% endstyle %}
+
+{% comment %} HTML markup {% endcomment %}
+<section class="section
+                {{ css_class }}
+                is-width-{{ width }}
+                {% if show_gutter == false %}
+                  has-no-side-gutter
+                  has-background
+                {% else %}
+                  has-gutter-enabled
+                {% endif %}"
+                {% if animation != "none" %}
+                  data-scroll-class="{{ animation }}"
+                {% endif %}>
+  <div class="container ">
+      <div class="product-text-container">
+
+    {% if object.settings.title != blank %}
+            <h3 class="fatbox__h3 image-with-text__heading text-align-{{ object.settings.alignment }} is-{{ object.settings.heading_size }}" >
+              {{ object.settings.title }}
+            </h3>
+    <p> {{ object.settings.text2 }}</p>
+    {% endif %}
+    </div>
+    <div class="image-with-text__container
+                is-flex {% if image_position == 'left' %}is-flex-row-reverse{% endif %}
+                is-flex-wrap">
+      <div class="pos-relative-wrapper image-with-text__text-column
+                  image-with-text__column
+                  one-half
+                  medium-down--one-whole
+                  column
+                  has-padding-left
+                  has-padding-right
+                  {% if background_alpha != 0 %}has-background {% endif %}
+                  is-flex
+                  is-flex-wrap
+                  is-justify-{{ object.settings.alignment }}
+                  is-align-{{ object.settings.vertical_position }}">
+        <div class="image-with-text__wrapper">
+          
+    
+
+          {% if object.settings.text != blank %}
+            <div class="image-with-text__text text-align-{{ object.settings.alignment }} content">
+              <svg xmlns="http://www.w3.org/2000/svg" width="170.695" height="40.831" viewBox="0 0 170.695 40.831">
+  <g id="Group_342" data-name="Group 342" transform="translate(-902.963 -1644.29)">
+    <g id="Layer_2" data-name="Layer 2" transform="translate(1027 1644.008)">
+      <g id="Layer_1" data-name="Layer 1">
+        <line id="Line_95" data-name="Line 95" y2="2" transform="translate(23.46 4.42)" fill="none" stroke="#2b2b2b" stroke-linejoin="round" stroke-width="1.3"/>
+        <line id="Line_96" data-name="Line 96" y2="2" transform="translate(23.46 8.42)" fill="none" stroke="#2b2b2b" stroke-linejoin="round" stroke-width="1.3"/>
+        <line id="Line_97" data-name="Line 97" x1="2" transform="translate(20.46 7.42)" fill="none" stroke="#2b2b2b" stroke-linejoin="round" stroke-width="1.3"/>
+        <line id="Line_98" data-name="Line 98" x1="2" transform="translate(24.46 7.42)" fill="none" stroke="#2b2b2b" stroke-linejoin="round" stroke-width="1.3"/>
+        <line id="Line_99" data-name="Line 99" y2="3" transform="translate(39.46 18.42)" fill="none" stroke="#2b2b2b" stroke-linejoin="round" stroke-width="1.3"/>
+        <line id="Line_100" data-name="Line 100" y2="3" transform="translate(39.46 25.42)" fill="none" stroke="#2b2b2b" stroke-linejoin="round" stroke-width="1.3"/>
+        <line id="Line_101" data-name="Line 101" x1="3" transform="translate(34.46 23.42)" fill="none" stroke="#2b2b2b" stroke-linejoin="round" stroke-width="1.3"/>
+        <line id="Line_102" data-name="Line 102" x1="3" transform="translate(41.46 23.42)" fill="none" stroke="#2b2b2b" stroke-linejoin="round" stroke-width="1.3"/>
+        <line id="Line_103" data-name="Line 103" x1="2" y2="2" transform="translate(31.46 31.42)" fill="none" stroke="#2b2b2b" stroke-linejoin="round" stroke-width="1.3"/>
+        <line id="Line_104" data-name="Line 104" x1="2.07" y2="2.07" transform="translate(26.39 36.42)" fill="none" stroke="#2b2b2b" stroke-linejoin="round" stroke-width="1.3"/>
+        <line id="Line_105" data-name="Line 105" x1="2.07" y1="2" transform="translate(26.39 31.42)" fill="none" stroke="#2b2b2b" stroke-linejoin="round" stroke-width="1.3"/>
+        <line id="Line_106" data-name="Line 106" x1="2" y1="2" transform="translate(31.46 36.42)" fill="none" stroke="#2b2b2b" stroke-linejoin="round" stroke-width="1.3"/>
+        <line id="Line_107" data-name="Line 107" x1="2" y2="2" transform="translate(14.53 11.42)" fill="none" stroke="#2b2b2b" stroke-linejoin="round" stroke-width="1.3"/>
+        <line id="Line_108" data-name="Line 108" x1="2.07" y2="2.07" transform="translate(9.46 16.42)" fill="none" stroke="#2b2b2b" stroke-linejoin="round" stroke-width="1.3"/>
+        <line id="Line_109" data-name="Line 109" x1="2.07" y1="2" transform="translate(9.46 11.42)" fill="none" stroke="#2b2b2b" stroke-linejoin="round" stroke-width="1.3"/>
+        <line id="Line_110" data-name="Line 110" x1="2" y1="2" transform="translate(14.53 16.42)" fill="none" stroke="#2b2b2b" stroke-linejoin="round" stroke-width="1.3"/>
+        <path id="Path_2474" data-name="Path 2474" d="M1,36.54c4,3.89,8.14,4.33,11,3.56,3.89-1,4.93-4,4.3-6.29s-2.63-4.12-6.21-3.16S5.69,36.07,1,36.54Z" fill="none" stroke="#2b2b2b" stroke-linejoin="round" stroke-width="1.3"/>
+        <path id="Path_2475" data-name="Path 2475" d="M16.56,33.52l8.81-7.23C29.3,22.35,44.9,5.21,45.65,3.84a2,2,0,0,0-.19-2.36,2,2,0,0,0-2.36-.19C41.73,2,24.58,17.64,20.65,21.57l-7.23,8.81" fill="none" stroke="#2b2b2b" stroke-miterlimit="10" stroke-width="1.3"/>
+        <line id="Line_111" data-name="Line 111" x1="3.96" y1="3.95" transform="translate(21.5 21.52)" fill="none" stroke="#2b2b2b" stroke-miterlimit="10" stroke-width="1.3"/>
+      </g>
+    </g>
+    <path id="Path_2420" data-name="Path 2420" d="M-46.113,0H67.424" transform="translate(949.076 1668.5)" fill="none" stroke="#2b2b2b" stroke-width="1"/>
+  </g>
+</svg>
+
+              {{ object.settings.text }}
+            </div>
+          {% endif %}
+
+          {% if object.settings.button_label != blank %}
+            <div class="buttons is-{{ object.settings.alignment }}">
+              {% render 'button',
+                      label: object.settings.button_label,
+                      href: object.settings.link,
+                      style: object.settings.button_style,
+                      type: "link"
+              %}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+      <div class="image-with-text__image-column
+                  image-with-text__column
+                  one-half
+                  medium-down--one-whole
+                  column
+                  {% if image_crop != 'none' %}
+                    has-image-crop
+                    image-crop--{{ object.settings.image_crop }}
+                  {% endif %}
+                  is-flex
+                  is-flex-wrap
+                  is-align-center">
+        {% if object.settings.image_link %}
+          <a href="{{ object.settings.image_link }}">
+        {% endif %}
+        {% if object.settings.image != blank %}
+            {% render 'image-element',
+                    image: object.settings.image,
+                    alt: object.settings.image.alt,
+                    stretch_width: true,
+              additional_classes:"img_desk1"
+            %}
+        {% else %}
+          {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+        {% endif %}
+            {% if object.settings.image_mob != blank %}
+            {% render 'image-element',
+                    image: object.settings.image_mob,
+                    alt: object.settings.image.alt,
+                    stretch_width: true,
+            additional_classes:"img_mob1"
+            %}
+       
+        
+        {% endif %}
+        {% if object.settings.image_link %}
+          </a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>

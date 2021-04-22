@@ -1,0 +1,69 @@
+<style>
+  #shopify-section-page-testimonial {
+    background-color:{{section.settings.bg}};
+  padding-top:50px;
+    padding-bottom:50px;
+  
+  }
+</style>
+  <div class="testimonials container" {% if blocks.size > 2 %}data-testimonial-slider{% endif %}>
+ 
+
+      {% comment %} Content settings {% endcomment %}
+      {%- assign image = section.settings.image -%}
+     {%- assign logo = section.settings.logo -%}
+      {%- assign quote = section.settings.quote -%}
+      {%- assign text = section.settings.text -%}
+          {%- assign caption = section.settings.caption -%}
+      {%- assign info_text = section.settings.info_text -%}
+      {%- assign info_background = section.settings.info_background -%}
+      {% comment %} End content settings {% endcomment %}
+
+      {% comment %} Is the color set to transparent? {% endcomment %}
+      {%- assign info_text_alpha = info_text | color_extract: 'alpha' -%}
+      {%- assign info_background_alpha = info_background | color_extract: 'alpha' -%}
+
+      <div id="shopify-section-{{ block.id }}"
+          class="testimonial-block">
+                 
+                 
+        <style>
+            .block--{{ section.id }} .testimonial__name {
+              color: {%- if info_text_alpha != 0 -%}{{ info_text }}{%- endif -%};
+              background-color: {%- if info_background_alpha != 0 -%}{{ info_background }}{% else %}{{ settings.shop_bg_color }}{%- endif -%};
+            }
+        </style>
+        <div class="fat__box">
+        <div class="fat__one page-one">
+       <img src="{{logo | img_url:'original'}}"/>
+         
+        </div>
+        <div class="fat__two page-quote">
+          <div class="quote-block ">
+            <span class="quote-svg">
+     <svg xmlns="http://www.w3.org/2000/svg" width="63" height="136" viewBox="0 0 63 136">
+  <text id="_" data-name="“" transform="translate(0 110)" fill="#56b7fb" font-size="120" font-family="Georgia-Bold, Georgia" font-weight="700" letter-spacing="-0.02em"><tspan x="0" y="0">“</tspan></text>
+</svg>
+            </span>
+
+                 {{ quote }}
+              <span class="img-title"><img src="{{ image | img_url:'thumbnail'}}"/>
+          {{caption}}</span>
+          </div>
+              
+        </div>
+      </div>
+    </div>
+   
+  </div>
+
+
+{% comment %}JavaScript{% endcomment %}
+<script
+  type="application/json"
+  data-section-id="{{ section.id }}"
+  data-section-data
+>
+  {
+  }
+</script>

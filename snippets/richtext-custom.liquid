@@ -1,0 +1,207 @@
+
+{% comment %}
+** Rich text - dynamic **
+- Draggable section
+{% endcomment %}
+
+{% comment %} Assign object as block or section {% endcomment %}
+{% if type == 'block' %}
+  {%- assign object = block -%}
+{% else %}
+  {%- assign object = section -%}
+{% endif %}
+
+{% comment %} Content settings {% endcomment %}
+{%- assign title = object.settings.title -%}
+{%- assign heading_font = object.settings.heading_font -%}
+{%- assign heading_color = object.settings.heading_color -%}
+{%- assign heading_alignment = object.settings.heading_alignment -%}
+{%- assign heading_size = object.settings.heading_size -%}
+{%- assign text = object.settings.text -%}
+{%- assign text_font = object.settings.text_font -%}
+{%- assign text_color = object.settings.text_color -%}
+{%- assign text_alignment = object.settings.text_alignment -%}
+{%- assign text_size = object.settings.text_size -%}
+{% comment %} End content settings {% endcomment %}
+
+{% comment %} Is the color set to transparent? {% endcomment %}
+{%- assign heading_alpha = heading_color | color_extract: 'alpha' -%}
+{%- assign text_alpha = text_color | color_extract: 'alpha' -%}
+{%- assign background_alpha = object.settings.background | color_extract: 'alpha' -%}
+{%- assign gradient_alpha = object.settings.gradient | color_extract: 'alpha' -%}
+<style>
+#shopify-section-{{ section.id }}  {
+background-color:#2B2B2B;
+  position:relative;
+    
+  
+}
+  
+ #shopify-section-{{ section.id }} .section {   
+   background:#2B2B2B;
+ }
+  #shopify-section-{{ section.id }}::after {
+    content:""; 
+    background:url('https://cdn.shopify.com/s/files/1/0482/1843/9847/files/Group_192_06292fbf-d741-4319-826b-4fe3a8f8a623.svg?v=1607987222');
+   background-size:cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -54px;
+    width: 100%;
+    height: 100%;
+        z-index:-1;
+    
+  }
+  @media only screen and (max-width: 768px) {
+ 
+  #shopify-section-{{ section.id }}::after {
+    content:""; 
+    background:url('https://cdn.shopify.com/s/files/1/0482/1843/9847/files/Group_192_06292fbf-d741-4319-826b-4fe3a8f8a623.svg?v=1607987222');
+  background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -28px;
+    width: 100%;
+    height: 400px;
+
+    
+  }
+  #shopify-section-{{ section.id }}  .container .columns {
+    margin: 0 auto;
+    width: 100%;
+}
+  }
+</style>
+{% comment %} Section specific CSS {% endcomment %}
+{% capture section_css -%}
+
+  .section {
+
+  }
+
+  .rich-text__heading {
+    font-size: 48px;
+    color: {%- if heading_alpha != 0 -%}{{ heading_color }}{%- else -%}{{ settings.heading_color }}{%- endif -%};
+    font-family: "Avenir Next LT Pro", sans-serif;
+    font-weight: 800;
+    font-style: {{ heading_font.style }};
+  }
+
+  .rich-text__text {
+    font-size: {{ text_size }}px;
+    color: {%- if text_alpha != 0 -%}{{ text_color }}{%- else -%}{{ settings.regular_color }}{%- endif -%};
+    font-family: "Avenir Next Demi", sans-serif;
+    font-weight: bold;
+    font-style: {{ text_font.style }};
+font-family: "Avenir Next";
+font-weight: bold;
+font-size: 20px;
+letter-spacing: -0.02em;
+line-height: 24px;
+text-align: center;
+color: #fff;
+
+
+
+  }
+
+
+{%- endcapture -%}
+
+{% style %}
+  {{ heading_font | font_face }}
+  {{ text_font | font_face }}
+
+  #shopify-section-{{ object.id }} {
+z-index:10;
+    padding-top:calc({{ object.settings.padding_top }}px + 15px);
+    padding-bottom: calc({{ object.settings.padding_top }}px * 2);
+    padding-left: {{ object.settings.padding_left }}px;
+    padding-right: {{ object.settings.padding_right }}px;
+    {% if object.settings.width == 'wide' %}
+      width: 100%;
+    {% elsif object.settings.width == 'half' %}
+      width: 50%;
+    {% endif %}
+  }
+ @media  (min-width: 2500px) {
+#shopify-section-{{ object.id }} {
+z-index:10;
+    padding-top: {{ object.settings.padding_top }};
+    padding-bottom: calc({{ object.settings.padding_top }}px * 4);
+
+}
+}
+  @media only screen and (max-width: 768px) {
+ .rich-text__heading {
+    font-size: 21px;
+       
+     }
+ #shopify-section-{{ object.id }} {
+z-index:10;
+    padding-top:50px;
+    padding-bottom: 30px;
+}
+}
+  {% render 'css-loop',
+          css: section_css,
+          id: object.id
+  %}
+  {% render 'css-loop',
+          css: object.settings.custom_css,
+          id: object.id
+  %}
+{% endstyle %}
+
+{% comment %} HTML markup {% endcomment %}
+<section class="section
+                {{ object.settings.css_class }}
+                is-width-{{ object.settings.width }}
+                {% if background_alpha != 0 or gradient_alpha != 0  %}
+                  has-background
+                {% endif %}
+                "
+          {% if object.settings.animation != "none" %}
+            data-scroll-class="{{ object.settings.animation }}"
+          {% endif %}>
+ 
+
+  <div class="container
+              has-limit
+              ">
+    <div class="columns one-whole">
+      <div class="rich-text__content card-content">
+
+        {% if title != blank %}
+          <h2 class="rich-text__heading title text-align-{{ heading_alignment }} {% if heading_size > 50 %}mobile-shrink-text{% endif %}"><span>{{ title }}</span></h2>
+        {% endif %}
+
+        {% if text != blank %}
+          <div class="fat_p rich-text__text has-columns--{{ object.settings.columns }} text-align-{{ text_alignment }} content {% if text_size > 35 %}mobile-shrink-text{% endif %}">
+            {{ text }}
+          </div>
+        {% endif %}
+
+        {% if object.settings.button_label != blank %}
+          <div class="yellow-act-button buttons is-{{ object.settings.button_alignment }}">
+            {% render 'button',
+                    label: object.settings.button_label,
+                    href: object.settings.button_link,
+                    style: object.settings.button_style,
+            class:"yellow-btn",
+                    type: "link"
+            %}
+          </div>
+        {% endif %}
+      </div>
+             
+                            </div>
+        <img class="mobile-absolute-1" src="https://cdn.shopify.com/s/files/1/0482/1843/9847/files/fatbox-mobile.png?v=1607386770">
+        <img class="mobile-absolute-2" src="  https://cdn.shopify.com/s/files/1/0482/1843/9847/files/mobile-2.png?v=1607386890
+">
+      <img class="desktop-absolute-1" src="https://cdn.shopify.com/s/files/1/0482/1843/9847/files/set1.png?v=1607985976">
+        <img class="desktop-absolute-2" src="  https://cdn.shopify.com/s/files/1/0482/1843/9847/files/set2.png?v=1607985976
+">
+
+  </div>
+</section>

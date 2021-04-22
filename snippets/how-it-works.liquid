@@ -1,0 +1,144 @@
+
+<style>
+
+
+
+</style>
+
+<div class='section-heading'>
+  <h2 class="fatbox__h3"> Free features in every mailer bag</h2>
+</div>
+<div class="{{product.handle}}-steps" id="main-1">
+   <nav class="section-nav">
+		<ul>
+          <li class="active"><a href="#fat">{{block.settings.step1}}</a></li>
+          <li class='self'><a href="#self">{{block.settings.step2}}</a></li>
+          <li class='digital'><a href="#digital">{{block.settings.step3}}</a></li>
+          <li class="env"><a href="#env">{{block.settings.step4}}</a></li>
+
+     </ul>
+  </nav>
+   
+     
+        <section id="fat" class="row modun-row LM3-modun-1">
+           <div>
+            <img class="product-icl-image lazyloaded" src="{{block.settings.image1 | img_url:"original"}}" alt="{{block.settings.image1.alt}}">
+
+          </div>
+          
+            <div class="content-inner text-left">
+              <img class="text-left" src="{{block.settings.svg}}">
+              <h3>{{block.settings.title}}</h3>
+              <p>{{block.settings.subtitle}}</p>
+              
+
+          </div>
+          
+      </section>
+       <section id="self" class="row modun-row LM3-modun-2">
+                    
+         
+            <div class="content-inner text-right">
+              <img class="text-right" src="{{block.settings.svg2}}">
+             <h3>{{block.settings.title2}}</h3>
+              <p>{{block.settings.subtitle2}}</p>
+              
+            </div>
+          
+           <div>
+                                   <img class="product-icl-image lazyloaded" src="{{block.settings.image2 | img_url:"original"}}" alt="{{block.settings.image2.alt}}">
+
+          </div>
+        </section>
+         <section id="digital" class="row modun-row LM3-modun-2">
+
+            <div>
+  <img class="product-icl-image lazyloaded" src="{{block.settings.image3 | img_url:"original"}}" alt="{{block.settings.image3.alt}}">
+
+          </div>
+            <div class="content-inner text-left">
+              <img class="text-right" src="{{block.settings.svg3}}">
+                    <h3>{{block.settings.title3}}</h3>
+              <p>{{block.settings.subtitle3}}</p>
+              
+            </div>
+          
+        </section>
+     
+        <section id="env" class="row modun-row LM3-modun-4">
+            <div class="content-inner text-right">
+              <img class="text-left" src="{{block.settings.svg4}}">
+                   <h3>{{block.settings.title4}}</h3>
+              <p>{{block.settings.subtitle4}}</p>
+              
+            </div>
+          
+          <div >
+            <img class="product-icl-image lazyloaded" src="{{block.settings.image4 | img_url:"original"}}" alt="{{block.settings.image4.alt}}">
+
+          </div>
+         
+        </section>
+
+    
+
+  </div>
+
+
+<!-- <script>
+window.addEventListener('DOMContentLoaded', () => {
+
+	const observer = new IntersectionObserver(entries => {
+		entries.forEach(entry => {
+			const id = entry.target.getAttribute('id');
+			if (entry.intersectionRatio > 0) {
+				document.querySelector(`nav li a[href="#${id}"]`).parentElement.classList.add('active');
+			} else {
+				document.querySelector(`nav li a[href="#${id}"]`).parentElement.classList.remove('active');
+			}
+		});
+	});
+
+	// Track all sections that have an `id` applied
+	document.querySelectorAll('section[id]').forEach((section) => {
+		observer.observe(section);
+	});
+	
+});
+
+</script> -->
+
+<script>
+  $(document).ready(function(){
+
+    $(".section-nav ul li").click(function(){
+      var sectionClass = $(this).attr('class');
+      if($(this).hasClass('active')){
+      }
+      else {
+        $(".section-nav ul li.active").removeClass('active');
+        $(this).addClass('active');
+        sectionId = $(this).attr('id');
+        var parts = sectionId.split("_");
+        $('html, body').animate({
+          scrollTop: $("#"+parts[1]).offset().top - 80},'slow');
+      }
+
+    });
+
+  });
+
+  $(window).scroll(function() {
+    var scrollDistance = $(window).scrollTop();
+    // Assign active class to nav links while scolling
+
+    $('#main-1 .modun-row').each(function(i) {
+      if ($(this).position().top <= scrollDistance + 200) {
+        $('.section-nav li.active').removeClass('active');
+        $('.section-nav li').eq(i).addClass('active');
+      }
+    });
+  }).scroll();
+
+</script>
+

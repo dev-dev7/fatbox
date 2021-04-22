@@ -1,0 +1,278 @@
+{% comment %}
+** FAQ - dynamic **
+- Draggable section
+- Uses blocks
+{% endcomment %}
+
+{% assign id = section.id %}
+{% assign title = bloock.settings.title %}
+
+{% assign width = section.settings.width %}
+{% assign animation = section.settings.animation %}
+{% assign padding_top = section.settings.padding_top %}
+{% assign padding_bottom = section.settings.padding_bottom %}
+{% comment %} Advanced {% endcomment %}
+{% assign css_class = section.settings.css_class %}
+{% assign custom_css = section.settings.custom_css %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {% for block in section.blocks %}
+      {% unless block.type == 'heading' %}
+        {
+          "@type": "Question",
+          "name": "{{ block.settings.title | escape }}",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "{{ block.settings.answer | strip_html }}"
+          }
+        }{% unless forloop.last %},{% endunless %}
+      {% endunless %}
+    {% endfor %}
+  ]
+}
+</script>
+
+{% comment %} Section specific CSS {% endcomment %}
+{% style %}
+  #shopify-section-{{ id }} {
+background:#F7F8FA;
+position:relative;
+    padding-top: {{ padding_top }}px;
+    padding-bottom: {{ padding_bottom }}px;
+    {% if width == 'wide' %}
+      width: 100%;
+    {% endif %}
+  }
+ 
+  {% render 'css-loop',
+          css: section_css,
+          id: id
+  %}
+  {% render 'css-loop',
+          css: custom_css,
+          id: id
+  %}
+{% endstyle %}
+
+{% capture icon_set %}
+{% if settings.toggle_icon_style == 'carets' %}
+  {% render 'icon',
+          name: 'down-caret',
+          icon_class: 'icon--rotate'
+  %}
+{% else %}
+  {% render 'icon',
+          name: 'plus',
+          icon_class: 'icon--active'
+  %}
+  {% render 'icon', name: 'minus' %}
+{% endif %}
+{% endcapture %}
+
+
+  <div class="container fat__container">
+   
+
+  
+
+    <div class="page-faq__column-wrap container column-wrapper">
+      <div class="{% if image == true %}one-half{% else %}one-whole{% endif %} medium-down--one-whole column faq faq__column-1">
+        
+          <dl class="{{ section.settings.css_class }}
+                    faq-accordion
+                    accordion-icon--{{ settings.toggle_icon_style }}">
+           
+
+                
+                  <dt>
+                    <button class="accordion-style--{{ settings.toggle_icon_style }} accordion__button" type="button" aria-controls="panel-{{ block.id }}" aria-expanded="true">
+                      <span class="number-expand">{{ forloop.index | prepend:'0' }}</span>
+                      {{ block.settings.title }}
+                        {{ icon_set }}
+                    </button>
+                  </dt>
+                  <dd id="panel-{{ block.id }}" aria-hidden="false">
+                    <div class="content">
+                      {{ block.settings.answer }}
+                    </div>
+                  </dd>
+               
+
+              
+
+               
+
+             
+
+            
+          </dl>
+              
+          <dl class="{{ section.settings.css_class }}
+                    faq-accordion
+                    accordion-icon--{{ settings.toggle_icon_style }}">
+           
+
+                
+                  <dt>
+                    <button class="accordion-style--{{ settings.toggle_icon_style }} accordion__button" type="button" aria-controls="panel-{{ block.id }}" aria-expanded="true">
+                      <span class="number-expand">{{ forloop.index | prepend:'0' }}</span>
+                      {{ block.settings.title2 }}
+                        {{ icon_set }}
+                    </button>
+                  </dt>
+                  <dd id="panel-{{ block.id }}" aria-hidden="false">
+                    <div class="content">
+                      {{ block.settings.answer2 }}
+                    </div>
+                  </dd>
+              
+              
+
+               
+
+             
+
+            
+          </dl>
+              
+          <dl class="{{ section.settings.css_class }}
+                    faq-accordion
+                    accordion-icon--{{ settings.toggle_icon_style }}">
+           
+
+                
+                  <dt>
+                    <button class="accordion-style--{{ settings.toggle_icon_style }} accordion__button" type="button" aria-controls="panel-{{ block.id }}" aria-expanded="true">
+                      <span class="number-expand">{{ forloop.index | prepend:'0' }}</span>
+                      {{ block.settings.title3 }}
+                        {{ icon_set }}
+                    </button>
+                  </dt>
+                  <dd id="panel-{{ block.id }}" aria-hidden="false">
+                    <div class="content">
+                      {{ block.settings.answer3 }}
+                    </div>
+                  </dd>
+           
+
+              
+
+               
+
+             
+
+            
+          </dl>
+              
+          <dl class="{{ section.settings.css_class }}
+                    faq-accordion
+                    accordion-icon--{{ settings.toggle_icon_style }}">
+           
+
+                
+                  <dt>
+                    <button class="accordion-style--{{ settings.toggle_icon_style }} accordion__button" type="button" aria-controls="panel-{{ block.id }}" aria-expanded="true">
+                      <span class="number-expand">{{ forloop.index | prepend:'0' }}</span>
+                      {{ block.settings.title4 }}
+                        {{ icon_set }}
+                    </button>
+                  </dt>
+                  <dd id="panel-{{ block.id }}" aria-hidden="false">
+                    <div class="content">
+                      {{ block.settings.answer4 }}
+                    </div>
+                  </dd>
+              
+              
+
+               
+
+             
+
+            
+          </dl>
+              
+          <dl class="{{ section.settings.css_class }}
+                    faq-accordion
+                    accordion-icon--{{ settings.toggle_icon_style }}">
+           
+
+                
+                  <dt>
+                    <button class="accordion-style--{{ settings.toggle_icon_style }} accordion__button" type="button" aria-controls="panel-{{ block.id }}" aria-expanded="true">
+                      <span class="number-expand">{{ forloop.index | prepend:'0' }}</span>
+                      {{ block.settings.title5 }}
+                        {{ icon_set }}
+                    </button>
+                  </dt>
+                  <dd id="panel-{{ block.id }}" aria-hidden="false">
+                    <div class="content">
+                      {{ block.settings.answer5 }}
+                    </div>
+                  </dd>
+               
+              
+
+               
+
+             
+
+            
+          </dl>
+              
+          <dl class="{{ section.settings.css_class }}
+                    faq-accordion
+                    accordion-icon--{{ settings.toggle_icon_style }}">
+           
+
+                
+                  <dt>
+                    <button class="accordion-style--{{ settings.toggle_icon_style }} accordion__button" type="button" aria-controls="panel-{{ block.id }}" aria-expanded="true">
+                      <span class="number-expand">{{ forloop.index | prepend:'0' }}</span>
+                      {{ block.settings.title6 }}
+                        {{ icon_set }}
+                    </button>
+                  </dt>
+                  <dd id="panel-{{ block.id }}" aria-hidden="false">
+                    <div class="content">
+                      {{ block.settings.answer6 }}
+                    </div>
+                  </dd>
+              
+
+              
+
+               
+
+             
+
+            
+          </dl>
+  
+      </div>
+
+   
+      
+    </div>
+    <span class="read-faq"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+  <g id="Add" transform="translate(-606 -4257)">
+    <circle id="Ellipse_81" data-name="Ellipse 81" cx="11" cy="11" r="11" transform="translate(606 4257)"/>
+    <path id="Path_178" data-name="Path 178" d="M9.167,4.167H5.833V.833a.833.833,0,0,0-1.667,0V4.167H.833a.833.833,0,0,0,0,1.667H4.167V9.167a.833.833,0,0,0,1.667,0V5.833H9.167a.833.833,0,0,0,0-1.667Z" transform="translate(612 4263)" fill="#fff"/>
+  </g>
+</svg>
+      Read All <strong><a href="#">FAQs</a></strong></span>
+  </div>
+  
+
+<div class="wrapper-svg">
+  <div class="custom-shape-divider-bottom-1605836294">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+    </svg>
+</div>
+     </div>
+<script data-theme-editor-load-script src="{{ 'z__jsFAQ.js' | asset_url }}"></script>

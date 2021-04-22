@@ -1,0 +1,4621 @@
+{
+  "current": {
+    "show_announcement_bar": true,
+    "show_popup": false,
+    "show_fixed_message": false,
+    "header_layout": "classic",
+    "footer_layout": "promotional",
+    "product_layout": "sections",
+    "image_loading_style": "fade-in",
+    "logo_mobile": "",
+    "mobile_logo_width": 200,
+    "logo_mobile_position": "center",
+    "logo_menu_position": "left",
+    "show_search_icon_mobile": true,
+    "show_locale_selector": true,
+    "show_currency_selector": true,
+    "mobile_sidebar_position": "below",
+    "mobile_menu_background_color": "rgba(0,0,0,0)",
+    "mobile_menu_opacity": 100,
+    "mobile_menu_link_color": "rgba(0,0,0,0)",
+    "mobile_menu_link_hover_color": "#eebe13",
+    "button_primary_padding": "large",
+    "button_primary_bg_color": "#009aff",
+    "button_primary_bg_color_transparency": 100,
+    "button_primary_border_color": "#009aff",
+    "button_primary_text_color": "#ffffff",
+    "button_primary_bg_color--highlight": "#0585d9",
+    "button_primary_bg_color_transparency--highlight": 100,
+    "button_primary_border_color--highlight": "#009aff",
+    "button_primary_text_color--highlight": "#ffffff",
+    "button_primary_border_radius": 25,
+    "button_secondary_padding": "regular",
+    "button_secondary_bg_color": "rgba(0,0,0,0)",
+    "button_secondary_bg_color_transparency": 0,
+    "button_secondary_border_color": "#000000",
+    "button_secondary_text_color": "#000000",
+    "button_secondary_bg_color--highlight": "#000000",
+    "button_secondary_bg_color_transparency--highlight": 100,
+    "button_secondary_border_color--highlight": "#000000",
+    "button_secondary_text_color--highlight": "#ffffff",
+    "button_secondary_border_radius": 33,
+    "button_link_padding": "regular",
+    "button_link_text_color": "#ffffff",
+    "button_link_text_color--highlight": "#ffffff",
+    "button_link_underline_style": "solid",
+    "button_link_underline_thickness": 1,
+    "button_cart_padding": "large",
+    "button_cart_bg_color": "#009aff",
+    "button_cart_bg_color--highlight": "#0585d9",
+    "button_cart_border_color": "#009aff",
+    "button_cart_border_color--highlight": "#009aff",
+    "button_cart_text_color": "#ffffff",
+    "button_cart_text_color--highlight": "#ffffff",
+    "button_cart_icon": "",
+    "button_cart_icon_position": "right",
+    "button_cart_border_radius": 35,
+    "icon": "icon_outline",
+    "toggle_icon_style": "plus_and_minus",
+    "social_media_share_style": "squared",
+    "breadcrumb_capitalization": "none",
+    "breadcrumb_separator": "arrow",
+    "breadcrumb_size": "regular",
+    "dropdown_style": "vertical",
+    "dropdown_position": "below-header",
+    "dropdown_link_spacing": "large",
+    "use_placeholders": false,
+    "form_button_style": "button--secondary",
+    "display_heading_divider": false,
+    "heading_divider_animation": "none",
+    "heading_divider_style": "short",
+    "heading_divider_width": 1,
+    "toggle_sidebar": false,
+    "tab_style": "regular",
+    "table_styles_enabled": true,
+    "qty_box_style": "stacked",
+    "qty_border_radius": 5,
+    "tag_style": "solid",
+    "mega_menu_1": true,
+    "mega_menu_2": false,
+    "mega_menu_3": true,
+    "mega_menu_4": true,
+    "mega_menu_5": false,
+    "mega_menu_6": false,
+    "mega_menu_7": false,
+    "mega_menu_8": false,
+    "mega_menu_9": false,
+    "mega_menu_10": false,
+    "shop_bg_color": "#f7f8fa",
+    "border_color": "rgba(0,0,0,0)",
+    "regular_color": "#282828",
+    "link_color": "#282828",
+    "link_hover_color": "#a358df",
+    "heading_color": "#000000",
+    "banner_heading_color": "#ffffff",
+    "divider_color": "#000000",
+    "logo_text": "#282828",
+    "header_background": "#ffffff",
+    "header_link_color": "#282828",
+    "header_link_hover_color": "#282828",
+    "header_cart_badge_color": "#a358df",
+    "cart_background_color": "#fff",
+    "show_dropdown_shadow": true,
+    "dropdown_background": "#ffffff",
+    "dropdown_background_opacity": 90,
+    "dropdown_link_color": "#636363",
+    "dropdown_link_hover_color": "#000000",
+    "footer_background": "#f7f8fa",
+    "footer_border": "rgba(0,0,0,0)",
+    "footer_link_color": "#000000",
+    "footer_link_hover_color": "#ffffff",
+    "footer_text_color": "#000000",
+    "sale_color": "#ae3333",
+    "was_price_color": "#a6a6a6",
+    "product_hover_text_color": "#ae3333",
+    "product_hover_bg_color": "#ffffff",
+    "banner_bestseller": "#ff80c1",
+    "banner_comingsoon": "#ff8002",
+    "banner_new": "#ebd62b",
+    "banner_preorder": "#1aa8d5",
+    "banner_sale": "#88ad44",
+    "banner_staffpick": "#a58ced",
+    "qty_icon_color": "#000000",
+    "qty_icon_hover_color": "#000000",
+    "qty_background_color": "#ffffff",
+    "qty_background_hover_color": "#ffffff",
+    "regular__font": "avenir_next_n5",
+    "regular_font_size": 16,
+    "logo__font": "helvetica_n7",
+    "logo_font_size": 16,
+    "logo_font_style": "uppercase",
+    "nav__font": "avenir_next_n7",
+    "nav_font_size": 15,
+    "nav_letter_spacing": 0,
+    "nav_font_style": "uppercase",
+    "dropdown_heading_font_size": 22,
+    "dropdown_font_size": 14,
+    "dropdown_letter_spacing": 0,
+    "dropdown_font_style": "none",
+    "button__font": "avenir_next_n6",
+    "button_letter_spacing": 0,
+    "button_font_style": "none",
+    "heading__font": "avenir_next_n4",
+    "heading_size": 30,
+    "heading_letter_spacing": 0,
+    "heading_font_style": "none",
+    "preheading_font": "helvetica_n4",
+    "preheading_size": 15,
+    "preheading_style": "none",
+    "subheading_font": "helvetica_n4",
+    "subheading_size": 15,
+    "subheading_style": "none",
+    "banner_heading__font": "helvetica_n7",
+    "banner_heading_size": 60,
+    "banner_heading_style": "none",
+    "banner_text__font": "helvetica_n4",
+    "banner_text_size": 30,
+    "banner_text_letter_spacing": 1,
+    "footer_heading_font_size": 20,
+    "footer_font_size": 16,
+    "search_option": "everything",
+    "search_title": "Search",
+    "search_placeholder": "What are you looking for?",
+    "search_heading_color": "#000",
+    "search_display_style": "popup",
+    "search_popup_bg": "#fff",
+    "search_menu": "",
+    "enable_autocomplete": true,
+    "search_to_display": 5,
+    "show_secondary_image": false,
+    "display_vendor": false,
+    "thumbnail_hover_enabled": true,
+    "thumbnail_text_alignment": "left",
+    "stickers_enabled": false,
+    "sticker_shape": "square",
+    "sticker_position": "bottom-left",
+    "collection_swatches": true,
+    "collection_swatches_shape": "square",
+    "enable_shopify_review_comments": false,
+    "enable_shopify_collection_badges": false,
+    "display_product_quantity": false,
+    "limit_quantity": false,
+    "display_inventory_left": false,
+    "inventory_threshold": 10,
+    "free_price_text": "Free",
+    "product_form_style": "swatches",
+    "swatch_style": "square",
+    "notify_me_form": false,
+    "notify_me_description": "<p>Notify me when this product is available:<\/p>",
+    "size_chart": "",
+    "enable_quickshop": false,
+    "quickshop_button_style": "button--2",
+    "quickshop_show_vendor": false,
+    "quickshop_show_price_savings": true,
+    "show_dynamic_checkout_button": false,
+    "quickshop_truncate_words": false,
+    "quickshop_truncate_words_limit": 20,
+    "qs_popup_color": "#fff",
+    "show_product_gallery_thumbnails": false,
+    "quickshop_arrows": true,
+    "quickshop_magnify_images": false,
+    "quickshop_speed": 0,
+    "quickshop_gallery_transition_styles": "slide",
+    "quickshop_thumbnail_position": "bottom-thumbnails",
+    "enable_thumbnail_slider": true,
+    "quickshop_gallery_position": "left",
+    "video_looping": false,
+    "cart_action": "redirect_cart",
+    "show_lock_icon": true,
+    "cart_icon": "box",
+    "display_special_instructions": false,
+    "display_tos_checkbox": false,
+    "tos_page": "",
+    "display_savings": false,
+    "display_ajax_quantity_box": false,
+    "cart_message": "",
+    "go_to_checkout": true,
+    "enable_shipping_calculator": false,
+    "shipping_calculator_default_country": "United States",
+    "currency_format": "money_with_currency_format",
+    "show_multiple_currencies": false,
+    "supported_currencies": "USD CAD INR GBP AUD EUR JPY",
+    "default_currency": "USD",
+    "disqus_enabled": false,
+    "disqus_shortname": "",
+    "twitter_link": "https:\/\/twitter.com\/shopify",
+    "facebook_link": "https:\/\/facebook.com\/shopify",
+    "youtube_link": "",
+    "vimeo_link": "",
+    "pinterest_link": "",
+    "tumblr_link": "",
+    "instagram_link": "",
+    "snapchat_link": "",
+    "houzz_link": "",
+    "linkedin_link": "linkedin.com",
+    "dribbble_link": "",
+    "behance_link": "",
+    "flickr_link": "",
+    "email_link": "",
+    "favicon": "shopify:\/\/shop_images\/fatbox-icov2.png",
+    "checkout_header_image": "shopify:\/\/shop_images\/fresh__page--password-banner-01.jpg",
+    "checkout_logo_image": "shopify:\/\/shop_images\/logo_FB_12-5_2x_0d6d13ee-da8d-4029-9878-d116a9ceab34.png",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "medium",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#ffffff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#f7f8fa",
+    "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_body_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_accent_color": "#ff80c1",
+    "checkout_button_color": "#009aff",
+    "checkout_error_color": "#e32c2b",
+    "icon_style": "icons",
+    "og_image_fallback": "shopify:\/\/shop_images\/fresh-social-share-image.jpg",
+    "show_labels": false,
+    "quikckshop_show_price_savings": true,
+    "field_input_style": "square",
+    "logo_width": 200,
+    "btn1_font_size": 12,
+    "btn1_border_radius": 0,
+    "btn1_block": false,
+    "btn1_bg_color": "#ffffff",
+    "btn1_border_color": "rgba(0,0,0,0)",
+    "btn1_text_color": "#000000",
+    "btn1_bg_color--highlight": "#000000",
+    "btn1_border_color--highlight": "rgba(0,0,0,0)",
+    "btn1_text_color--highlight": "#ffffff",
+    "btn2_font_size": 16,
+    "btn2_border_radius": 0,
+    "btn2_block": false,
+    "btn2_bg_color": "rgba(0,0,0,0)",
+    "btn2_border_color": "#000000",
+    "btn2_text_color": "#000000",
+    "btn2_bg_color--highlight": "#000000",
+    "btn2_border_color--highlight": "#000000",
+    "btn2_text_color--highlight": "#ffffff",
+    "btn3_font_size": 12,
+    "btn3_border_radius": 2,
+    "btn3_bg_color": "#000000",
+    "btn3_bg_color_transparency": 100,
+    "btn3_bg_color--highlight": "#fff",
+    "btn3_bg_color_transparency--highlight": 100,
+    "btn3_border_color": "#000000",
+    "btn3_border_color--highlight": "#000000",
+    "btn3_text_color": "#ffffff",
+    "btn3_text_color--highlight": "#000",
+    "btn3_icon": "heart",
+    "btn3_icon_position": "left",
+    "btn3_animation": "checkmark",
+    "sections": {
+      "announcement-bar": {
+        "type": "announcement-bar",
+        "settings": {
+          "icon_label": "",
+          "text": "<p>Ordering more than 2,000 packages? Get discount pricing with Fatbox Pro. <\/p>",
+          "alignment": "center",
+          "size": "regular",
+          "button_label": "Learn more",
+          "link": "shopify:\/\/pages\/customquote",
+          "button_style": "button--link-style",
+          "background": "#2b2b2b",
+          "text_color": "#cccccc",
+          "width": "wide",
+          "homepage_only": false,
+          "enable_sticky": false,
+          "show_close_icon": false,
+          "css_class": ".announcement-bar__text",
+          "custom_css": "{\nfont-size: 17px;\nfont-weight: 600;\n}"
+        }
+      },
+      "header__top-bar": {
+        "type": "header__top-bar",
+        "blocks": {
+          "header__top-bar-0": {
+            "type": "text",
+            "settings": {
+              "text": ""
+            }
+          },
+          "1564160346825": {
+            "type": "menu",
+            "settings": {
+              "menu": "",
+              "menu_alignment": "center"
+            }
+          }
+        },
+        "block_order": [
+          "header__top-bar-0",
+          "1564160346825"
+        ],
+        "settings": {
+          "show_top_bar": false,
+          "font": "helvetica_n7",
+          "font_style": "none",
+          "font_size": 18,
+          "letter_spacing": 0,
+          "show_locale_selector": true,
+          "show_currency_selector": true,
+          "background": "#333333",
+          "link_color": "#c3c3c3",
+          "link_hover_color": "#ffffff",
+          "text_color": "#ffffff",
+          "width": "standard",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "header-classic": {
+        "type": "header-classic",
+        "settings": {
+          "logo": "shopify:\/\/shop_images\/fblogo_nowhite1057am.jpg",
+          "logo_width": 180,
+          "main_linklist": "main-menu",
+          "menu_alignment": "center",
+          "dropdown_click": false,
+          "display_search": false,
+          "icon_style": "text",
+          "enable_overlay": false,
+          "show_text_shadow": false,
+          "overlay_link_color": "#282828",
+          "overlay_link_hover_color": "rgba(0,0,0,0)",
+          "overlay_background": "#a358df",
+          "overlay_background_opacity": 0,
+          "overlay_logo_width": 175,
+          "enable_sticky": true,
+          "sticky_background_opacity": 100,
+          "scroll_logo_width": 175,
+          "width": "wide",
+          "vertical_alignment": "center",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "mega-menu-1": {
+        "type": "mega-menu-1",
+        "blocks": {
+          "ea5e3018-b6de-46f3-b7c7-a343769d834e": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/updated.png",
+              "image_link": "shopify:\/\/products\/mailer-bag",
+              "image_caption": "<p><a href=\"\/products\/mailer-bag\" title=\"Mailer Bag\">Mailer Bag<\/a><\/p>"
+            }
+          },
+          "107f5c6f-b5ac-4be3-805b-b683f43f795e": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/444fatbox__prod2_2x-Recovered.png",
+              "image_link": "shopify:\/\/products\/product-box",
+              "image_caption": "<p><a href=\"\/products\/product-box\" title=\"Product Box\">Product Box<\/a><\/p>"
+            }
+          },
+          "131b99e3-3500-4d2b-b8cf-7719b9874627": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/22fatbox__prod2_2x-Recovered.png",
+              "image_link": "shopify:\/\/products\/ecommerce-box-1",
+              "image_caption": "<p><a href=\"\/products\/ecommerce-box-1\" title=\"Ecommerce Box\">E-Commerce Box<\/a><\/p>"
+            }
+          },
+          "3f3d618c-0ceb-4772-a28b-6a6a6400df77": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/fatbox__prod2_2x-Recovered_8ee551db-8de0-4f52-9be0-0ba9bd978189.png",
+              "image_link": "shopify:\/\/products\/shipper-box",
+              "image_caption": "<p><a href=\"\/products\/shipper-box\" title=\"Shipper Box\">Shipper Box<\/a><\/p>"
+            }
+          },
+          "1565195799064": {
+            "type": "featured_promo",
+            "settings": {
+              "richtext": "<p>Ordering over 2,000 units or looking for something more unique? <\/p>",
+              "richtext2": "<p>Get a quote with <a href=\"\/pages\/customquote\" title=\"Fatbox - Get a Quote with Fatbox Pro\">Fatbox Pro<\/a><\/p>",
+              "bgr_color": "#ffffff",
+              "text_color": "#282828",
+              "promo_link": "shopify:\/\/pages\/customquote",
+              "button_label": "Custom Quote",
+              "button_style": "button--secondary"
+            }
+          }
+        },
+        "block_order": [
+          "ea5e3018-b6de-46f3-b7c7-a343769d834e",
+          "107f5c6f-b5ac-4be3-805b-b683f43f795e",
+          "131b99e3-3500-4d2b-b8cf-7719b9874627",
+          "3f3d618c-0ceb-4772-a28b-6a6a6400df77",
+          "1565195799064"
+        ],
+        "settings": {
+          "parent_link": "Packages",
+          "enable_mega_menu_border": true,
+          "mega_menu_background_color": "#ffffff",
+          "mega_menu_text_color": "#404040",
+          "show_mega_bottom_bar": true,
+          "icon_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0482\/1843\/9847\/files\/flag.svg?v=1605742694",
+          "mega_bottom_bar_icon": "box",
+          "mega_bottom_bar_text": "All packages manufactured and printed in USA",
+          "size": "regular",
+          "bottom_banner_bg": "#2b2b2b",
+          "bottom_banner_text": "#ffffff",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "footer__icon-bar": {
+        "type": "footer__icon-bar",
+        "blocks": {
+          "footer__icon-bar-1": {
+            "type": "text",
+            "settings": {
+              "icon": "shield",
+              "text": "ETHICALLY SOURCED"
+            }
+          },
+          "footer__icon-bar-2": {
+            "type": "text",
+            "settings": {
+              "icon": "leaf-2",
+              "text": "100% NATURAL"
+            }
+          },
+          "footer__icon-bar-3": {
+            "type": "text",
+            "settings": {
+              "icon": "heart",
+              "text": "MANUFACTURED IN USA"
+            }
+          },
+          "1559011765495": {
+            "type": "text",
+            "settings": {
+              "icon": "recycle",
+              "text": "RESPONSIBLE PACKAGING"
+            }
+          }
+        },
+        "block_order": [
+          "footer__icon-bar-1",
+          "footer__icon-bar-2",
+          "footer__icon-bar-3",
+          "1559011765495"
+        ],
+        "settings": {
+          "show_icon_bar": false,
+          "alignment": "center",
+          "icon_position": "row",
+          "size": "medium",
+          "background": "#ebebeb",
+          "link_color": "#ffffff",
+          "link_hover_color": "#000000",
+          "text_color": "#000000",
+          "width": "standard",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "footer-classic": {
+        "type": "footer-classic",
+        "blocks": {
+          "footer-classic-1": {
+            "type": "link_list",
+            "settings": {
+              "menu": "",
+              "social_icons_footer": false
+            }
+          },
+          "1559752958390": {
+            "type": "link_list",
+            "settings": {
+              "menu": "",
+              "social_icons_footer": false
+            }
+          },
+          "1563557700911": {
+            "type": "newsletter",
+            "settings": {
+              "newsletter_title": "Sign up for our newsletter",
+              "newsletter_richtext": "<p>Be the first to hear about new product releases and sales!<\/p>",
+              "display_first_name": false,
+              "display_last_name": false
+            }
+          }
+        },
+        "block_order": [
+          "footer-classic-1",
+          "1559752958390",
+          "1563557700911"
+        ],
+        "settings": {
+          "copyright_text": "",
+          "display_designed_by": true,
+          "display_shopify": true,
+          "display_payment_methods": true,
+          "show_locale_selector": true,
+          "show_currency_selector": true,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "product__sidebar": {
+        "type": "product__sidebar",
+        "blocks": {
+          "product__sidebar-0": {
+            "type": "featured_promo",
+            "settings": {
+              "promo_background": "#eeeeee",
+              "promo_text": "#000000",
+              "richtext": "<p>Use this area for promotional information.<\/p>",
+              "button_label": "Shop now",
+              "button_style": "button--primary"
+            }
+          },
+          "product__sidebar-1": {
+            "type": "menu",
+            "settings": {
+              "menu": ""
+            }
+          },
+          "product__sidebar-2": {
+            "type": "text",
+            "settings": {
+              "title": "Heading",
+              "text": "<p>Text area can be used for details about blog authors or general information.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "product__sidebar-0",
+          "product__sidebar-1",
+          "product__sidebar-2"
+        ],
+        "settings": {
+          "show_sidebar": false,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "product__main": {
+        "type": "product__main",
+        "settings": {
+          "product_breadcrumb": false,
+          "display_thumbnails": true,
+          "gallery_arrows": true,
+          "enable_zoom": true,
+          "enable_product_lightbox": true,
+          "slideshow_speed": 3,
+          "slideshow_transition": "slide",
+          "thumbnail_position": "bottom-thumbnails",
+          "enable_thumbnail_slider": true,
+          "display_vendor": false,
+          "display_sku": false,
+          "enable_shopify_product_badges": false,
+          "display_savings": true,
+          "display_collections": false,
+          "display_type": false,
+          "display_tags": false,
+          "display_social_buttons": true,
+          "product_description_position": "top",
+          "show_payment_button": true,
+          "product_images_position": "left",
+          "set_product_height": false,
+          "product_height": 500,
+          "video_looping": false,
+          "width": "standard",
+          "padding_top": 20,
+          "padding_bottom": 20,
+          "animation": "none",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "product-sections__main": {
+        "type": "product-sections__main",
+        "blocks": {
+          "product-sections__main-2": {
+            "type": "product_gallery",
+            "settings": {
+              "display_thumbnails": true,
+              "gallery_arrows": true,
+              "enable_zoom": false,
+              "enable_product_lightbox": true,
+              "slideshow_speed": 3,
+              "slideshow_transition": "slide",
+              "thumbnail_position": "bottom-thumbnails",
+              "enable_thumbnail_slider": true,
+              "set_product_height": false,
+              "product_height": 500,
+              "video_looping": false,
+              "width": "half",
+              "padding_top": 0,
+              "padding_bottom": 0,
+              "padding_left": 0,
+              "padding_right": 0,
+              "animation": "none"
+            }
+          },
+          "product-sections__main-0": {
+            "type": "rich_text",
+            "settings": {
+              "title": "Uplift + Restore",
+              "heading_font": "helvetica_n7",
+              "heading_color": "rgba(0,0,0,0)",
+              "heading_alignment": "center",
+              "heading_size": 30,
+              "text": "<p>Take some time to relax, unwind and recharge with our line of bath + body products. Inspired by nature, the ocean and of course – <em>you<\/em>. Fresh + natural ingredients <strong>only<\/strong> in all of our products. Designed to cleanse and nourish, suitable for all skin and hair types. <\/p>",
+              "text_font": "helvetica_n4",
+              "text_color": "rgba(0,0,0,0)",
+              "text_alignment": "center",
+              "text_size": 14,
+              "columns": 1,
+              "button_label": "Read more",
+              "button_link": "shopify:\/\/blogs\/news\/why-is-exfoliating-important",
+              "button_alignment": "center",
+              "button_style": "button--primary",
+              "background": "#eeeeee",
+              "gradient": "rgba(0,0,0,0)",
+              "gradient_rotation": 0,
+              "width": "half",
+              "padding_top": 0,
+              "padding_bottom": 0,
+              "padding_left": 0,
+              "padding_right": 0,
+              "animation": "none"
+            }
+          },
+          "product-sections__main-1": {
+            "type": "product_info",
+            "settings": {
+              "display_vendor": false,
+              "display_sku": false,
+              "enable_shopify_product_badges": false,
+              "display_savings": true,
+              "display_collections": false,
+              "display_type": false,
+              "display_tags": false,
+              "display_social_buttons": true,
+              "product_description_position": "top",
+              "show_payment_button": true,
+              "width": "standard",
+              "padding_top": 0,
+              "padding_bottom": 0,
+              "padding_left": 0,
+              "padding_right": 0,
+              "animation": "none"
+            }
+          },
+          "1564417741937": {
+            "type": "recommended_products",
+            "settings": {
+              "width": "standard",
+              "padding_top": 20,
+              "padding_bottom": 20,
+              "animation": "fadeInDown"
+            }
+          },
+          "1569523664866": {
+            "type": "image_with_overlay",
+            "settings": {
+              "pretext": "",
+              "title": "Everything you need for Selfcare Sundays",
+              "subtitle": "",
+              "pretext_color": "#000000",
+              "heading_color": "#ffffff",
+              "subheading_color": "#000000",
+              "text_alignment": "center",
+              "text_horizontal_position": "center",
+              "text_vertical_position": "middle",
+              "background_color": "#ffffff",
+              "background_opacity": 0,
+              "border_color": "#ffffff",
+              "border_width": 0,
+              "text_width": 40,
+              "button_1": "Bath",
+              "button_1_link": "shopify:\/\/collections\/shampoos",
+              "button_1_style": "button--primary",
+              "button_2": "Body",
+              "button_2_link": "shopify:\/\/collections\/soaps",
+              "button_2_style": "button--primary",
+              "mobile_image_crop": "none",
+              "mobile_text_below_image": true,
+              "pretext_color_mobile": "#000000",
+              "heading_color_mobile": "#000000",
+              "subheading_color_mobile": "#000000",
+              "width": "wide",
+              "padding_top": 0,
+              "padding_bottom": 0,
+              "padding_left": 0,
+              "padding_right": 0,
+              "animation": "none"
+            }
+          }
+        },
+        "block_order": [
+          "product-sections__main-2",
+          "product-sections__main-0",
+          "product-sections__main-1",
+          "1564417741937",
+          "1569523664866"
+        ],
+        "settings": {
+          "product_breadcrumb": true,
+          "padding_top": 20,
+          "padding_bottom": 0,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "header-centered__top-bar": {
+        "type": "header-centered__top-bar",
+        "settings": {
+          "show_social_icons": false,
+          "text": "<p>Add a phone number or other information.<\/p>",
+          "show_locale_selector": true,
+          "show_currency_selector": true,
+          "font": "open_sans_n4",
+          "font_style": "none",
+          "font_size": 14,
+          "letter_spacing": 0,
+          "top_bar_background": "rgba(0,0,0,0)",
+          "top_bar_link": "#f30f0f",
+          "top_bar_link_hover": "rgba(0,0,0,0)",
+          "top_bar_text": "rgba(0,0,0,0)",
+          "display_search": true,
+          "icon_style": "icons",
+          "cart_button_background": "#000000",
+          "cart_button_text": "#ffffff",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "header-centered": {
+        "type": "header-centered",
+        "settings": {
+          "logo": "",
+          "logo_width": 160,
+          "logo_position": "above",
+          "main_linklist": "main-menu",
+          "menu_spacing": "default",
+          "dropdown_click": false,
+          "enable_overlay": false,
+          "show_text_shadow": false,
+          "overlay_background": "rgba(0,0,0,0)",
+          "overlay_background_opacity": 0,
+          "overlay_link_color": "rgba(0,0,0,0)",
+          "overlay_link_hover_color": "rgba(0,0,0,0)",
+          "overlay_logo": "",
+          "overlay_logo_width": 80,
+          "enable_sticky": false,
+          "display_search": true,
+          "sticky_background_opacity": 50,
+          "scroll_logo_width": 200,
+          "width": "standard",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "mega-menu-2": {
+        "type": "mega-menu-2",
+        "blocks": {
+          "mega-menu-2-0": {
+            "type": "menu",
+            "settings": {
+              "menu_1": "bath",
+              "menu_1_link": ""
+            }
+          },
+          "1559747600703": {
+            "type": "mixed",
+            "settings": {
+              "richtext_top": "BENEFITS",
+              "image_top": "",
+              "image_link_top": "",
+              "image_caption_top": "<p>✔&nbsp;Benefit number one<\/p>\n<p>✔ Benefit number two<\/p>\n<p>✔ Benefit number three<\/p>\n<p>✔ Benefit number four and all of these can be a sentence or longer than 1-2 words<\/p>",
+              "menu_1": "",
+              "menu_1_link": "",
+              "menu_2": "",
+              "menu_2_link": "",
+              "menu_3": "",
+              "menu_3_link": "",
+              "menu_4": "",
+              "menu_4_link": "",
+              "image_bottom": "",
+              "image_link_bottom": "",
+              "richtext_bottom": ""
+            }
+          },
+          "mega-menu-2-4": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/fresh__megamenu-02.jpg",
+              "image_link": "",
+              "image_caption": ""
+            }
+          }
+        },
+        "block_order": [
+          "mega-menu-2-0",
+          "1559747600703",
+          "mega-menu-2-4"
+        ],
+        "settings": {
+          "parent_link": "Bath and Shower",
+          "enable_mega_menu_border": false,
+          "mega_menu_background_color": "#f6f6f6",
+          "mega_menu_text_color": "#404040",
+          "show_mega_bottom_bar": false,
+          "mega_bottom_bar_icon": "",
+          "mega_bottom_bar_text": "Add your deal, information or promotional text",
+          "mega_bottom_bar_link": "",
+          "size": "regular",
+          "bottom_banner_bg": "#007ace",
+          "bottom_banner_text": "#efefef",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "mega-menu-3": {
+        "type": "mega-menu-3",
+        "blocks": {
+          "5686817c-9ba9-4838-9813-2293ace0a294": {
+            "type": "mixed",
+            "settings": {
+              "richtext_top": "",
+              "image_caption_top": "<p>About Us<\/p><p>FAQ<\/p>",
+              "menu_1": "",
+              "menu_1_link": "shopify:\/\/blogs\/news",
+              "menu_2": "",
+              "menu_3": "",
+              "menu_4": "",
+              "richtext_bottom": ""
+            }
+          }
+        },
+        "block_order": [
+          "5686817c-9ba9-4838-9813-2293ace0a294"
+        ],
+        "settings": {
+          "parent_link": "About",
+          "enable_mega_menu_border": false,
+          "mega_menu_background_color": "#ffffff",
+          "mega_menu_text_color": "#404040",
+          "show_mega_bottom_bar": false,
+          "mega_bottom_bar_icon": "",
+          "mega_bottom_bar_text": "Add your deal, information or promotional text",
+          "size": "small",
+          "bottom_banner_bg": "#007ace",
+          "bottom_banner_text": "#efefef",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "mega-menu-4": {
+        "type": "mega-menu-4",
+        "blocks": {
+          "mega-menu-4-5": {
+            "type": "featured_product",
+            "settings": {
+              "featured_product": "golden-marigold-solid-soap-bar",
+              "richtext_bottom": ""
+            }
+          },
+          "1559747883433": {
+            "type": "featured_product",
+            "settings": {
+              "featured_product": "cherry-blossom-solid-soap-bar",
+              "richtext_bottom": ""
+            }
+          },
+          "1559747891814": {
+            "type": "featured_product",
+            "settings": {
+              "featured_product": "early-grey-marble-soap-bar",
+              "richtext_bottom": ""
+            }
+          },
+          "1565107767822": {
+            "type": "featured_product",
+            "settings": {
+              "featured_product": "fresh-basil-solid-soap-bar",
+              "richtext_bottom": ""
+            }
+          }
+        },
+        "block_order": [
+          "mega-menu-4-5",
+          "1559747883433",
+          "1559747891814",
+          "1565107767822"
+        ],
+        "settings": {
+          "parent_link": "About234",
+          "enable_mega_menu_border": false,
+          "mega_menu_background_color": "#f6f6f6",
+          "mega_menu_text_color": "#404040",
+          "show_mega_bottom_bar": false,
+          "mega_bottom_bar_icon": "",
+          "mega_bottom_bar_text": "Add your deal, information or promotional text",
+          "size": "regular",
+          "bottom_banner_bg": "#007ace",
+          "bottom_banner_text": "#efefef",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "mega-menu-5": {
+        "type": "mega-menu-5",
+        "blocks": {
+          "mega-menu-5-1": {
+            "type": "featured_promo",
+            "settings": {
+              "image": "",
+              "richtext": "<p>Add description and links to your promotion<\/p>",
+              "bgr_color": "#eeeeee",
+              "text_color": "#000000",
+              "promo_link": "",
+              "button_label": "Shop now",
+              "button_style": "button--1"
+            }
+          },
+          "mega-menu-5-5": {
+            "type": "featured_product",
+            "settings": {
+              "featured_product": "",
+              "richtext_bottom": ""
+            }
+          },
+          "1559748478822": {
+            "type": "featured_product",
+            "settings": {
+              "featured_product": "",
+              "richtext_bottom": ""
+            }
+          },
+          "1559748481834": {
+            "type": "featured_product",
+            "settings": {
+              "featured_product": "",
+              "richtext_bottom": ""
+            }
+          }
+        },
+        "block_order": [
+          "mega-menu-5-1",
+          "mega-menu-5-5",
+          "1559748478822",
+          "1559748481834"
+        ],
+        "settings": {
+          "parent_link": "Gift Ideas",
+          "enable_mega_menu_border": false,
+          "mega_menu_background_color": "#f6f6f6",
+          "mega_menu_text_color": "#404040",
+          "show_mega_bottom_bar": false,
+          "mega_bottom_bar_icon": "",
+          "mega_bottom_bar_text": "Add your deal, information or promotional text",
+          "mega_bottom_bar_link": "",
+          "size": "regular",
+          "bottom_banner_bg": "#007ace",
+          "bottom_banner_text": "#efefef",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "mega-menu-6": {
+        "type": "mega-menu-6",
+        "blocks": {
+          "1559748432638": {
+            "type": "featured_promo",
+            "settings": {
+              "image": "",
+              "richtext": "<p>Add description and links to your promotion<\/p>",
+              "bgr_color": "#eeeeee",
+              "text_color": "#000000",
+              "promo_link": "",
+              "button_label": "Shop now",
+              "button_style": "button--1"
+            }
+          },
+          "mega-menu-6-5": {
+            "type": "featured_product",
+            "settings": {
+              "featured_product": "",
+              "richtext_bottom": ""
+            }
+          },
+          "1559748391110": {
+            "type": "featured_product",
+            "settings": {
+              "featured_product": "",
+              "richtext_bottom": ""
+            }
+          },
+          "1559748426523": {
+            "type": "featured_product",
+            "settings": {
+              "featured_product": "",
+              "richtext_bottom": ""
+            }
+          }
+        },
+        "block_order": [
+          "1559748432638",
+          "mega-menu-6-5",
+          "1559748391110",
+          "1559748426523"
+        ],
+        "settings": {
+          "parent_link": "Nude Packaging",
+          "enable_mega_menu_border": false,
+          "mega_menu_background_color": "#f6f6f6",
+          "mega_menu_text_color": "#404040",
+          "show_mega_bottom_bar": false,
+          "mega_bottom_bar_icon": "",
+          "mega_bottom_bar_text": "Add your deal, information or promotional text",
+          "mega_bottom_bar_link": "",
+          "size": "regular",
+          "bottom_banner_bg": "#007ace",
+          "bottom_banner_text": "#efefef",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "popup": {
+        "type": "popup",
+        "settings": {
+          "show_close_icon": true,
+          "show_popup_on_mobile": false,
+          "display_border": true,
+          "border_color": "#009aff",
+          "border_width": 14,
+          "newsletter_title": "Dive in - subscribe today!",
+          "newsletter_text": "<p>You&#x27;ll get the inside scoop on flash sales, new product releases and be entered in a contest for a year&#x27;s worth of Fresh!<\/p>",
+          "newsletter_section_text_align": "center",
+          "text_color": "#000000",
+          "background_color": "#ffffff",
+          "show_signup_form": true,
+          "display_first_name": false,
+          "display_last_name": false,
+          "image_cropping": "center",
+          "image_position": "left",
+          "overlay_color": "#000000",
+          "overlay_background_opacity": 50,
+          "popup_delay": 120,
+          "popup_days_to_hide": "365",
+          "animation": "slideInRight",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "404__banner": {
+        "type": "404__banner",
+        "settings": {
+          "show_banner": true,
+          "image": "shopify:\/\/shop_images\/fresh__page--404-01.jpg",
+          "image_darken": false,
+          "width": "wide",
+          "banner_height": "medium",
+          "padding_top": 0,
+          "padding_bottom": 0,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "404__main": {
+        "type": "404__main",
+        "settings": {
+          "not_found_text": "<p>We're sorry, but the page you're looking for could not be found.<\/p>\n<p>Try searching or <a href=\"\/collections\/all\">continue shopping<\/a>.<\/p>",
+          "display_search_field": true,
+          "width": "standard",
+          "padding_top": 40,
+          "padding_bottom": 40,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "password__main": {
+        "type": "password__main",
+        "settings": {
+          "custom_logo": "",
+          "password-page-background": "shopify:\/\/shop_images\/fresh__page--password-banner-01.jpg",
+          "pagework_page_bg_stretched": true,
+          "copyright_text": "",
+          "display_designed_by": true,
+          "display_shopify": true,
+          "social_media": true,
+          "password_page_background_color": "#ffffff",
+          "password_page_text_color": "#000000",
+          "newsletter_title": "Subscribe",
+          "newsletter_richtext": "<p>Sign up to get the latest on sales, new releases and more …<\/p>",
+          "show_signup_form": true,
+          "display_first_name": false,
+          "display_last_name": false,
+          "padding_top": 40,
+          "padding_bottom": 40,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "fixed-message": {
+        "type": "fixed-message",
+        "settings": {
+          "text": "<p>We use cookies on our website to give you the best shopping experience. By using this site, you agree to its use of cookies. <\/p>",
+          "button_label": "I agree",
+          "button_style": "button--primary",
+          "background": "#000000",
+          "background_opacity": 77,
+          "text_color": "#ffffff",
+          "width": "wide",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "product__recommendations": {
+        "type": "product__recommendations",
+        "settings": {
+          "show_product_recommendations": false,
+          "product_recommendations_style": "grid",
+          "product_recommendations_heading": "You may also like",
+          "products_per": 3,
+          "recommended_products_limit": 3,
+          "align_height": false,
+          "collection_height": 200,
+          "width": "wide",
+          "padding_top": 20,
+          "padding_bottom": 0,
+          "padding_left": 0,
+          "padding_right": 0,
+          "animation": "none",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "page__main": {
+        "type": "page__main",
+        "settings": {
+          "width": "standard",
+          "padding_top": 40,
+          "padding_bottom": 40,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "page-faq__banner": {
+        "type": "page-faq__banner",
+        "settings": {
+          "show_banner": false,
+          "image_darken": false,
+          "subtitle": "",
+          "width": "wide",
+          "banner_height": "medium",
+          "padding_top": 26,
+          "padding_bottom": 46,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "page-faq__main": {
+        "type": "page-faq__main",
+        "settings": {
+          "width": "standard",
+          "padding_top": 80,
+          "padding_bottom": 80,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "page-faq__column1": {
+        "type": "page-faq__column1",
+        "blocks": {
+          "page-faq__column1-0": {
+            "type": "heading",
+            "settings": {
+              "title": "General information"
+            }
+          },
+          "page-faq__column1-1": {
+            "type": "content",
+            "settings": {
+              "title": "What is the minimum order quantity?",
+              "answer": "<p>Minimums are listed below:<\/p><p>E-Commerce Boxes: 1<\/p><p>Shipper Boxes: 1<\/p><p>Product Boxes: 25<\/p><p>Poly Bags: Contact Us <\/p>"
+            }
+          },
+          "page-faq__column1-2": {
+            "type": "content",
+            "settings": {
+              "title": "How long is the turnaround time?",
+              "answer": "<p>All printing is within 10 business days. Shipping varies on what you select but generally 2-5 business days. The normal turnaround time in the industry is 4-6 weeks. Fatbox does it much faster.<\/p>"
+            }
+          },
+          "page-faq__column1-3": {
+            "type": "content",
+            "settings": {
+              "title": "How do I re-order my boxes?",
+              "answer": "<p>Within FatDesigner™, click &quot;My Designs&quot; and you&#x27;ll see all your saved designs. You can Checkout with that same design from there.<\/p><p><\/p><p>For Fatbox Pro customers, you&#x27;re B2B portal contains your order history can be re-ordered easily from there. <\/p>"
+            }
+          },
+          "page-faq__column1-5": {
+            "type": "content",
+            "settings": {
+              "title": "Is your packaging recyclable?",
+              "answer": "<p>You bet!  All custom packaging is 100% recyclable and environment friendly. <\/p>"
+            }
+          },
+          "566006dc-cacb-4837-93fb-dcdf074a6cb6": {
+            "type": "content",
+            "settings": {
+              "title": "What is FatDesigner™ and do I need to use it?",
+              "answer": "<p>FatDesigner™ lets anyone order custom packages with as little as 1 package. Simply <a href=\"https:\/\/myfatbox.myshopify.com\/#custom-package\">select your package type<\/a> and click the blue &quot;Design My Box&quot; button to get started. However for enterprise customers, we work directly with you one on one through <a title=\"Fatbox - Get a Quote with Fatbox Pro\" href=\"\/pages\/customquote\">Fatbox Pro<\/a>.<\/p>"
+            }
+          },
+          "c7487823-16b1-4b72-9cfe-8a2b928d663e": {
+            "type": "content",
+            "settings": {
+              "title": "Can I get a custom quote?",
+              "answer": "<p>Absolutely, if you are order 2,000 packages or more simply fill out the form on our <a title=\"Fatbox - Get a Quote with Fatbox Pro\" href=\"\/pages\/customquote\">Fatbox Pro page<\/a> and tell us what you need. Otherwise, we designed a self service design tool called FatDesigner™.<\/p>"
+            }
+          },
+          "55e29ef8-6b42-4072-b240-3c735c987d31": {
+            "type": "content",
+            "settings": {
+              "title": "Is Fatbox meant for small businesses and start ups?",
+              "answer": "<p>Yes we&#x27;re a fit for both very small order and enterprise accounts. FatDesigner™ lets anyone order custom packages with as little as 1 package or up to millions with our <a title=\"Fatbox - Get a Quote with Fatbox Pro\" href=\"\/pages\/customquote\">Fatbox Pro<\/a> program.<\/p>"
+            }
+          },
+          "0243b8f2-898f-4e2d-a2b1-0edb5e454b3b": {
+            "type": "content",
+            "settings": {
+              "title": "Do I need to be a business to order a custom package?",
+              "answer": "<p>Not at all. People hosting parties, weddings and birthdays have made custom packages for events. <\/p>"
+            }
+          },
+          "d4c0dee9-ed05-44b1-83cf-e8bb0ac45e65": {
+            "type": "content",
+            "settings": {
+              "title": "Are all Fatbox packages printed in the USA?",
+              "answer": "<p>Yes, 100% of our packages are printed in the US. This means higher quality and much faster turn times.<\/p>"
+            }
+          },
+          "page-faq__column1-4": {
+            "type": "heading",
+            "settings": {
+              "title": "Order Information"
+            }
+          },
+          "page-faq__column1-6": {
+            "type": "content",
+            "settings": {
+              "title": "When will my order ship?",
+              "answer": "<p>After an order proof is approved, printing will complete within 10 days and be shipped immediately afterwards. <\/p>"
+            }
+          },
+          "1564163024067": {
+            "type": "content",
+            "settings": {
+              "title": "How is my shipping calculated?",
+              "answer": "<p>Our shipping rates are determined by location and the total weight of your order. Shipping rates will be calculated and displayed at checkout!<\/p>"
+            }
+          },
+          "1564162991424": {
+            "type": "content",
+            "settings": {
+              "title": "Do you offer bulk discounts?",
+              "answer": "<p>Yes, all orders over 2,000 units qualify for our <a title=\"Fatbox - Get a Quote with Fatbox Pro\" href=\"\/pages\/customquote\">Fatbox Pro program<\/a> and gain access to a dedicated account manager and more!<\/p>"
+            }
+          },
+          "page-faq__column1-7": {
+            "type": "content",
+            "settings": {
+              "title": "I have a question about my order, what should I do?",
+              "answer": "<p>Reach out! Email us directly at hello [at] fatbox [dot] com. We’re happy to answer questions about Orders, Order Modifications, Shipping, Returns, &amp; Cancellations.<\/p>"
+            }
+          },
+          "1594386161484": {
+            "type": "heading",
+            "settings": {
+              "title": "Company"
+            }
+          },
+          "1594386322176": {
+            "type": "content",
+            "settings": {
+              "title": "When was Fatbox founded and why was it started?",
+              "answer": "<p>Fatbox was founded in 2020 by two online entrepreneurs who made b2c products with a combined 20 years of experience. We know how hard and cumbersome custom packaging was to handle, and that challenge inspired us to start Fatbox!<\/p>"
+            }
+          },
+          "1594386169135": {
+            "type": "content",
+            "settings": {
+              "title": "Are you hiring?",
+              "answer": "<p>We&#x27;re always looking for good help from account managers to back-end developers. You can send us an email at hello [at] fatbox [dot] com. You&#x27;re welcome to submit your resume and we’ll contact you if we see a fit.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "page-faq__column1-0",
+          "page-faq__column1-1",
+          "page-faq__column1-2",
+          "page-faq__column1-3",
+          "page-faq__column1-5",
+          "566006dc-cacb-4837-93fb-dcdf074a6cb6",
+          "c7487823-16b1-4b72-9cfe-8a2b928d663e",
+          "55e29ef8-6b42-4072-b240-3c735c987d31",
+          "0243b8f2-898f-4e2d-a2b1-0edb5e454b3b",
+          "d4c0dee9-ed05-44b1-83cf-e8bb0ac45e65",
+          "page-faq__column1-4",
+          "page-faq__column1-6",
+          "1564163024067",
+          "1564162991424",
+          "page-faq__column1-7",
+          "1594386161484",
+          "1594386322176",
+          "1594386169135"
+        ],
+        "settings": {
+          "padding_top": 0,
+          "padding_bottom": 0,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "page-faq__column2": {
+        "type": "page-faq__column2",
+        "blocks": {
+          "page-faq__column2-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/FBX_Product-Box_2.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "page-faq__column2-0"
+        ],
+        "settings": {
+          "padding_top": 0,
+          "padding_bottom": 0,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "blog__banner": {
+        "type": "blog__banner",
+        "settings": {
+          "show_banner": false,
+          "image_darken": false,
+          "subtitle": "Subheading",
+          "width": "wide",
+          "banner_height": "medium",
+          "padding_top": 0,
+          "padding_bottom": 0,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "blog__sidebar": {
+        "type": "blog__sidebar",
+        "blocks": {
+          "blog__sidebar-2": {
+            "type": "text",
+            "settings": {
+              "title": "THE LATEST",
+              "text": "<p>Catch up on our latest articles and join in on the conversation!<\/p>"
+            }
+          },
+          "1564173257081": {
+            "type": "search",
+            "settings": {
+              "title": "SEARCH",
+              "search_results": "product,page,article"
+            }
+          },
+          "1564173213695": {
+            "type": "post_tags",
+            "settings": {
+              "title": "CATEGORIES",
+              "blog": "news"
+            }
+          },
+          "blog__sidebar-1": {
+            "type": "menu",
+            "settings": {
+              "menu": ""
+            }
+          },
+          "1564173250193": {
+            "type": "newsletter",
+            "settings": {
+              "newsletter_title": "SUBSCRIBE",
+              "newsletter_richtext": "<p>Be the first to hear about new product releases and sales! <\/p>",
+              "display_first_name": false,
+              "display_last_name": false
+            }
+          }
+        },
+        "block_order": [
+          "blog__sidebar-2",
+          "1564173257081",
+          "1564173213695",
+          "blog__sidebar-1",
+          "1564173250193"
+        ],
+        "settings": {
+          "show_sidebar": true,
+          "sidebar_position": "right",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "blog__main": {
+        "type": "blog__main",
+        "settings": {
+          "blog_tags": false,
+          "blog_posts_per_row": 3,
+          "blog_posts_per_page": 12,
+          "pagination_type": "basic_pagination",
+          "blog_author": false,
+          "blog_date": true,
+          "read_time": true,
+          "blog_comment_count": true,
+          "blog_show_tags": true,
+          "blog_show_excerpt": false,
+          "show_border": true,
+          "button_label": "Read more",
+          "button_type": "button--link-style",
+          "width": "standard",
+          "padding_top": 40,
+          "padding_bottom": 40,
+          "animation": "none",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "page-details__main": {
+        "type": "page-details__main",
+        "blocks": {
+          "1594383671973": {
+            "type": "contact_form",
+            "settings": {
+              "subtitle": "GO FATBOX PRO AND GET",
+              "title": "custom quoteS & discount pricing.",
+              "content_text": "<p>Order 2,000+ packages and you’ll qualify for our personalized service and get access to a dedicated account manager. Request your quote now!<\/p><p><\/p>",
+              "bullet": "Located in St Pete, Florida",
+              "bullet2": "48 hour responses",
+              "bullet3": "Simple pricing",
+              "image1": "https:\/\/cdn.shopify.com\/s\/files\/1\/0482\/1843\/9847\/files\/account-manager.svg?v=1610057079",
+              "link1": "Dedicated account manager",
+              "image2": "https:\/\/cdn.shopify.com\/s\/files\/1\/0482\/1843\/9847\/files\/high-volume.svg?v=1610057079",
+              "link2": "High volume discounts",
+              "image3": "https:\/\/cdn.shopify.com\/s\/files\/1\/0482\/1843\/9847\/files\/unlimited-designs.svg?v=1610057079",
+              "link3": "Unlimited designs per dieline",
+              "image4": "https:\/\/cdn.shopify.com\/s\/files\/1\/0482\/1843\/9847\/files\/premium-packaging.svg?v=1610057079",
+              "link4": "All premium packaging materials",
+              "image5": "https:\/\/cdn.shopify.com\/s\/files\/1\/0482\/1843\/9847\/files\/free-expert.svg?v=1610057079",
+              "link5": "Free expert consultation",
+              "cta": "<p>For under 2,000 units, use FatDesigner™️ and <a title=\"\/#custom-package\" href=\"\/#custom-package\" target=\"_blank\">select your package<\/a><\/p>",
+              "social_enable": false,
+              "text_alignment": "left",
+              "background": "#009aff",
+              "text_color": "#ffffff",
+              "form_position": "right",
+              "width": "standard",
+              "padding_top": 80,
+              "padding_bottom": 63,
+              "animation": "fadeIn"
+            }
+          },
+          "0766b83c-1348-488a-b0d5-b820e422a776": {
+            "type": "text-images-columns",
+            "settings": {
+              "logos_per_row": 3,
+              "image1": "https:\/\/cdn.shopify.com\/s\/files\/1\/0482\/1843\/9847\/files\/volume.svg?v=1612387640",
+              "link1": "Volume Discounts",
+              "text1": "Custom pricing for high volume orders, without locking you into contracts.",
+              "image2": "https:\/\/cdn.shopify.com\/s\/files\/1\/0482\/1843\/9847\/files\/vip.svg?v=1612388045",
+              "link2": "VIP Account Manager",
+              "text2": "Dedicated Account Manager to help you from concept to final delivery.",
+              "image3": "https:\/\/cdn.shopify.com\/s\/files\/1\/0482\/1843\/9847\/files\/materialoptions.svg?v=1609973111",
+              "link3": "Unlimited Material Options",
+              "text3": "No job is too complex, get access to all our materials, finishes and upgrades.",
+              "padding_top": 70,
+              "padding_bottom": 66,
+              "animation": "none"
+            }
+          }
+        },
+        "block_order": [
+          "1594383671973",
+          "0766b83c-1348-488a-b0d5-b820e422a776"
+        ],
+        "settings": {
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "page-contact__banner": {
+        "type": "page-contact__banner",
+        "settings": {
+          "show_banner": true,
+          "image": "shopify:\/\/shop_images\/fresh__page--contact-us-banner-01.jpg",
+          "image_darken": false,
+          "subtitle": "We love to hear from you!",
+          "width": "wide",
+          "banner_height": "medium",
+          "padding_top": 0,
+          "padding_bottom": 0,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "page-contact__main": {
+        "type": "page-contact__main",
+        "blocks": {
+          "page-contact__main-0": {
+            "type": "textfield",
+            "settings": {
+              "label": "Name",
+              "required": true
+            }
+          },
+          "page-contact__main-1": {
+            "type": "email",
+            "settings": {
+              "label": "Email"
+            }
+          },
+          "1564170182418": {
+            "type": "checkbox",
+            "settings": {
+              "label": "Subject",
+              "required": false,
+              "options_1": "Product Inquiry",
+              "options_2": "Order Inquiry",
+              "options_3": "Other",
+              "options_4": "",
+              "options_5": "",
+              "options_6": "",
+              "options_7": "",
+              "options_8": "",
+              "options_9": "",
+              "options_10": ""
+            }
+          },
+          "page-contact__main-2": {
+            "type": "textarea",
+            "settings": {
+              "label": "Message",
+              "required": true
+            }
+          }
+        },
+        "block_order": [
+          "page-contact__main-0",
+          "page-contact__main-1",
+          "1564170182418",
+          "page-contact__main-2"
+        ],
+        "settings": {
+          "content_image": "shopify:\/\/shop_images\/fresh__page--contact-us-01.jpg",
+          "title": "Need to get in touch?",
+          "content_text": "<p>We're always happy to chat and help answer any questions you may have! Please note, we try our best to respond to all inquiries within 48 hours, Monday - Friday.<\/p>",
+          "social_enable": true,
+          "text_alignment": "left",
+          "background": "#000000",
+          "text_color": "#ffffff",
+          "form_position": "right",
+          "width": "standard",
+          "padding_top": 40,
+          "padding_bottom": 40,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "page-contact__sections": {
+        "type": "page-contact__sections",
+        "blocks": {
+          "page-contact__sections-0": {
+            "type": "rich_text",
+            "settings": {
+              "title": "Come and visit",
+              "heading_font": "helvetica_n7",
+              "heading_color": "#ffffff",
+              "heading_alignment": "left",
+              "heading_size": 50,
+              "text": "<p>Stop by one of our locations!&nbsp;<\/p>\n<p>Mon-Fri: 9:00am - 6:00pm<br>Sat: 10:00am - 3:00pm<br>Sun: Closed<\/p>",
+              "text_font": "helvetica_n4",
+              "text_color": "#ffffff",
+              "text_alignment": "left",
+              "text_size": 16,
+              "columns": 1,
+              "button_label": "",
+              "button_link": "",
+              "button_alignment": "center",
+              "button_style": "button--primary",
+              "background": "#000000",
+              "gradient": "rgba(0,0,0,0)",
+              "gradient_rotation": 180,
+              "width": "half",
+              "padding_top": 0,
+              "padding_bottom": 0,
+              "padding_left": 0,
+              "padding_right": 0,
+              "animation": "none"
+            }
+          },
+          "page-contact__sections-1": {
+            "type": "map",
+            "settings": {
+              "map_address": "Bath, England",
+              "map_height": 400,
+              "zoom_level": 11,
+              "map_image": "",
+              "api_key": "",
+              "show_pin": false,
+              "map_style": "silver",
+              "width": "half",
+              "padding_top": 0,
+              "padding_bottom": 0,
+              "padding_left": 0,
+              "padding_right": 0,
+              "animation": "none"
+            }
+          }
+        },
+        "block_order": [
+          "page-contact__sections-0",
+          "page-contact__sections-1"
+        ],
+        "settings": {}
+      },
+      "collection__banner": {
+        "type": "collection__banner",
+        "settings": {
+          "show_banner": false,
+          "image_darken": false,
+          "subtitle": "Subheading",
+          "width": "wide",
+          "banner_height": "medium",
+          "padding_top": 0,
+          "padding_bottom": 0,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "collection__sidebar": {
+        "type": "collection__sidebar",
+        "blocks": {
+          "collection__sidebar-0": {
+            "type": "featured_promo",
+            "settings": {
+              "promo_background": "#eeeeee",
+              "promo_text": "#000000",
+              "richtext": "<p>Use this area for promotional information.<\/p>",
+              "button_label": "Shop now",
+              "button_style": "button--primary"
+            }
+          },
+          "collection__sidebar-1": {
+            "type": "menu",
+            "settings": {
+              "menu": ""
+            }
+          },
+          "collection__sidebar-2": {
+            "type": "text",
+            "settings": {
+              "title": "Heading",
+              "text": "<p>Text area can be used for details about blog authors or general information.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "collection__sidebar-0",
+          "collection__sidebar-1",
+          "collection__sidebar-2"
+        ],
+        "settings": {
+          "show_sidebar": false,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "collection__main": {
+        "type": "collection__main",
+        "settings": {
+          "collection_breadcrumb": true,
+          "collection_tags": true,
+          "collection_sort": true,
+          "show_promo_banner": false,
+          "image_darken": true,
+          "promo_title": "Special sale on now!",
+          "promo_text": "<p>Description of promotion with lots of details.<\/p>",
+          "banner_height": "medium",
+          "align_height": false,
+          "collection_height": 200,
+          "products_per_row": 3,
+          "mobile_products_per_row": "1",
+          "pagination_limit": 48,
+          "pagination_type": "basic_pagination",
+          "width": "standard",
+          "padding_top": 40,
+          "padding_bottom": 40,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "cart__banner": {
+        "type": "cart__banner",
+        "settings": {
+          "show_banner": false,
+          "image_darken": false,
+          "subtitle": "Subheading",
+          "width": "wide",
+          "banner_height": "medium",
+          "padding_top": 0,
+          "padding_bottom": 0,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "cart__main": {
+        "type": "cart__main",
+        "blocks": {
+          "1564171735975": {
+            "type": "featured_collection",
+            "settings": {
+              "title": "Current favourites",
+              "collection": "hair",
+              "products_per": 5,
+              "mobile_products_per_row": "1",
+              "products_limit": 5,
+              "align_height": false,
+              "collection_height": 200,
+              "collection_style": "grid",
+              "width": "wide",
+              "show_gutter": true,
+              "padding_top": 20,
+              "padding_bottom": 20,
+              "animation": "none"
+            }
+          }
+        },
+        "block_order": [
+          "1564171735975"
+        ],
+        "settings": {
+          "display_product_quantity_cart": true,
+          "display_savings": true,
+          "cart_message": "",
+          "width": "standard",
+          "padding_top": 40,
+          "padding_bottom": 40,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "collection-subcollection__main": {
+        "type": "collection-subcollection__main",
+        "settings": {
+          "collection_breadcrumb": true,
+          "collection_tags": true,
+          "collection_sort": true,
+          "show_promo_banner": false,
+          "image": "",
+          "image_darken": true,
+          "promo_title": "Special sale on now!",
+          "promo_text": "<p>Description of promotion with lots of details.<\/p>",
+          "banner_height": "medium",
+          "collections_per_row": 2,
+          "mobile_collections_per_row": "1",
+          "align_height": false,
+          "collection_height": 400,
+          "button_style": "button--primary",
+          "overlay_background": "#d3d3d3",
+          "overlay_background_opacity": 0,
+          "overlay_text": "#000000",
+          "collection_title_below_image": false,
+          "products_per_row": 3,
+          "mobile_products_per_row": "1",
+          "align_thumbnail_height": false,
+          "thumbnail_height": 200,
+          "pagination_limit": 48,
+          "width": "standard",
+          "padding_top": 13,
+          "padding_bottom": 0,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "subcollection__featured-collection": {
+        "type": "subcollection__featured-collection",
+        "settings": {
+          "collection_tags": true,
+          "collection_sort": true,
+          "align_height": false,
+          "collection_height": 200,
+          "products_per_row": 3,
+          "mobile_products_per_row": "1",
+          "pagination_limit": 48,
+          "width": "standard",
+          "padding_top": 40,
+          "padding_bottom": 40,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "list-collections__main": {
+        "type": "list-collections__main",
+        "settings": {
+          "collections_per_row": 3,
+          "pagination_limit": 48,
+          "pagination_type": "basic_pagination",
+          "align_height": false,
+          "collection_height": 400,
+          "button_style": "button--secondary",
+          "overlay_background": "#939393",
+          "overlay_background_opacity": 0,
+          "overlay_text": "#000000",
+          "collection_title_below_image": false,
+          "width": "standard",
+          "padding_top": 40,
+          "padding_bottom": 40,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "search__banner": {
+        "type": "search__banner",
+        "settings": {
+          "show_banner": false,
+          "image": "",
+          "image_darken": false,
+          "width": "wide",
+          "banner_height": "medium",
+          "padding_top": 0,
+          "padding_bottom": 0,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "search__sidebar": {
+        "type": "search__sidebar",
+        "blocks": {
+          "search__sidebar-0": {
+            "type": "featured_promo",
+            "settings": {
+              "promo_background": "#eeeeee",
+              "promo_text": "#000000",
+              "promo_image": "",
+              "richtext": "<p>Use this area for promotional information.<\/p>",
+              "promo_link": "",
+              "button_label": "Shop now",
+              "button_style": "button--primary"
+            }
+          },
+          "search__sidebar-1": {
+            "type": "menu",
+            "settings": {
+              "menu": ""
+            }
+          },
+          "search__sidebar-2": {
+            "type": "text",
+            "settings": {
+              "title": "Heading",
+              "text": "<p>Text area can be used for details about blog authors or general information.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "search__sidebar-0",
+          "search__sidebar-1",
+          "search__sidebar-2"
+        ],
+        "settings": {
+          "show_sidebar": false,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "search__main": {
+        "type": "search__main",
+        "settings": {
+          "search_breadcrumb": true,
+          "text": "<p>Find what you seek.<\/p>",
+          "products_per_row": 3,
+          "mobile_products_per_row": "2",
+          "pagination_limit": 48,
+          "pagination_type": "basic_pagination",
+          "align_height": false,
+          "collection_height": 200,
+          "blog_author": false,
+          "blog_date": true,
+          "width": "standard",
+          "padding_top": 40,
+          "padding_bottom": 40,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "article__banner": {
+        "type": "article__banner",
+        "settings": {
+          "show_banner": true,
+          "image_darken": false,
+          "width": "wide",
+          "banner_height": "medium",
+          "padding_top": 0,
+          "padding_bottom": 0,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "article__sidebar": {
+        "type": "article__sidebar",
+        "blocks": {
+          "article__sidebar-0": {
+            "type": "featured_promo",
+            "settings": {
+              "promo_background": "#eeeeee",
+              "promo_text": "#000000",
+              "promo_image": "",
+              "richtext": "<p>Use this area for promotional information.<\/p>",
+              "promo_link": "",
+              "button_label": "Shop now",
+              "button_style": "button--primary"
+            }
+          },
+          "article__sidebar-1": {
+            "type": "menu",
+            "settings": {
+              "menu": ""
+            }
+          },
+          "article__sidebar-2": {
+            "type": "text",
+            "settings": {
+              "title": "Heading",
+              "text": "<p>Text area can be used for details about blog authors or general information.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "article__sidebar-0",
+          "article__sidebar-1",
+          "article__sidebar-2"
+        ],
+        "settings": {
+          "show_sidebar": false,
+          "sidebar_position": "left",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "article__main": {
+        "type": "article__main",
+        "settings": {
+          "show_breadcrumb": true,
+          "blog_author": true,
+          "blog_date": true,
+          "read_time": true,
+          "blog_comment_count": true,
+          "show_tags": false,
+          "show_featured_image": false,
+          "width": "standard",
+          "padding_top": 40,
+          "padding_bottom": 40,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "footer-promotional": {
+        "type": "footer-promotional",
+        "blocks": {
+          "06159ae1-42e0-4afe-b8e8-b9de9e72fcb9": {
+            "type": "logo",
+            "settings": {}
+          },
+          "66214930-93c1-4d42-a5c9-d3667a8b87d8": {
+            "type": "text",
+            "settings": {
+              "title": "",
+              "content": "<p>We’ll make your box fatter guaranteed.<\/p><p><strong>Address<\/strong><\/p><p>7904 E Chaparral Rd STE A110-430, Scottsdale, AZ 85250, USA<\/p>",
+              "logo": "shopify:\/\/shop_images\/footer__logo_4a86e687-49d5-4a4b-bc68-5a2c90c5a92d.png",
+              "size": "small",
+              "alignment": "start"
+            }
+          },
+          "683b1bf6-3868-4964-9107-c4fe1d80eac5": {
+            "type": "link_list",
+            "settings": {
+              "menu_1": "product",
+              "menu_2": "general",
+              "menu_3": "contact"
+            }
+          },
+          "ba16d7ca-0589-476f-96b4-b1cc5e78fcbb": {
+            "type": "social",
+            "settings": {}
+          }
+        },
+        "block_order": [
+          "06159ae1-42e0-4afe-b8e8-b9de9e72fcb9",
+          "66214930-93c1-4d42-a5c9-d3667a8b87d8",
+          "683b1bf6-3868-4964-9107-c4fe1d80eac5",
+          "ba16d7ca-0589-476f-96b4-b1cc5e78fcbb"
+        ],
+        "settings": {
+          "menu_1": "copyright-footer",
+          "copyright_text": "",
+          "display_designed_by": false,
+          "display_shopify": false,
+          "display_payment_methods": false,
+          "show_locale_selector": false,
+          "show_currency_selector": false,
+          "enable_promo": false,
+          "promo_background": "#eeeeee",
+          "promo_text": "#000000",
+          "promo_position": "row-reverse",
+          "richtext": "<p>Use this area for promotional information.<\/p>",
+          "button_label": "Shop now",
+          "button_style": "button--primary",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "1605667119299d4fdc": {
+        "type": "custom-text-overlay",
+        "blocks": {
+          "42768fa0-3edd-40a8-9e11-5a22cfed6155": {
+            "type": "image",
+            "settings": {
+              "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0482\/1843\/9847\/files\/stars.svg?v=1605752294",
+              "quote": "<p>&quot;...Only package company I&#x27;ll use&quot;<\/p>"
+            }
+          },
+          "8da1ff9d-c7fa-41e0-beff-82fca631cc1e": {
+            "type": "image",
+            "settings": {
+              "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0482\/1843\/9847\/files\/stars.svg?v=1605752294",
+              "quote": "<p>“Best online designer for packaging”<\/p>"
+            }
+          },
+          "f77fd1c6-fb9a-4022-9942-877906f0c806": {
+            "type": "image",
+            "settings": {
+              "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0482\/1843\/9847\/files\/stars.svg?v=1605752294",
+              "quote": "<p>“Fastest turn times I&#x27;ve ever seen...”<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "42768fa0-3edd-40a8-9e11-5a22cfed6155",
+          "8da1ff9d-c7fa-41e0-beff-82fca631cc1e",
+          "f77fd1c6-fb9a-4022-9942-877906f0c806"
+        ],
+        "settings": {
+          "image": "shopify:\/\/shop_images\/hero_image_Dec2nd_2x_117bc667-cc6e-49f4-a565-f6b89046bed6.png",
+          "mobile_image": "shopify:\/\/shop_images\/mobile-hero.png",
+          "swirl": "shopify:\/\/shop_images\/hero_image_Dec2nd_2x_117bc667-cc6e-49f4-a565-f6b89046bed6.png",
+          "pretext": "<p>THE #1 PLATFORM TO<\/p>",
+          "title": "DESIGN&nbsp;&&nbsp;BUY CUSTOM&nbsp;PACKAGING.",
+          "subtitle": "<p>The tech first packaging company. Design and buy in 10 minutes.<\/p>",
+          "icon1": "Printed in 10 days",
+          "icon1_svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0482\/1843\/9847\/files\/truck.svg?v=1605742286",
+          "icon2_svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0482\/1843\/9847\/files\/leaf.svg?v=1605742694",
+          "icon3_svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0482\/1843\/9847\/files\/flag.svg?v=1605742694",
+          "icon2": "Eco-friendly packaging",
+          "icon3": "Made in USA",
+          "pretext_color": "#333333",
+          "heading_color": "#282828",
+          "subheading_color": "#282828",
+          "text_alignment": "left",
+          "text_horizontal_position": "left",
+          "text_vertical_position": "middle",
+          "background_color": "#ffffff",
+          "background_opacity": 0,
+          "border_color": "#ffffff",
+          "border_width": 0,
+          "text_width": 40,
+          "button_1": "Button 1",
+          "button_1_style": "button--secondary",
+          "button_2": "Button 2",
+          "button_2_style": "button--secondary",
+          "mobile_image_crop": "none",
+          "mobile_text_below_image": true,
+          "pretext_color_mobile": "rgba(0,0,0,0)",
+          "heading_color_mobile": "rgba(0,0,0,0)",
+          "subheading_color_mobile": "rgba(0,0,0,0)",
+          "width": "standard",
+          "padding_top": 30,
+          "padding_bottom": 0,
+          "padding_left": 0,
+          "padding_right": 0,
+          "animation": "fadeIn",
+          "css_class": "hero-high",
+          "custom_css": ""
+        }
+      },
+      "1605754288255ce720": {
+        "type": "index__heading",
+        "disabled": true,
+        "settings": {
+          "preheading": "",
+          "title": "SELECT YOUR CUSTOM PACKAGE:",
+          "subheading": "",
+          "preheading_color": "rgba(0,0,0,0)",
+          "heading_color": "rgba(0,0,0,0)",
+          "subheading_color": "rgba(0,0,0,0)",
+          "background": "rgba(0,0,0,0)",
+          "gradient": "rgba(0,0,0,0)",
+          "gradient_rotation": 0,
+          "heading_alignment": "center",
+          "vertical_spacing": "medium",
+          "width": "standard",
+          "padding_top": 0,
+          "padding_bottom": 0,
+          "padding_left": 0,
+          "padding_right": 0,
+          "animation": "none",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "16057545314e7e7791": {
+        "type": "index__faq",
+        "blocks": {
+          "16057545314e7e7791-1": {
+            "type": "content",
+            "settings": {
+              "title": "What is the minimum size order?",
+              "answer": "<p>Our minimums order quantities (MOQs) are listed below:<\/p><p><strong>E-Commerce Boxes: <\/strong>1<\/p><p><strong>Shipper Boxes:<\/strong> 1<\/p><p><strong>Product Boxes:<\/strong> 25<\/p><p><strong>Poly Bags: <\/strong>Contact Us<\/p>"
+            }
+          },
+          "16057545314e7e7791-2": {
+            "type": "content",
+            "settings": {
+              "title": "How long does it take to receive my custom boxes?",
+              "answer": "<p>Most of our packages are printed and shipped within 10 days. <\/p>"
+            }
+          },
+          "16057545314e7e7791-3": {
+            "type": "content",
+            "settings": {
+              "title": "How do I customize my box?",
+              "answer": "<p>Using FatDesigner™ you can add your logo, text, and patterns to make your own design. If you&#x27;d rather use a professional designer, contact us on the <a href=\"\/pages\/customquote\" title=\"Fatbox - Get a Quote with Fatbox Pro\">Get a Quote<\/a> page.<\/p>"
+            }
+          },
+          "16057545314e7e7791-5": {
+            "type": "content",
+            "settings": {
+              "title": "Is Fatbox meant for small businesses and start ups?",
+              "answer": "<p>Yes we&#x27;re a fit for both very small order and enterprise accounts. FatDesigner™ lets anyone order custom packages with as little as 1 package or up to millions with our <a href=\"\/pages\/customquote\" title=\"Fatbox - Get a Quote with Fatbox Pro\">Fatbox Pro<\/a> program.<\/p>"
+            }
+          },
+          "dd61f161-3c20-4a6d-bbbd-63842a222bb6": {
+            "type": "content",
+            "settings": {
+              "title": "What is FatDesigner™ and do I need to use it?",
+              "answer": "<p>FatDesigner™ lets anyone order custom packages with as little as 1 package. Simply <a href=\"\/#custom-package\" title=\"\/#custom-package\">select your package type<\/a> and click the blue &quot;Design My Box&quot; button to get started.<\/p>"
+            }
+          },
+          "16057545314e7e7791-6": {
+            "type": "content",
+            "settings": {
+              "title": "Can I get a custom quote?",
+              "answer": "<p>Absolutely, if you are order 2,000 packages or more simply fill out the form on our <a href=\"\/pages\/customquote\" title=\"Fatbox - Get a Quote with Fatbox Pro\">Fatbox Pro page<\/a> and tell us what you need.<\/p>"
+            }
+          },
+          "6e61aa21-d452-4259-adda-c310d9a2e63b": {
+            "type": "content",
+            "settings": {
+              "title": "Do you offer custom box sizes?",
+              "answer": "<p>For orders over 2,000 units, yes any size or material is possible. <\/p><p>However, for our low volume orders in FatDesigner™ we have a fixed set of sizes to choose from. <\/p>"
+            }
+          },
+          "2cb75067-57f6-427f-b11d-2c47c782c61b": {
+            "type": "content",
+            "settings": {
+              "title": "Does Fatbox work with enterprise sized clients with high order volume?",
+              "answer": "<p>Absolutely, check out <a href=\"\/pages\/customquote\" title=\"Fatbox - Get a Quote with Fatbox Pro\">Fatbox Pro<\/a> and tell us what you&#x27;re looking for. A package specialist will get back to you within 48 hours. We offer design services, package engineering, dedicated account manager and volume pricing for all enterprise accounts.<\/p>"
+            }
+          },
+          "4e9c329f-f85e-47a5-8963-d206f4a0130d": {
+            "type": "content",
+            "settings": {
+              "title": "Are all Fatbox printed in the USA?",
+              "answer": "<p>Yes, 100% of our packages are printed in the US. This means higher quality and much faster turn times.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "16057545314e7e7791-1",
+          "16057545314e7e7791-2",
+          "16057545314e7e7791-3",
+          "16057545314e7e7791-5",
+          "dd61f161-3c20-4a6d-bbbd-63842a222bb6",
+          "16057545314e7e7791-6",
+          "6e61aa21-d452-4259-adda-c310d9a2e63b",
+          "2cb75067-57f6-427f-b11d-2c47c782c61b",
+          "4e9c329f-f85e-47a5-8963-d206f4a0130d"
+        ],
+        "settings": {
+          "title": "Your Package questions, answered",
+          "width": "standard",
+          "padding_top": 80,
+          "padding_bottom": 28,
+          "animation": "none",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "16057564338841997e": {
+        "type": "index__fatbox-richtext",
+        "blocks": {
+          "a7c0113f-8497-4849-8c7e-34f615169d1b": {
+            "type": "image",
+            "settings": {
+              "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0482\/1843\/9847\/files\/stars.svg?v=1605752294",
+              "quote": "<p>“Templates are a game-changer”<\/p>"
+            }
+          },
+          "54c02e67-bb55-49d2-8105-b0125eb4fc85": {
+            "type": "image",
+            "settings": {
+              "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0482\/1843\/9847\/files\/stars.svg?v=1605752294",
+              "quote": "<p>“Only package company Il’’ use”<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "a7c0113f-8497-4849-8c7e-34f615169d1b",
+          "54c02e67-bb55-49d2-8105-b0125eb4fc85"
+        ],
+        "settings": {
+          "title": "send me a sample pack TODAY!",
+          "heading_font": "open_sans_n7",
+          "heading_color": "#ffffff",
+          "heading_alignment": "center",
+          "heading_size": 48,
+          "text": "<p>Let’s date before we get married. Order a sample pack and get one of each of our most popular packages for $19.95. <\/p><p><\/p><p><\/p><p><\/p>",
+          "text_font": "open_sans_n4",
+          "text_color": "#ffffff",
+          "text_alignment": "center",
+          "text_size": 14,
+          "columns": 1,
+          "button_label": "Order Sample Pack",
+          "button_link": "http:\/\/join.fatbox.com\/earlybird",
+          "button_alignment": "center",
+          "button_style": "button--primary",
+          "background": "#2b2b2b",
+          "gradient": "rgba(0,0,0,0)",
+          "gradient_rotation": 180,
+          "width": "standard",
+          "padding_top": 80,
+          "padding_bottom": 80,
+          "padding_left": 0,
+          "padding_right": 0,
+          "animation": "none",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "1605758048833a9403": {
+        "type": "richtext-custom_a",
+        "settings": {
+          "title": "High Volume? request a Custom quote",
+          "heading_font": "open_sans_n7",
+          "heading_color": "rgba(0,0,0,0)",
+          "heading_alignment": "center",
+          "heading_size": 40,
+          "text": "<p>Ordering over 2,000 orders and want the best pricing?<\/p><p>Request a quote through Fatbox Pro and talk to a specialist today.<br\/><\/p>",
+          "text_font": "open_sans_n4",
+          "text_color": "rgba(0,0,0,0)",
+          "text_alignment": "center",
+          "text_size": 24,
+          "columns": 1,
+          "button_label": "Request Quote",
+          "button_link": "shopify:\/\/pages\/customquote",
+          "button_alignment": "center",
+          "button_style": "button--primary",
+          "background": "#ffffff",
+          "gradient": "#c0c0c0",
+          "gradient_rotation": 180,
+          "width": "standard",
+          "padding_top": 80,
+          "padding_bottom": 80,
+          "padding_left": 0,
+          "padding_right": 0,
+          "animation": "none",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "1605911228f1068a9e": {
+        "type": "testimonial--wide",
+        "blocks": {
+          "1605911228f1068a9e-0": {
+            "type": "image",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/logo2.png",
+              "image": "shopify:\/\/shop_images\/annadoe_2x_34fdf38c-64cb-4076-a0ee-f96ac18c5098.png",
+              "caption": "",
+              "quote": "<p>We’ve used several packaging companies. With FATBOX, we’re able to manage packaging without the hassles” <\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1605911228f1068a9e-0"
+        ],
+        "settings": {
+          "show_border": false,
+          "enable_images": true,
+          "crop_shape": "circle",
+          "card_alignment": "center",
+          "card_text": "rgba(0,0,0,0)",
+          "card_background": "#f7f8fa",
+          "width": "wide",
+          "padding_top": 44,
+          "padding_bottom": 80,
+          "animation": "fadeIn",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "1605919330fdfd97d4": {
+        "type": "image-text-steps",
+        "blocks": {
+          "86734813-b3b8-48ce-a394-5dc7e47b4871": {
+            "type": "image_with_text",
+            "settings": {
+              "image_position": "left",
+              "image": "shopify:\/\/shop_images\/step-1-fatbox_a4ac9c36-dbc7-45f3-a02f-7187716c29b7.png",
+              "image_crop": "none",
+              "svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0482\/1843\/9847\/files\/paint-1.svg?v=1605918024",
+              "title": "Design Online With FatDesigner<span class=\"bracket\"><small><small><sup><\/sup><\/small><\/small>™<small><small><sup><\/sup><\/small><\/small><\/span>",
+              "heading_size": "regular",
+              "text": "<p>Our 3d editor allows anyone to drag and drop their logo, images and text directly onto a package. <\/p>",
+              "button_label": "",
+              "button_style": "button--primary",
+              "alignment": "left",
+              "vertical_position": "center",
+              "background": "rgba(0,0,0,0)",
+              "text_color": "rgba(0,0,0,0)",
+              "width": "standard",
+              "show_gutter": true,
+              "padding_top": 20,
+              "padding_bottom": 20,
+              "animation": "none"
+            }
+          },
+          "36b0394c-4268-4ecc-9629-7675b13f44d9": {
+            "type": "image_with_text",
+            "settings": {
+              "image_position": "right",
+              "image": "shopify:\/\/shop_images\/step-2-fatbox.png",
+              "image_crop": "none",
+              "svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0482\/1843\/9847\/files\/leaf-2.svg?v=1605918024",
+              "title": "Eco Friendly Packaging",
+              "heading_size": "regular",
+              "text": "<p>All of our packages are engineered from the ground up to be safe and environmentally friendly.<\/p>",
+              "button_label": "",
+              "button_style": "button--primary",
+              "alignment": "right",
+              "vertical_position": "center",
+              "background": "rgba(0,0,0,0)",
+              "text_color": "rgba(0,0,0,0)",
+              "width": "standard",
+              "show_gutter": true,
+              "padding_top": 20,
+              "padding_bottom": 20,
+              "animation": "none"
+            }
+          },
+          "ffcb30fc-1100-4081-a8aa-1cc35f7c00ae": {
+            "type": "image_with_text",
+            "settings": {
+              "image_position": "left",
+              "image": "shopify:\/\/shop_images\/step-03-fatbox.png",
+              "image_crop": "none",
+              "svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0482\/1843\/9847\/files\/drops-3.svg?v=1605918024",
+              "title": "Vibrant NanoInk&trade; Colors",
+              "heading_size": "regular",
+              "text": "<p>Our NanoInk™ technology combined with progressional grade printers means high-end colors without breaking the bank.<\/p>",
+              "button_label": "",
+              "button_style": "button--primary",
+              "alignment": "left",
+              "vertical_position": "center",
+              "background": "rgba(0,0,0,0)",
+              "text_color": "rgba(0,0,0,0)",
+              "width": "standard",
+              "show_gutter": true,
+              "padding_top": 20,
+              "padding_bottom": 20,
+              "animation": "none"
+            }
+          },
+          "cfdbad7a-14d5-4b23-9ef7-a4ee99d4a3b5": {
+            "type": "image_with_text",
+            "settings": {
+              "image_position": "right",
+              "image": "shopify:\/\/shop_images\/step-04-fatbox_2x_668c1e79-c063-4fff-b046-85245dd0e21f.png",
+              "image_crop": "none",
+              "svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0482\/1843\/9847\/files\/clock-4.svg?v=1605918024",
+              "title": "Fast Turnaround Times",
+              "heading_size": "regular",
+              "text": "<p>Get your custom packages printed in record time. All boxes are printed within 10 days and shipped immediately after.<\/p>",
+              "button_label": "",
+              "button_style": "button--primary",
+              "alignment": "right",
+              "vertical_position": "center",
+              "background": "rgba(0,0,0,0)",
+              "text_color": "rgba(0,0,0,0)",
+              "width": "standard",
+              "show_gutter": true,
+              "padding_top": 20,
+              "padding_bottom": 70,
+              "animation": "none"
+            }
+          }
+        },
+        "block_order": [
+          "86734813-b3b8-48ce-a394-5dc7e47b4871",
+          "36b0394c-4268-4ecc-9629-7675b13f44d9",
+          "ffcb30fc-1100-4081-a8aa-1cc35f7c00ae",
+          "cfdbad7a-14d5-4b23-9ef7-a4ee99d4a3b5"
+        ],
+        "settings": {
+          "css_class": "",
+          "custom_css": "",
+          "title": "Why people love Fatbox"
+        }
+      },
+      "1606172961c59ff539": {
+        "type": "animated-steps",
+        "disabled": true,
+        "settings": {
+          "title": "HOW IT WORKS",
+          "step1": "Select package type",
+          "step1text": "this text is now customizable",
+          "step2": "Design your package",
+          "step2text": "this text is now customizable",
+          "step3": "Checkout and buy",
+          "step3text": "this text is now customizable",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "16061744273b1e55d8": {
+        "type": "animated-steps",
+        "settings": {
+          "title": "HOW IT WORKS",
+          "step1": "Select package type",
+          "step1text": "Select which type of package you'd like to start customizing",
+          "step2": "Design your package",
+          "step2text": "Using FatDesigner™ you can select templates or design your package from scratch",
+          "step3": "Checkout and buy",
+          "step3text": "Order as little as 1 unit and get delivery within only 10 business days",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "16068532277568a7af": {
+        "type": "index__collection-list",
+        "blocks": {
+          "16068532277568a7af-0": {
+            "type": "collection",
+            "settings": {
+              "feature_collection": "shipper-box",
+              "prod_link": "shopify:\/\/products\/mailer-bag",
+              "image": "shopify:\/\/shop_images\/updated_47bfff14-f6ad-4af9-9589-e33f3f2b4554.png",
+              "title": "Mailer Bag",
+              "description": "Poly mailer perfect for flexible goods",
+              "button_label": "select"
+            }
+          },
+          "16068532277568a7af-1": {
+            "type": "collection",
+            "settings": {
+              "feature_collection": "product-box",
+              "prod_link": "shopify:\/\/products\/product-box",
+              "image": "shopify:\/\/shop_images\/444fatbox__prod2_2x-Recovered_6bcaebdc-541c-4f6a-a50b-e172ef9c751f.png",
+              "title": "Product Box",
+              "description": "Retail ready box made from cardstock",
+              "button_label": "Select"
+            }
+          },
+          "16068532277568a7af-2": {
+            "type": "collection",
+            "settings": {
+              "feature_collection": "ecommerce-box",
+              "prod_link": "shopify:\/\/products\/ecommerce-box-1",
+              "image": "shopify:\/\/shop_images\/111fatbox__prod2_2x-Recovered.png",
+              "title": "E-commerce Box",
+              "description": "Our most popular box for consumer busineses",
+              "button_label": "select"
+            }
+          },
+          "ada507c9-4628-4515-b740-684f87dd7b6a": {
+            "type": "collection",
+            "settings": {
+              "feature_collection": "shipper-box",
+              "prod_link": "shopify:\/\/products\/shipper-box",
+              "image": "shopify:\/\/shop_images\/fatbox__prod2_2x-Recovered_8bb92893-3429-4cea-948d-fcb07eb36f99.png",
+              "title": "Shipper Box",
+              "description": "Environment friendly and designed for shipping",
+              "button_label": "select"
+            }
+          }
+        },
+        "block_order": [
+          "16068532277568a7af-0",
+          "16068532277568a7af-1",
+          "16068532277568a7af-2",
+          "ada507c9-4628-4515-b740-684f87dd7b6a"
+        ],
+        "settings": {
+          "title": "SELECT YOUR CUSTOM PACKAGE:",
+          "collections_per_row": 4,
+          "align_height": true,
+          "collection_height": 400,
+          "button_style": "button--secondary",
+          "overlay_background": "#ffffff",
+          "overlay_background_opacity": 0,
+          "overlay_text": "#282828",
+          "collection_title_below_image": true,
+          "width": "standard",
+          "show_gutter": true,
+          "padding_top": 64,
+          "padding_bottom": 64,
+          "animation": "none",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "16073928536f75613a": {
+        "type": "animated-steps-mobile",
+        "settings": {
+          "title": "HOW IT WORKS",
+          "step1": "Select package type",
+          "step1text": "Select Your Package Type",
+          "step2": "Design your package",
+          "step2text": "Add your custom logo and graphics",
+          "step3": "Checkout and buy",
+          "step3text": "Checkout and buy in minutes",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "1607473070a5ae08f3": {
+        "type": "custom-slideshoow",
+        "blocks": {
+          "1607473070a5ae08f3-1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/FBX_Shipper_4-min.jpg",
+              "pretext": "<p>Preheading<\/p>",
+              "title": "Classic slideshow",
+              "subtitle": "<p>Additional info in the subheading<\/p>",
+              "pretext_color": "#000000",
+              "heading_color": "#000000",
+              "subheading_color": "#000000",
+              "text_alignment": "left",
+              "text_horizontal_position": "left",
+              "background_color": "#ffffff",
+              "background_opacity": 77,
+              "border_color": "#ffffff",
+              "border_width": 0,
+              "text_width": 40,
+              "button_1": "Button 1",
+              "button_1_style": "button--secondary",
+              "button_2": "Button 2",
+              "button_2_style": "button--secondary",
+              "mobile_image_crop": "none",
+              "pretext_color_mobile": "rgba(0,0,0,0)",
+              "heading_color_mobile": "rgba(0,0,0,0)",
+              "subheading_color_mobile": "rgba(0,0,0,0)"
+            }
+          },
+          "db70b5cd-5c8c-4c3c-977c-04cd33c6c5bc": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/FBX_Product-Box_3.jpg",
+              "pretext": "<p>Preheading<\/p>",
+              "title": "Classic slideshow",
+              "subtitle": "<p>Additional info in the subheading<\/p>",
+              "pretext_color": "#000000",
+              "heading_color": "#000000",
+              "subheading_color": "#000000",
+              "text_alignment": "center",
+              "text_horizontal_position": "center",
+              "background_color": "#ffffff",
+              "background_opacity": 77,
+              "border_color": "#ffffff",
+              "border_width": 0,
+              "text_width": 40,
+              "button_1": "Button 1",
+              "button_1_style": "button--secondary",
+              "button_2": "Button 2",
+              "button_2_style": "button--secondary",
+              "mobile_image_crop": "none",
+              "pretext_color_mobile": "rgba(0,0,0,0)",
+              "heading_color_mobile": "rgba(0,0,0,0)",
+              "subheading_color_mobile": "rgba(0,0,0,0)"
+            }
+          },
+          "a791cd80-092c-4a89-bb52-bf3a75fdc29d": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/FBX_Ecommerce_5-min.jpg",
+              "pretext": "<p>Preheading<\/p>",
+              "title": "Classic slideshow",
+              "subtitle": "<p>Additional info in the subheading<\/p>",
+              "pretext_color": "#000000",
+              "heading_color": "#000000",
+              "subheading_color": "#000000",
+              "text_alignment": "center",
+              "text_horizontal_position": "center",
+              "background_color": "#ffffff",
+              "background_opacity": 77,
+              "border_color": "#ffffff",
+              "border_width": 0,
+              "text_width": 40,
+              "button_1": "Button 1",
+              "button_1_style": "button--secondary",
+              "button_2": "Button 2",
+              "button_2_style": "button--secondary",
+              "mobile_image_crop": "none",
+              "pretext_color_mobile": "rgba(0,0,0,0)",
+              "heading_color_mobile": "rgba(0,0,0,0)",
+              "subheading_color_mobile": "rgba(0,0,0,0)"
+            }
+          },
+          "1607473070a5ae08f3-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/FBX_Product-Box_4.jpg",
+              "pretext": "<p>Preheading<\/p>",
+              "title": "Flex Shopify Theme",
+              "subtitle": "",
+              "pretext_color": "#000000",
+              "heading_color": "#000000",
+              "subheading_color": "#000000",
+              "text_alignment": "center",
+              "text_horizontal_position": "center",
+              "background_color": "#ffffff",
+              "background_opacity": 77,
+              "border_color": "#ffffff",
+              "border_width": 0,
+              "text_width": 40,
+              "button_1": "Button 1",
+              "button_1_style": "button--secondary",
+              "button_2": "Button 2",
+              "button_2_style": "button--secondary",
+              "mobile_image_crop": "center",
+              "pretext_color_mobile": "rgba(0,0,0,0)",
+              "heading_color_mobile": "rgba(0,0,0,0)",
+              "subheading_color_mobile": "rgba(0,0,0,0)"
+            }
+          },
+          "c28f248a-4f4c-43fa-aa1c-ab2db142efb1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/FBX_Mailer_9-min.jpg",
+              "pretext": "<p>Preheading<\/p>",
+              "title": "Classic slideshow",
+              "subtitle": "<p>Additional info in the subheading<\/p>",
+              "pretext_color": "#000000",
+              "heading_color": "#000000",
+              "subheading_color": "#000000",
+              "text_alignment": "center",
+              "text_horizontal_position": "center",
+              "background_color": "#ffffff",
+              "background_opacity": 77,
+              "border_color": "#ffffff",
+              "border_width": 0,
+              "text_width": 40,
+              "button_1": "Button 1",
+              "button_1_style": "button--secondary",
+              "button_2": "Button 2",
+              "button_2_style": "button--secondary",
+              "mobile_image_crop": "none",
+              "pretext_color_mobile": "rgba(0,0,0,0)",
+              "heading_color_mobile": "rgba(0,0,0,0)",
+              "subheading_color_mobile": "rgba(0,0,0,0)"
+            }
+          },
+          "74257942-1747-4ae0-bef7-dc78ddeff5b8": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/FBX_Shipper_5-min.jpg",
+              "pretext": "<p>Preheading<\/p>",
+              "title": "Classic slideshow",
+              "subtitle": "<p>Additional info in the subheading<\/p>",
+              "pretext_color": "#000000",
+              "heading_color": "#000000",
+              "subheading_color": "#000000",
+              "text_alignment": "center",
+              "text_horizontal_position": "center",
+              "background_color": "#ffffff",
+              "background_opacity": 77,
+              "border_color": "#ffffff",
+              "border_width": 0,
+              "text_width": 40,
+              "button_1": "Button 1",
+              "button_1_style": "button--secondary",
+              "button_2": "Button 2",
+              "button_2_style": "button--secondary",
+              "mobile_image_crop": "none",
+              "pretext_color_mobile": "rgba(0,0,0,0)",
+              "heading_color_mobile": "rgba(0,0,0,0)",
+              "subheading_color_mobile": "rgba(0,0,0,0)"
+            }
+          },
+          "1b429723-509a-45f9-8492-caec68e51a73": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/FBX_Product-Box_5-min_2928b072-dab7-4826-a368-859068e13a71.jpg",
+              "pretext": "<p>Preheading<\/p>",
+              "title": "Classic slideshow",
+              "subtitle": "<p>Additional info in the subheading<\/p>",
+              "pretext_color": "#000000",
+              "heading_color": "#000000",
+              "subheading_color": "#000000",
+              "text_alignment": "center",
+              "text_horizontal_position": "center",
+              "background_color": "#ffffff",
+              "background_opacity": 77,
+              "border_color": "#ffffff",
+              "border_width": 0,
+              "text_width": 40,
+              "button_1": "Button 1",
+              "button_1_style": "button--secondary",
+              "button_2": "Button 2",
+              "button_2_style": "button--secondary",
+              "mobile_image_crop": "none",
+              "pretext_color_mobile": "rgba(0,0,0,0)",
+              "heading_color_mobile": "rgba(0,0,0,0)",
+              "subheading_color_mobile": "rgba(0,0,0,0)"
+            }
+          }
+        },
+        "block_order": [
+          "1607473070a5ae08f3-1",
+          "db70b5cd-5c8c-4c3c-977c-04cd33c6c5bc",
+          "a791cd80-092c-4a89-bb52-bf3a75fdc29d",
+          "1607473070a5ae08f3-0",
+          "c28f248a-4f4c-43fa-aa1c-ab2db142efb1",
+          "74257942-1747-4ae0-bef7-dc78ddeff5b8",
+          "1b429723-509a-45f9-8492-caec68e51a73"
+        ],
+        "settings": {
+          "title": "Inspiration",
+          "mobile_text_below_image": true,
+          "width": "wide",
+          "padding_top": 50,
+          "padding_bottom": 80,
+          "animation": "none",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "product-mailer": {
+        "type": "product-mailer",
+        "blocks": {
+          "product-mailer-1": {
+            "type": "product_gallery",
+            "settings": {
+              "display_thumbnails": false,
+              "gallery_arrows": false,
+              "enable_zoom": false,
+              "enable_product_lightbox": false,
+              "slideshow_speed": 0,
+              "slideshow_transition": "slide",
+              "thumbnail_position": "bottom-thumbnails",
+              "enable_thumbnail_slider": false,
+              "set_product_height": true,
+              "product_height": 800,
+              "video_looping": false,
+              "width": "half",
+              "padding_top": 0,
+              "padding_bottom": 0,
+              "padding_left": 0,
+              "padding_right": 0,
+              "animation": "none"
+            }
+          },
+          "product-mailer-0": {
+            "type": "product_info",
+            "settings": {
+              "display_vendor": false,
+              "display_sku": false,
+              "enable_shopify_product_badges": true,
+              "display_savings": false,
+              "display_collections": false,
+              "display_type": false,
+              "display_tags": false,
+              "display_social_buttons": false,
+              "product_description_position": "top",
+              "show_payment_button": false,
+              "width": "half",
+              "padding_top": 0,
+              "padding_bottom": 0,
+              "padding_left": 0,
+              "padding_right": 0,
+              "animation": "none"
+            }
+          },
+          "db19b842-249a-4883-bf56-23bd5d4605b9": {
+            "type": "text-images-columns",
+            "settings": {
+              "logos_per_row": 3,
+              "image1": "https:\/\/cdn.shopify.com\/s\/files\/1\/0482\/1843\/9847\/files\/box-print.svg?v=1607543857",
+              "link1": "Quick Printing Speed",
+              "text1": "Custom printed packages shipped fast",
+              "image2": "https:\/\/cdn.shopify.com\/s\/files\/1\/0482\/1843\/9847\/files\/product-trees.svg?v=1611605737",
+              "link2": "Eco Friendly Materials",
+              "text2": "Environmentally friendly packaging",
+              "image3": "https:\/\/cdn.shopify.com\/s\/files\/1\/0482\/1843\/9847\/files\/usps.svg?v=1607543857",
+              "link3": "Delivered with USPS",
+              "text3": "Shipped quickly directly to you with USPS",
+              "padding_top": 32,
+              "padding_bottom": 31,
+              "animation": "none"
+            }
+          },
+          "cc3ea81d-5a9c-4a96-a368-a796953f358e": {
+            "type": "image_with_text",
+            "settings": {
+              "image_position": "left",
+              "image": "shopify:\/\/shop_images\/mailbag_hero_2_2x_25dda45f-d7e9-4b18-a365-6a1e64637165.png",
+              "image_mob": "shopify:\/\/shop_images\/mailbag-hero-2mob.png",
+              "image_crop": "none",
+              "title": "VIBRANT COLORS WITH OUR  NANOINK® TECHNOLOGY",
+              "text2": "High resolution print technology on our premium 2mm FatFilm™. <br> Impress your customers with rich and vibrant colors.",
+              "heading_size": "regular",
+              "text": "<p>NanoInk® means deep, rich colors and inky blacks. Impress your customers and make the right first impression.<\/p>",
+              "button_label": "",
+              "button_style": "button--primary",
+              "alignment": "left",
+              "vertical_position": "center",
+              "background": "rgba(0,0,0,0)",
+              "text_color": "rgba(0,0,0,0)",
+              "width": "standard",
+              "show_gutter": true,
+              "padding_top": 69,
+              "padding_bottom": 0,
+              "animation": "none"
+            }
+          },
+          "1f50df53-542d-4de5-a943-fa24eae15c3f": {
+            "type": "tabs-collection",
+            "settings": {
+              "title": "Design templates to get started with fatdesigner",
+              "link1": "mailer bag",
+              "link2": "product box",
+              "link3": "e-commerce box",
+              "link4": "shipper boox",
+              "cta": "https:\/\/join.fatbox.com\/earlybird",
+              "image1": "shopify:\/\/shop_images\/FBX_Mailer_2-min_3b133add-2652-49b8-aa35-cac5005131be.jpg",
+              "url1": "https:\/\/join.fatbox.com\/earlybird",
+              "image2": "shopify:\/\/shop_images\/FBX_Mailer_3-min_8bf15709-0308-45a2-9876-bb30f29bef51.jpg",
+              "url2": "https:\/\/join.fatbox.com\/earlybird",
+              "image3": "shopify:\/\/shop_images\/FBX_Mailer_9-min_38a686fc-1052-4027-ae19-7573607e78f1.jpg",
+              "url3": "https:\/\/join.fatbox.com\/earlybird",
+              "image4": "shopify:\/\/shop_images\/FBX_Mailer_3-min.jpg",
+              "url4": "https:\/\/join.fatbox.com\/earlybird",
+              "image5": "shopify:\/\/shop_images\/FBX_Mailer_4-min.jpg",
+              "url5": "https:\/\/join.fatbox.com\/earlybird",
+              "image6": "shopify:\/\/shop_images\/FBX_Mailer_7-min.jpg",
+              "url6": "https:\/\/join.fatbox.com\/earlybird",
+              "image7": "shopify:\/\/shop_images\/FBX_Mailer_6-min.jpg",
+              "url7": "https:\/\/join.fatbox.com\/earlybird",
+              "image8": "shopify:\/\/shop_images\/FBX_Mailer_2-min_3b133add-2652-49b8-aa35-cac5005131be.jpg",
+              "url8": "https:\/\/join.fatbox.com\/earlybird",
+              "image9": "shopify:\/\/shop_images\/FBX_Shipper_3-min.jpg",
+              "url9": "#",
+              "image10": "shopify:\/\/shop_images\/FBX_Mailer_2-min_3b133add-2652-49b8-aa35-cac5005131be.jpg",
+              "image11": "shopify:\/\/shop_images\/FBX_Shipper_1-min.jpg",
+              "image17": "shopify:\/\/shop_images\/FBX_Shipper_2-min.jpg",
+              "image25": "shopify:\/\/shop_images\/FBX_Shipper_1-min.jpg",
+              "image26": "shopify:\/\/shop_images\/FBX_Mailer_2-min_3b133add-2652-49b8-aa35-cac5005131be.jpg",
+              "url32": "https:\/\/join.fatbox.com\/earlybird"
+            }
+          },
+          "87ba968f-8cb3-4d67-9c57-c0d53ab0998e": {
+            "type": "testimonial",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/logo2.png",
+              "image": "shopify:\/\/shop_images\/annadoe_2x_34fdf38c-64cb-4076-a0ee-f96ac18c5098.png",
+              "caption": "",
+              "quote": "<p>We’ve used several packaging companies. With FATBOX, we’re able to manage packaging without the hassles<\/p>"
+            }
+          },
+          "a51b0d06-6d5f-47b4-b42f-1b82a91b1ede": {
+            "type": "image_steps",
+            "settings": {
+              "step1": "FatFilm™<br>Technology",
+              "step2": "Self-Adhesive<br>Strip",
+              "step3": "NanoInk® Colors",
+              "step4": "Produced<br>in the USA",
+              "image1": "shopify:\/\/shop_images\/mailer-bag-1_2x_4e886183-e3de-471a-8d48-a71da34b1be1.png",
+              "svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0482\/1843\/9847\/files\/fatfilm.svg?v=1608240600",
+              "title": "High performance  FatFilm™  Technology",
+              "subtitle": "Our FatFilm™ technology utilizes a premium 2 millimeter low-density polyurethane (LDPE) film that is guaranteed water resistant and tear-proof.",
+              "image2": "shopify:\/\/shop_images\/self-adhesive_2x_cb9c2176-5264-4d40-ae6d-7cc87feb8264.png",
+              "svg2": "https:\/\/cdn.shopify.com\/s\/files\/1\/0482\/1843\/9847\/files\/lock.svg?v=1608240606",
+              "title2": "Self-Adhesive Strip",
+              "subtitle2": "Feel confident your package is safe with this heavy duty self-adhesive strip. It’s strong and secure while designed for fast processing.",
+              "image3": "shopify:\/\/shop_images\/digital-cmyk_2x_fe2fa7ef-e9f2-4cf7-b278-6dc949d6a9e5.png",
+              "svg3": "https:\/\/cdn.shopify.com\/s\/files\/1\/0482\/1843\/9847\/files\/drops-3.svg?v=1605918024",
+              "title3": "Vibrant NanoInk® Color Technology",
+              "subtitle3": "CMYK printing brings vibrance and depth of colors that will impress your customers, all while maintaining industry leading cost efficiency.",
+              "image4": "shopify:\/\/shop_images\/usa_2x_f9677d7e-7b39-46f1-a802-96ba3e761714.png",
+              "svg4": "https:\/\/cdn.shopify.com\/s\/files\/1\/0482\/1843\/9847\/files\/eco-friendly.svg?v=1607543857",
+              "title4": "Produced in the USA",
+              "subtitle4": "Fatbox is based out of Florida and Arizona, and all our card stock and corrugated printing is done domestically as well for reliable, fast shipping.",
+              "css_class": "",
+              "custom_css": ""
+            }
+          },
+          "58fe256a-fb20-4754-b03f-adda47b89617": {
+            "type": "rich_text",
+            "settings": {
+              "title": "Customize Online in Minutes With FatDesigner™",
+              "heading_font": "open_sans_n4",
+              "heading_color": "rgba(0,0,0,0)",
+              "heading_alignment": "center",
+              "heading_size": 48,
+              "text": "<p>Customize your packaging online using our 3d editor. No need to hire a designer and spent thousands on your design. Get started today!<\/p>",
+              "text_font": "open_sans_n4",
+              "text_color": "rgba(0,0,0,0)",
+              "text_alignment": "center",
+              "text_size": 18,
+              "columns": 1,
+              "button_label": "Launch FatDesigner&trade;",
+              "button_alignment": "center",
+              "button_style": "button--primary",
+              "background": "#ffffff",
+              "gradient": "rgba(0,0,0,0)",
+              "gradient_rotation": 0,
+              "width": "standard",
+              "padding_top": 80,
+              "padding_bottom": 41,
+              "padding_left": 80,
+              "padding_right": 80,
+              "animation": "none"
+            }
+          },
+          "08f6e00d-3d8b-4434-b626-2e0b784e0ebb": {
+            "type": "slideshow",
+            "settings": {
+              "mobile_text_below_image": true,
+              "width": "wide",
+              "padding_top": 0,
+              "padding_bottom": 0,
+              "animation": "none",
+              "css_class": "",
+              "custom_css": "",
+              "image": "shopify:\/\/shop_images\/FBX_Mailer_2-min_3b133add-2652-49b8-aa35-cac5005131be.jpg",
+              "image2": "shopify:\/\/shop_images\/FBX_Mailer_3-min.jpg",
+              "image3": "shopify:\/\/shop_images\/FBX_Mailer_9-min_38a686fc-1052-4027-ae19-7573607e78f1.jpg",
+              "image4": "shopify:\/\/shop_images\/FBX_Mailer_6-min.jpg",
+              "image5": "shopify:\/\/shop_images\/FBX_Mailer_3-min_8bf15709-0308-45a2-9876-bb30f29bef51.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/FBX_Mailer_4-min.jpg",
+              "title": "GET INSPIRED",
+              "heading_color": "#000000",
+              "subheading_color": "#000000",
+              "text_alignment": "center",
+              "text_horizontal_position": "center",
+              "background_color": "#ffffff",
+              "background_opacity": 77,
+              "border_color": "#ffffff",
+              "border_width": 0,
+              "text_width": 40,
+              "button_1": "Button 1",
+              "button_1_style": "button--secondary",
+              "button_2": "Button 2",
+              "button_2_style": "button--secondary",
+              "mobile_image_crop": "none",
+              "pretext_color_mobile": "rgba(0,0,0,0)",
+              "heading_color_mobile": "rgba(0,0,0,0)",
+              "subheading_color_mobile": "rgba(0,0,0,0)"
+            }
+          }
+        },
+        "block_order": [
+          "product-mailer-1",
+          "product-mailer-0",
+          "db19b842-249a-4883-bf56-23bd5d4605b9",
+          "cc3ea81d-5a9c-4a96-a368-a796953f358e",
+          "1f50df53-542d-4de5-a943-fa24eae15c3f",
+          "87ba968f-8cb3-4d67-9c57-c0d53ab0998e",
+          "a51b0d06-6d5f-47b4-b42f-1b82a91b1ede",
+          "58fe256a-fb20-4754-b03f-adda47b89617",
+          "08f6e00d-3d8b-4434-b626-2e0b784e0ebb"
+        ],
+        "settings": {
+          "image": "shopify:\/\/shop_images\/Group-345.png",
+          "pretext": "INTRODUCING OUR",
+          "reviews": "4.82(1,731 reviews)",
+          "title": "Design templates to get started with fatdesigner",
+          "link1": "",
+          "link2": "",
+          "link3": "",
+          "link4": "",
+          "product_breadcrumb": false,
+          "padding_top": 20,
+          "padding_bottom": 0,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "richtext-custom_a": {
+        "type": "richtext-custom_a",
+        "settings": {
+          "title": "High volume? request a Custom quote",
+          "heading_font": "open_sans_n4",
+          "heading_color": "rgba(0,0,0,0)",
+          "heading_alignment": "center",
+          "heading_size": 20,
+          "text": "<p>Ordering over 2,000 orders and want the best pricing? <\/p><p>Request a custom quote through Fatbox Pro and talk to a package specialist today.<\/p>",
+          "text_font": "open_sans_n4",
+          "text_color": "rgba(0,0,0,0)",
+          "text_alignment": "center",
+          "text_size": 12,
+          "columns": 1,
+          "button_label": "Request Quote",
+          "button_link": "shopify:\/\/pages\/customquote",
+          "button_alignment": "center",
+          "button_style": "button--primary",
+          "background": "#ffffff",
+          "gradient": "#c0c0c0",
+          "gradient_rotation": 180,
+          "width": "wide",
+          "padding_top": 20,
+          "padding_bottom": 57,
+          "padding_left": 0,
+          "padding_right": 0,
+          "animation": "none",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "index__faq": {
+        "type": "index__faq",
+        "blocks": {
+          "744632b2-5812-4adb-bbde-996c118bdcb5": {
+            "type": "content",
+            "settings": {
+              "title": "How long will it take to receive my Product Box?",
+              "answer": "<p>All product boxes are printed within 10 days, and shipping times vary 2-5 days.<\/p>"
+            }
+          },
+          "b014299d-0e17-4d94-b692-7872b31d9943": {
+            "type": "content",
+            "settings": {
+              "title": "What's the minimum order size?",
+              "answer": "<p>Product boxes have a 25 minimum order quantity.<\/p>"
+            }
+          },
+          "b9e34eae-c72d-4ab2-8cd7-d0314245bf92": {
+            "type": "content",
+            "settings": {
+              "title": "What is a Product Box?",
+              "answer": "<p>Product boxes are small boxes to hold cosmetics, accessories, health and beauty products and mow. They are made of durable and lightweight cardstock, similar to a material of a deck of cards. Product boxes are retail ready to be on a shelf, but for shipping they need additional protection such as a shipper box or mailer box. <\/p>"
+            }
+          },
+          "ef2423b3-104e-432c-9371-0d0b9912cf33": {
+            "type": "content",
+            "settings": {
+              "title": "Can I print on the inside of a Product Box?",
+              "answer": "<p>Within FatDesigner™ we only offer one sided printing. For double sided printing and unlimited finishes, please check out <a href=\"\/pages\/customquote\" title=\"Fatbox - Get a Quote with Fatbox Pro\">Fatbox Pro<\/a> and get a custom quote.<\/p>"
+            }
+          },
+          "4253d6bb-56a4-4652-afd2-67df006ca38a": {
+            "type": "content",
+            "settings": {
+              "title": "Is the Product Box glossy or matte?",
+              "answer": "<p>Our premium FatCard™ is matte be default, by adding our FatFinish™ it becomes glossy.<\/p>"
+            }
+          },
+          "dd31fa30-86c6-4e53-9654-0ecb092b5944": {
+            "type": "content",
+            "settings": {
+              "title": "What’s the benefit of using Glossy FatFinish™?",
+              "answer": "<p>FatFinish™ will add a glossy layer to our premium cardstock. This will add a high-end shine and protect and preserve the ink and colors from the elements. If you want to add a protective layer but maintain a matte look, we offer other finishes within our Fatbox Pro program. <\/p>"
+            }
+          },
+          "b731b816-42b7-4d5c-a1b1-2eb0acd7c180": {
+            "type": "content",
+            "settings": {
+              "title": "Do you offer Embossing, Soft Touch and other finishes?",
+              "answer": "<p>Absolutely but only within Fatbox Pro. For our self-serve customers using FatDesigner, our Glossy FatFinish is our only premium finish.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "744632b2-5812-4adb-bbde-996c118bdcb5",
+          "b014299d-0e17-4d94-b692-7872b31d9943",
+          "b9e34eae-c72d-4ab2-8cd7-d0314245bf92",
+          "ef2423b3-104e-432c-9371-0d0b9912cf33",
+          "4253d6bb-56a4-4652-afd2-67df006ca38a",
+          "dd31fa30-86c6-4e53-9654-0ecb092b5944",
+          "b731b816-42b7-4d5c-a1b1-2eb0acd7c180"
+        ],
+        "settings": {
+          "title": "YOUR PRODUCT BOX QUESTIONS, ANSWERED",
+          "width": "standard",
+          "padding_top": 80,
+          "padding_bottom": 80,
+          "animation": "none",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "index__fatbox-richtext": {
+        "type": "index__fatbox-richtext",
+        "settings": {
+          "title": "Get your sample pack today",
+          "heading_font": "open_sans_n4",
+          "heading_color": "#ffffff",
+          "heading_alignment": "center",
+          "heading_size": 30,
+          "text": "<p>Let&#x27;s date before we get married. Order a sample pack and get one of each of our most popular packages for only $19.95.<\/p>",
+          "text_font": "open_sans_n4",
+          "text_color": "rgba(0,0,0,0)",
+          "text_alignment": "center",
+          "text_size": 14,
+          "columns": 1,
+          "button_label": "Order Sample Pack",
+          "button_link": "https:\/\/join.fatbox.com\/earlybird",
+          "button_alignment": "center",
+          "button_style": "button--primary",
+          "background": "#eeeeee",
+          "gradient": "#c0c0c0",
+          "gradient_rotation": 180,
+          "width": "standard",
+          "padding_top": 80,
+          "padding_bottom": 0,
+          "padding_left": 0,
+          "padding_right": 0,
+          "animation": "none",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "product-box": {
+        "type": "product-box",
+        "blocks": {
+          "product-box-1": {
+            "type": "product_gallery",
+            "settings": {
+              "display_thumbnails": true,
+              "gallery_arrows": true,
+              "enable_zoom": true,
+              "enable_product_lightbox": true,
+              "slideshow_speed": 0,
+              "slideshow_transition": "slide",
+              "thumbnail_position": "bottom-thumbnails",
+              "enable_thumbnail_slider": true,
+              "set_product_height": false,
+              "product_height": 500,
+              "video_looping": false,
+              "width": "half",
+              "padding_top": 0,
+              "padding_bottom": 0,
+              "padding_left": 0,
+              "padding_right": 0,
+              "animation": "none"
+            }
+          },
+          "product-box-0": {
+            "type": "product_info",
+            "settings": {
+              "reviews": "4.67 (6 reviews)",
+              "display_vendor": false,
+              "display_sku": false,
+              "enable_shopify_product_badges": false,
+              "display_savings": false,
+              "display_collections": false,
+              "display_type": false,
+              "display_tags": false,
+              "display_social_buttons": false,
+              "product_description_position": "top",
+              "show_payment_button": false,
+              "width": "half",
+              "padding_top": 0,
+              "padding_bottom": 0,
+              "padding_left": 0,
+              "padding_right": 0,
+              "animation": "none"
+            }
+          },
+          "a7a35259-5195-45ba-8cf7-87bcd12aa430": {
+            "type": "text-images-columns",
+            "settings": {
+              "logos_per_row": 3,
+              "image1": "https:\/\/cdn.shopify.com\/s\/files\/1\/0482\/1843\/9847\/files\/box-print.svg?v=1607543857",
+              "link1": "Printed in 10 days",
+              "text1": "Custom printed packages within 10 days",
+              "image2": "https:\/\/cdn.shopify.com\/s\/files\/1\/0482\/1843\/9847\/files\/product-trees.svg?v=1611605737",
+              "link2": "Eco Friendly Materials",
+              "text2": "Environmentally friendly packaging",
+              "image3": "https:\/\/cdn.shopify.com\/s\/files\/1\/0482\/1843\/9847\/files\/usps.svg?v=1607543857",
+              "link3": "Delivered with USPS",
+              "text3": "Shipped quickly directly to you with USPS",
+              "padding_top": 21,
+              "padding_bottom": 64,
+              "animation": "none"
+            }
+          },
+          "cad8f46e-2fa1-4422-90d4-665fa64bff0f": {
+            "type": "image_with_text",
+            "settings": {
+              "image_position": "right",
+              "image": "shopify:\/\/shop_images\/prodcut-box-GLOSSY_2x_bbc0f667-1d65-4bb5-98bb-4fccf6e6e382.png",
+              "image_crop": "none",
+              "title": "Upgrade Your Product Box With Glossy FatFINISH™",
+              "text2": "Dazzle your customers with FatFinish&trade; for a luxurious shine that enhances colors and image depths. Separate your brand from the crowd!",
+              "heading_size": "regular",
+              "textA": "<p>FatFinish™ offers a high resolution, high gloss finish that feels luxurious.<\/p>",
+              "textB": "<p>Glossy feel of FatFinish™ has a more finalized texture and appearance that protects the ink from the elements.<\/p>",
+              "button_label": "",
+              "button_style": "button--primary",
+              "alignment": "left",
+              "vertical_position": "center",
+              "background": "rgba(0,0,0,0)",
+              "text_color": "rgba(0,0,0,0)",
+              "width": "standard",
+              "show_gutter": true,
+              "padding_top": 52,
+              "padding_bottom": 20,
+              "animation": "none"
+            }
+          },
+          "25102b25-c052-4357-8fdd-b891a753105e": {
+            "type": "tabs-collection",
+            "settings": {
+              "title": "Design templates to get started with fatdesigner",
+              "link1": "Product box",
+              "link2": "Mailer bag",
+              "link3": "E-commerce box",
+              "link4": "shipper box",
+              "cta": "https:\/\/join.fatbox.com\/earlybird",
+              "image1": "shopify:\/\/shop_images\/444fatbox__prod2_2x-Recovered_6bcaebdc-541c-4f6a-a50b-e172ef9c751f.png",
+              "url1": "https:\/\/join.fatbox.com\/earlybird",
+              "image2": "shopify:\/\/shop_images\/PB-6_thumbnail-min_eadc2849-35fd-4a58-9e3c-c5321e953929.jpg",
+              "url2": "https:\/\/join.fatbox.com\/earlybird",
+              "image3": "shopify:\/\/shop_images\/PB-2_thumbnail-min.jpg",
+              "url3": "https:\/\/join.fatbox.com\/earlybird",
+              "image4": "shopify:\/\/shop_images\/PB-5_thumbnail-min.jpg",
+              "url4": "https:\/\/join.fatbox.com\/earlybird",
+              "image5": "shopify:\/\/shop_images\/PB-7_thumbnail-min.jpg",
+              "url5": "https:\/\/join.fatbox.com\/earlybird",
+              "image6": "shopify:\/\/shop_images\/PB-1_thumbnail-min.jpg",
+              "url6": "https:\/\/join.fatbox.com\/earlybird",
+              "image7": "shopify:\/\/shop_images\/PB-4_thumbnail-min.jpg",
+              "url7": "https:\/\/join.fatbox.com\/earlybird",
+              "image8": "shopify:\/\/shop_images\/PB-3_thumbnail-min.jpg",
+              "url8": "https:\/\/join.fatbox.com\/earlybird",
+              "image9": "shopify:\/\/shop_images\/FBX_Mailer_4-min.jpg",
+              "url9": "https:\/\/join.fatbox.com\/earlybird",
+              "image10": "shopify:\/\/shop_images\/FBX_Mailer_3-min_8bf15709-0308-45a2-9876-bb30f29bef51.jpg",
+              "url10": "https:\/\/join.fatbox.com\/earlybird",
+              "image11": "shopify:\/\/shop_images\/FBX_Mailer_7-min.jpg",
+              "url11": "https:\/\/join.fatbox.com\/earlybird",
+              "image12": "shopify:\/\/shop_images\/FBX_Mailer_9-min_38a686fc-1052-4027-ae19-7573607e78f1.jpg",
+              "url12": "https:\/\/join.fatbox.com\/earlybird",
+              "image13": "shopify:\/\/shop_images\/FBX_Mailer_3-min.jpg",
+              "url13": "https:\/\/join.fatbox.com\/earlybird",
+              "image14": "shopify:\/\/shop_images\/FBX_Mailer_2-min.jpg",
+              "url14": "https:\/\/join.fatbox.com\/earlybird",
+              "image15": "shopify:\/\/shop_images\/FBX_Mailer_6-min.jpg",
+              "url15": "https:\/\/join.fatbox.com\/earlybird",
+              "image16": "shopify:\/\/shop_images\/updated_47bfff14-f6ad-4af9-9589-e33f3f2b4554.png",
+              "url16": "https:\/\/join.fatbox.com\/earlybird",
+              "image17": "shopify:\/\/shop_images\/FBX_Ecommerce_4-min.jpg",
+              "image18": "shopify:\/\/shop_images\/FBX_Ecommerce_2-min.jpg",
+              "image19": "shopify:\/\/shop_images\/FBX_Ecommerce_1-min.jpg",
+              "image20": "shopify:\/\/shop_images\/ecom-126.png"
+            }
+          },
+          "fa215a8f-dd54-4a95-9b8a-9a46fcc3ceb5": {
+            "type": "testimonial",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/ToothWhiteners.com.png",
+              "image": "shopify:\/\/shop_images\/jon-circle-headshot-p-500-300x300.png",
+              "caption": "<p>John Alimpic, CEO<\/p>",
+              "quote": "<p>Fatbox can’t be beat on price, quality and lead time. Put all three of those things together and they make a great enterprise partner<\/p>"
+            }
+          },
+          "f925310a-c118-4242-8d9f-4325e017b300": {
+            "type": "image_steps",
+            "settings": {
+              "step1": "Premium<br>CardStock",
+              "step2": "Self-Locking<br>Flap",
+              "step3": "NanoInk®<br>Colors",
+              "step4": "Produced<br>In The USA",
+              "image1": "shopify:\/\/shop_images\/dazzle-cardstock_2x_d5efaefd-62dd-4f15-beb1-3df7319315ae.png",
+              "svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0482\/1843\/9847\/files\/unlimited-designs.svg?v=1610057079",
+              "title": "Dazzle Customers With Our Premium CardStock",
+              "subtitle": "Our Fatbox card stock utilizes a premium paperstock guaranteed to showcase colors vividly without breaking the bank.",
+              "image2": "shopify:\/\/shop_images\/self-locking-product_2x_28beba67-e442-460f-8450-dd43b2ea310b.png",
+              "svg2": "https:\/\/cdn.shopify.com\/s\/files\/1\/0482\/1843\/9847\/files\/puzzle.svg?v=1609969144",
+              "title2": "Self-Locking Tuck Top",
+              "subtitle2": "Feel confident your package is safe with this heavy duty self-adhesive strip. It’s strong and secure while designed for fast processing.",
+              "image3": "shopify:\/\/shop_images\/digital-cmyk_2x_fe2fa7ef-e9f2-4cf7-b278-6dc949d6a9e5.png",
+              "svg3": "https:\/\/cdn.shopify.com\/s\/files\/1\/0482\/1843\/9847\/files\/drops-3.svg?v=1605918024",
+              "title3": "Vibrant NanoInk® Colors",
+              "subtitle3": "CMYK printing brings vibrance and depth of colors that will impress your customers, all while maintaining industry leading cost efficiency.",
+              "image4": "shopify:\/\/shop_images\/usa_2x_f9677d7e-7b39-46f1-a802-96ba3e761714.png",
+              "svg4": "https:\/\/cdn.shopify.com\/s\/files\/1\/0482\/1843\/9847\/files\/eco-friendly.svg?v=1607543857",
+              "title4": "Produced in the USA",
+              "subtitle4": "Fatbox is based out of Florida and Arizona, and all our card stock and corrugated printing is done domestically as well for reliable, fast shipping.",
+              "css_class": "",
+              "custom_css": ""
+            }
+          },
+          "3b4567db-a37c-4fd3-be4d-c062f528e31f": {
+            "type": "rich_text",
+            "settings": {
+              "title": "Customize Online in Minutes With FatDesigner™",
+              "heading_font": "open_sans_n4",
+              "heading_color": "rgba(0,0,0,0)",
+              "heading_alignment": "center",
+              "heading_size": 20,
+              "text": "<p>Customize your packaging online using our 3d editor. No need to hire a designer and spent thousands on your design. Get started today!<\/p>",
+              "text_font": "open_sans_n4",
+              "text_color": "rgba(0,0,0,0)",
+              "text_alignment": "center",
+              "text_size": 14,
+              "columns": 1,
+              "button_label": "Launch FatDesigner&trade;",
+              "button_link": "#",
+              "button_alignment": "center",
+              "button_style": "button--primary",
+              "background": "#ffffff",
+              "gradient": "rgba(0,0,0,0)",
+              "gradient_rotation": 0,
+              "width": "standard",
+              "padding_top": 80,
+              "padding_bottom": 80,
+              "padding_left": 0,
+              "padding_right": 0,
+              "animation": "none"
+            }
+          },
+          "a0c90559-6c56-4c8d-9c83-ca93a2f795ef": {
+            "type": "slideshow",
+            "settings": {
+              "mobile_text_below_image": true,
+              "width": "wide",
+              "padding_top": 0,
+              "padding_bottom": 0,
+              "animation": "none",
+              "css_class": "",
+              "custom_css": "",
+              "image": "shopify:\/\/shop_images\/FBX_Product-Box_5-min_2928b072-dab7-4826-a368-859068e13a71.jpg",
+              "image2": "shopify:\/\/shop_images\/FBX_Product-Box_2.jpg",
+              "image3": "shopify:\/\/shop_images\/FBX_Product-Box_3.jpg",
+              "image4": "shopify:\/\/shop_images\/FBX_Product-Box_4.jpg",
+              "image5": "shopify:\/\/shop_images\/FBX_Product-Box_1.jpg",
+              "title": "GET INSPIRED",
+              "heading_color": "#000000",
+              "subheading_color": "#000000",
+              "text_alignment": "center",
+              "text_horizontal_position": "center",
+              "background_color": "#ffffff",
+              "background_opacity": 77,
+              "border_color": "#ffffff",
+              "border_width": 0,
+              "text_width": 40,
+              "button_1": "Button 1",
+              "button_1_style": "button--secondary",
+              "button_2": "Button 2",
+              "button_2_style": "button--secondary",
+              "mobile_image_crop": "none",
+              "pretext_color_mobile": "rgba(0,0,0,0)",
+              "heading_color_mobile": "rgba(0,0,0,0)",
+              "subheading_color_mobile": "rgba(0,0,0,0)"
+            }
+          }
+        },
+        "block_order": [
+          "product-box-1",
+          "product-box-0",
+          "a7a35259-5195-45ba-8cf7-87bcd12aa430",
+          "cad8f46e-2fa1-4422-90d4-665fa64bff0f",
+          "25102b25-c052-4357-8fdd-b891a753105e",
+          "fa215a8f-dd54-4a95-9b8a-9a46fcc3ceb5",
+          "f925310a-c118-4242-8d9f-4325e017b300",
+          "3b4567db-a37c-4fd3-be4d-c062f528e31f",
+          "a0c90559-6c56-4c8d-9c83-ca93a2f795ef"
+        ],
+        "settings": {
+          "image": "shopify:\/\/shop_images\/Group-344.png",
+          "pretext": "INTRODUCING OUR",
+          "product_breadcrumb": false,
+          "padding_top": 20,
+          "padding_bottom": 0,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "product-ecommerce": {
+        "type": "product-ecommerce",
+        "blocks": {
+          "product-ecommerce-1": {
+            "type": "product_gallery",
+            "settings": {
+              "display_thumbnails": true,
+              "gallery_arrows": true,
+              "enable_zoom": true,
+              "enable_product_lightbox": true,
+              "slideshow_speed": 0,
+              "slideshow_transition": "slide",
+              "thumbnail_position": "bottom-thumbnails",
+              "enable_thumbnail_slider": true,
+              "set_product_height": false,
+              "product_height": 500,
+              "video_looping": false,
+              "width": "half",
+              "padding_top": 0,
+              "padding_bottom": 0,
+              "padding_left": 0,
+              "padding_right": 0,
+              "animation": "none"
+            }
+          },
+          "product-ecommerce-0": {
+            "type": "product_info",
+            "settings": {
+              "reviews": "4.76 (11 reviews)",
+              "display_vendor": false,
+              "display_sku": false,
+              "enable_shopify_product_badges": false,
+              "display_savings": true,
+              "display_collections": false,
+              "display_type": false,
+              "display_tags": false,
+              "display_social_buttons": false,
+              "product_description_position": "top",
+              "show_payment_button": false,
+              "width": "half",
+              "padding_top": 0,
+              "padding_bottom": 0,
+              "padding_left": 0,
+              "padding_right": 0,
+              "animation": "none"
+            }
+          },
+          "37fe97e1-6186-4bc2-97fc-675a2acf8c17": {
+            "type": "text-images-columns",
+            "settings": {
+              "logos_per_row": 3,
+              "image1": "https:\/\/cdn.shopify.com\/s\/files\/1\/0482\/1843\/9847\/files\/box-print.svg?v=1607543857",
+              "link1": "Printed in 10 days",
+              "text1": "Custom printed packages within 10 days",
+              "image2": "https:\/\/cdn.shopify.com\/s\/files\/1\/0482\/1843\/9847\/files\/eco-friendly.svg?v=1607543857",
+              "link2": "Eco Friendly Materials",
+              "text2": "Environmentally friendly packaging",
+              "image3": "https:\/\/cdn.shopify.com\/s\/files\/1\/0482\/1843\/9847\/files\/usps.svg?v=1607543857",
+              "link3": "Delivered with USPS",
+              "text3": "Shipped quickly directly to you with USPS",
+              "padding_top": 24,
+              "padding_bottom": 57,
+              "animation": "none"
+            }
+          },
+          "571858b6-0421-4afc-ab2a-8fce08dd42dc": {
+            "type": "image_with_text",
+            "settings": {
+              "image_position": "right",
+              "image": "shopify:\/\/shop_images\/glossy_box_render_2x_e80d596f-ded6-4a89-b38f-50edc8692543.png",
+              "image_crop": "none",
+              "title": "Upgrade Your  E-COMMERCE Box  With Glossy FatFinish™",
+              "text2": "FatFinish™ uses high resolution print technology  on our most premium  cardstock material. Impress your customers with this luxurious look and feel.",
+              "textA": "<p>High gloss finish gives colors a professional, high DPI look and feel.<\/p>",
+              "textB": "<p>Glossy feel of FatFinish™ has a much thicker texture and appearance. This finish also protects the ink from the elements.<\/p>",
+              "heading_size": "regular",
+              "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+              "button_label": "",
+              "button_style": "button--primary",
+              "alignment": "left",
+              "vertical_position": "center",
+              "background": "rgba(0,0,0,0)",
+              "text_color": "rgba(0,0,0,0)",
+              "width": "standard",
+              "show_gutter": true,
+              "padding_top": 70,
+              "padding_bottom": 20,
+              "animation": "none"
+            }
+          },
+          "264de95d-1f09-49d7-959c-828ff79597b1": {
+            "type": "tabs-collection",
+            "settings": {
+              "title": "Design templates to get started with fatdesigner",
+              "link1": "E-commerce box",
+              "link2": "product box",
+              "link3": "shipper box",
+              "link4": "mailer bag",
+              "cta": "https:\/\/join.fatbox.com\/earlybird",
+              "image1": "shopify:\/\/shop_images\/FBX_Ecommerce_3-min.jpg",
+              "url1": "https:\/\/join.fatbox.com\/earlybird",
+              "image2": "shopify:\/\/shop_images\/MLB_Ecommerce-min.jpg",
+              "url2": "https:\/\/join.fatbox.com\/earlybird",
+              "image3": "shopify:\/\/shop_images\/Ecomm-5_thumbnail-min.png",
+              "url3": "https:\/\/join.fatbox.com\/earlybird",
+              "image4": "shopify:\/\/shop_images\/Ecomm-4_thumbnail-min.png",
+              "url4": "https:\/\/join.fatbox.com\/earlybird",
+              "image5": "shopify:\/\/shop_images\/Ecomm-3_thumbnail-min.png",
+              "url5": "https:\/\/join.fatbox.com\/earlybird",
+              "image6": "shopify:\/\/shop_images\/Ecomm-2_thumbnail-min.png",
+              "url6": "https:\/\/join.fatbox.com\/earlybird",
+              "image7": "shopify:\/\/shop_images\/Ecomm-1_thumbnail-min.png",
+              "url7": "https:\/\/join.fatbox.com\/earlybird",
+              "image8": "shopify:\/\/shop_images\/FBX_Ecommerce_1-min.jpg",
+              "url8": "https:\/\/join.fatbox.com\/earlybird",
+              "url32": "https:\/\/join.fatbox.com\/earlybird"
+            }
+          },
+          "9ef293b3-c27e-4b72-b2bc-f0685e5217df": {
+            "type": "testimonial",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/proleve-header-logo_180x_acd0afa0-adc0-4af8-af07-08a6a7a9aa79.png",
+              "image": "shopify:\/\/shop_images\/PngItem_1685692.png",
+              "caption": "<p>Jonathan Solomon, President<\/p>",
+              "quote": "<p>We’ve used several packaging companies. With FATBOX, we’re able to manage packaging without the hassles<\/p>"
+            }
+          },
+          "19db216a-3aa2-42a9-962f-8af781fa620f": {
+            "type": "image_steps",
+            "settings": {
+              "step1": "Strong<br>& Beautiful",
+              "step2": "Self-Locking<br>Flap",
+              "step3": "NanoInk™ Colors",
+              "step4": "Produced<br>in the USA",
+              "image1": "shopify:\/\/shop_images\/fatbox-strong_2x_cf90832a-7216-4aa1-b8a9-0e1f9b6a35c3.png",
+              "svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0482\/1843\/9847\/files\/strong-beautiful.svg?v=1610387858",
+              "title": "Engineered for Strength & Beauty",
+              "subtitle": "Our corrugated technology utlilizes B-Flute thickness ideal for shipping, while maintaining a smooth surface for printing vibrant colors.",
+              "image2": "shopify:\/\/shop_images\/self-locking_2x_54766e0d-a1ea-42ae-a1f0-4d1bdbaa5544.png",
+              "svg2": "https:\/\/cdn.shopify.com\/s\/files\/1\/0482\/1843\/9847\/files\/puzzle.svg?v=1609969144",
+              "title2": "Self-Locking Flap",
+              "subtitle2": "Feel confident your package is safe with its self locking flap. It’s strong and secure while designed for fast process",
+              "image3": "shopify:\/\/shop_images\/digital-cmyk_2x_fe2fa7ef-e9f2-4cf7-b278-6dc949d6a9e5.png",
+              "svg3": "https:\/\/cdn.shopify.com\/s\/files\/1\/0482\/1843\/9847\/files\/drops-3.svg?v=1605918024",
+              "title3": "Vibrant NanoInk™ Colors",
+              "subtitle3": "CMYK printing brings vibrance and depth of colors that will impress your customers, all while maintaining industry leading cost efficiency.",
+              "image4": "shopify:\/\/shop_images\/usa_2x_f9677d7e-7b39-46f1-a802-96ba3e761714.png",
+              "svg4": "https:\/\/cdn.shopify.com\/s\/files\/1\/0482\/1843\/9847\/files\/eco-friendly.svg?v=1607543857",
+              "title4": "Produced in the USA",
+              "subtitle4": "Fatbox is based out of Florida and Arizona, and all our card stock and corrugated printing is done domestically as well for reliable, fast shipping.",
+              "css_class": "",
+              "custom_css": ""
+            }
+          },
+          "2328ce7f-4cda-448d-b749-2a330fda71b2": {
+            "type": "rich_text",
+            "settings": {
+              "title": "Customize Online in Minutes With FatDesigner™",
+              "heading_font": "open_sans_n4",
+              "heading_color": "rgba(0,0,0,0)",
+              "heading_alignment": "center",
+              "heading_size": 30,
+              "text": "<p>Customize your packaging online using our 3d editor. No need to hire a designer and spent thousands on your design. Get started today!<\/p>",
+              "text_font": "open_sans_n4",
+              "text_color": "rgba(0,0,0,0)",
+              "text_alignment": "center",
+              "text_size": 14,
+              "columns": 1,
+              "button_label": "Launch FatDesigner&trade;",
+              "button_link": "https:\/\/join.fatbox.com\/earlybird",
+              "button_alignment": "center",
+              "button_style": "button--primary",
+              "background": "#ffffff",
+              "gradient": "rgba(0,0,0,0)",
+              "gradient_rotation": 0,
+              "width": "standard",
+              "padding_top": 80,
+              "padding_bottom": 80,
+              "padding_left": 0,
+              "padding_right": 0,
+              "animation": "none"
+            }
+          },
+          "e6d1d613-97cf-464e-8b84-10ee6284c2d1": {
+            "type": "slideshow",
+            "settings": {
+              "mobile_text_below_image": true,
+              "width": "wide",
+              "padding_top": 0,
+              "padding_bottom": 0,
+              "animation": "none",
+              "css_class": "",
+              "custom_css": "",
+              "image": "shopify:\/\/shop_images\/FBX_Ecommerce_1-min.jpg",
+              "image2": "shopify:\/\/shop_images\/FBX_Ecommerce_5-min.jpg",
+              "image3": "shopify:\/\/shop_images\/FBX_Ecommerce_2-min.jpg",
+              "image4": "shopify:\/\/shop_images\/FBX_Ecommerce_3-min.jpg",
+              "image5": "shopify:\/\/shop_images\/FBX_Ecommerce_4-min.jpg",
+              "title": "GET INSPIRED",
+              "heading_color": "#000000",
+              "subheading_color": "#000000",
+              "text_alignment": "center",
+              "text_horizontal_position": "center",
+              "background_color": "#ffffff",
+              "background_opacity": 77,
+              "border_color": "#ffffff",
+              "border_width": 0,
+              "text_width": 40,
+              "button_1": "Button 1",
+              "button_1_style": "button--secondary",
+              "button_2": "Button 2",
+              "button_2_style": "button--secondary",
+              "mobile_image_crop": "none",
+              "pretext_color_mobile": "rgba(0,0,0,0)",
+              "heading_color_mobile": "rgba(0,0,0,0)",
+              "subheading_color_mobile": "rgba(0,0,0,0)"
+            }
+          }
+        },
+        "block_order": [
+          "product-ecommerce-1",
+          "product-ecommerce-0",
+          "37fe97e1-6186-4bc2-97fc-675a2acf8c17",
+          "571858b6-0421-4afc-ab2a-8fce08dd42dc",
+          "264de95d-1f09-49d7-959c-828ff79597b1",
+          "9ef293b3-c27e-4b72-b2bc-f0685e5217df",
+          "19db216a-3aa2-42a9-962f-8af781fa620f",
+          "2328ce7f-4cda-448d-b749-2a330fda71b2",
+          "e6d1d613-97cf-464e-8b84-10ee6284c2d1"
+        ],
+        "settings": {
+          "image": "shopify:\/\/shop_images\/Group-3456-_1.png",
+          "pretext": "INTRODUCING OUR",
+          "reviews": "4.82(1,731 reviews)",
+          "product_breadcrumb": false,
+          "padding_top": 20,
+          "padding_bottom": 0,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "shipper": {
+        "type": "shipper",
+        "blocks": {
+          "shipper-1": {
+            "type": "product_gallery",
+            "settings": {
+              "display_thumbnails": true,
+              "gallery_arrows": true,
+              "enable_zoom": true,
+              "enable_product_lightbox": true,
+              "slideshow_speed": 0,
+              "slideshow_transition": "slide",
+              "thumbnail_position": "bottom-thumbnails",
+              "enable_thumbnail_slider": true,
+              "set_product_height": false,
+              "product_height": 500,
+              "video_looping": false,
+              "width": "half",
+              "padding_top": 0,
+              "padding_bottom": 0,
+              "padding_left": 0,
+              "padding_right": 0,
+              "animation": "none"
+            }
+          },
+          "shipper-0": {
+            "type": "product_info",
+            "settings": {
+              "reviews": "4.83 (9 reviews)",
+              "display_vendor": false,
+              "display_sku": false,
+              "enable_shopify_product_badges": false,
+              "display_savings": true,
+              "display_collections": false,
+              "display_type": false,
+              "display_tags": false,
+              "display_social_buttons": false,
+              "product_description_position": "top",
+              "show_payment_button": false,
+              "width": "half",
+              "padding_top": 0,
+              "padding_bottom": 0,
+              "padding_left": 0,
+              "padding_right": 0,
+              "animation": "none"
+            }
+          },
+          "ecc1bc5b-fad6-48bc-8c25-a2d7b1e12027": {
+            "type": "text-images-columns",
+            "settings": {
+              "logos_per_row": 3,
+              "image1": "https:\/\/cdn.shopify.com\/s\/files\/1\/0482\/1843\/9847\/files\/box-print.svg?v=1607543857",
+              "link1": "Printed in 10 days",
+              "text1": "Customize your package now and  get it delivered fast",
+              "image2": "https:\/\/cdn.shopify.com\/s\/files\/1\/0482\/1843\/9847\/files\/eco-friendly.svg?v=1607543857",
+              "link2": "Eco Friendly Materials",
+              "text2": "Customize your package now and get it delivered fast",
+              "image3": "https:\/\/cdn.shopify.com\/s\/files\/1\/0482\/1843\/9847\/files\/usps.svg?v=1607543857",
+              "link3": "Delivered with USPS",
+              "text3": "Customize your package now and  get it delivered fast",
+              "padding_top": 73,
+              "padding_bottom": 39,
+              "animation": "none"
+            }
+          },
+          "a6446536-198c-4fd7-aa1b-30c61648430c": {
+            "type": "image_with_text",
+            "settings": {
+              "image_position": "left",
+              "image": "shopify:\/\/shop_images\/shipper-biodegradable_2x_57aa5a41-e9a3-4f71-a080-a0a815f5dfe3.png",
+              "image_crop": "none",
+              "title": "DESIGNED FROM SCRATCH WITH BIODEGRADABLE MATERIALS",
+              "text2": "FatPrintTM uses high resolution print technology on our most premium cardstock material.  Impress your customers with this luxurious look and feel.",
+              "textA": "<p>Natural corrugated cardboard is strong enough to protect your products, while being 99% biodegradable.<\/p>",
+              "heading_size": "regular",
+              "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+              "button_label": "",
+              "button_style": "button--primary",
+              "alignment": "left",
+              "vertical_position": "center",
+              "background": "rgba(0,0,0,0)",
+              "text_color": "rgba(0,0,0,0)",
+              "width": "standard",
+              "show_gutter": true,
+              "padding_top": 76,
+              "padding_bottom": 0,
+              "animation": "none"
+            }
+          },
+          "d9a44c05-86ff-49ae-bf12-977bf1f2598a": {
+            "type": "tabs-collection",
+            "settings": {
+              "title": "Design templates to get started with fatdesigner",
+              "link1": "shipper box",
+              "link2": "e-commerce box",
+              "link3": "product box",
+              "link4": "mailer bag",
+              "cta": "https:\/\/join.fatbox.com\/earlybird",
+              "image1": "shopify:\/\/shop_images\/FBX_Shipper_1-min.jpg",
+              "url1": "https:\/\/join.fatbox.com\/earlybird",
+              "image2": "shopify:\/\/shop_images\/Shipper-4_thumbnail-min.png",
+              "url2": "https:\/\/join.fatbox.com\/earlybird",
+              "image3": "shopify:\/\/shop_images\/Shipper-2_thumbnail-min.png",
+              "url3": "https:\/\/join.fatbox.com\/earlybird",
+              "image4": "shopify:\/\/shop_images\/Shipper-1_thumbnail-min.png",
+              "url4": "https:\/\/join.fatbox.com\/earlybird",
+              "image5": "shopify:\/\/shop_images\/Shipper-3_thumbnail-min.png",
+              "url5": "https:\/\/join.fatbox.com\/earlybird",
+              "image6": "shopify:\/\/shop_images\/Shipper-6_thumbnail-min.png",
+              "url6": "https:\/\/join.fatbox.com\/earlybird",
+              "image7": "shopify:\/\/shop_images\/Shipper-5_thumbnail-min.png",
+              "url7": "https:\/\/join.fatbox.com\/earlybird",
+              "image8": "shopify:\/\/shop_images\/FBX_Shipper_3-min.jpg",
+              "url8": "https:\/\/join.fatbox.com\/earlybird",
+              "url32": "https:\/\/join.fatbox.com\/earlybird"
+            }
+          },
+          "20add445-c10b-43c8-a915-6d1454e2a70b": {
+            "type": "testimonial",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/Meridian_Life_Balance_Logomark-02_500x_a2820215-3687-4541-a8e1-67f57f8d822c.png",
+              "image": "shopify:\/\/shop_images\/annadoe_2x_34fdf38c-64cb-4076-a0ee-f96ac18c5098.png",
+              "caption": "<p>Shanya Kovacevich, Creative Director<\/p>",
+              "quote": "<p>We’ve used several packaging companies. With FATBOX, we’re able to manage packaging without the hassles<\/p>"
+            }
+          },
+          "f2adf56a-836c-46a0-b4ab-fd6ce83f953d": {
+            "type": "image_steps",
+            "settings": {
+              "step1": "Strong<br>& Beautiful",
+              "step2": "Self-Locking<br>Flap",
+              "step3": "CMYK<br>Colors",
+              "step4": "Produced<br>in the USA",
+              "image1": "shopify:\/\/shop_images\/shipper-01.png",
+              "svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0482\/1843\/9847\/files\/shipper-strong-beautiful.svg?v=1609969095",
+              "title": "Engineered For Strength and Beauty",
+              "subtitle": "Our corrugated technology utlilizes B-Flute thickness ideal for shipping, while maintaining a smooth surface for printing vibrant colors.",
+              "image2": "shopify:\/\/shop_images\/shipper-02.png",
+              "svg2": "https:\/\/cdn.shopify.com\/s\/files\/1\/0482\/1843\/9847\/files\/puzzle.svg?v=1609969144",
+              "title2": "Secure & Safe Flaps",
+              "subtitle2": "Feel confident your package is secure. It’s strong and secure while designed for fast processing and shipping.",
+              "image3": "shopify:\/\/shop_images\/digital-cmyk_2x_fe2fa7ef-e9f2-4cf7-b278-6dc949d6a9e5.png",
+              "svg3": "https:\/\/cdn.shopify.com\/s\/files\/1\/0482\/1843\/9847\/files\/drops-3.svg?v=1605918024",
+              "title3": "Digital CMYK Colors",
+              "subtitle3": "CMYK printing brings vibrance and depth of colors that will impress your customers, all while maintaining industry leading cost efficiency.",
+              "image4": "shopify:\/\/shop_images\/usa_2x_f9677d7e-7b39-46f1-a802-96ba3e761714.png",
+              "svg4": "https:\/\/cdn.shopify.com\/s\/files\/1\/0482\/1843\/9847\/files\/eco-friendly.svg?v=1607543857",
+              "title4": "Produced in the USA",
+              "subtitle4": "Fatbox is based out of Florida and Arizona, and all our card stock and corrugated printing is done domestically as well for reliable, fast shipping.",
+              "css_class": "",
+              "custom_css": ""
+            }
+          },
+          "8a7cebd4-5ff8-4f06-8167-1fe5aeb95b53": {
+            "type": "rich_text",
+            "settings": {
+              "title": "Customize Online in Minutes With FatDesigner™",
+              "heading_font": "open_sans_n4",
+              "heading_color": "rgba(0,0,0,0)",
+              "heading_alignment": "center",
+              "heading_size": 30,
+              "text": "<p>Customize your packaging online using our 3d editor. No need to hire a designer and spent thousands on your design. Get started today!<\/p>",
+              "text_font": "open_sans_n4",
+              "text_color": "rgba(0,0,0,0)",
+              "text_alignment": "center",
+              "text_size": 14,
+              "columns": 1,
+              "button_label": "Launch FatDesigner&trade;",
+              "button_link": "https:\/\/join.fatbox.com\/earlybird",
+              "button_alignment": "center",
+              "button_style": "button--primary",
+              "background": "#ffffff",
+              "gradient": "rgba(0,0,0,0)",
+              "gradient_rotation": 0,
+              "width": "standard",
+              "padding_top": 80,
+              "padding_bottom": 80,
+              "padding_left": 0,
+              "padding_right": 0,
+              "animation": "none"
+            }
+          },
+          "0e5a84eb-a7f3-49bc-a5e2-a6022f90d0af": {
+            "type": "slideshow",
+            "settings": {
+              "mobile_text_below_image": true,
+              "width": "wide",
+              "padding_top": 0,
+              "padding_bottom": 0,
+              "animation": "none",
+              "css_class": "",
+              "custom_css": "",
+              "image": "shopify:\/\/shop_images\/FBX_Shipper_1-min.jpg",
+              "image2": "shopify:\/\/shop_images\/FBX_Shipper_5-min.jpg",
+              "image3": "shopify:\/\/shop_images\/FBX_Shipper_4-min.jpg",
+              "image4": "shopify:\/\/shop_images\/FBX_Shipper_3-min.jpg",
+              "image5": "shopify:\/\/shop_images\/FBX_Shipper_2-min.jpg",
+              "title": "GET INSPIRED",
+              "heading_color": "#000000",
+              "subheading_color": "#000000",
+              "text_alignment": "center",
+              "text_horizontal_position": "center",
+              "background_color": "#ffffff",
+              "background_opacity": 77,
+              "border_color": "#ffffff",
+              "border_width": 0,
+              "text_width": 40,
+              "button_1": "Button 1",
+              "button_1_style": "button--secondary",
+              "button_2": "Button 2",
+              "button_2_style": "button--secondary",
+              "mobile_image_crop": "none",
+              "pretext_color_mobile": "rgba(0,0,0,0)",
+              "heading_color_mobile": "rgba(0,0,0,0)",
+              "subheading_color_mobile": "rgba(0,0,0,0)"
+            }
+          }
+        },
+        "block_order": [
+          "shipper-1",
+          "shipper-0",
+          "ecc1bc5b-fad6-48bc-8c25-a2d7b1e12027",
+          "a6446536-198c-4fd7-aa1b-30c61648430c",
+          "d9a44c05-86ff-49ae-bf12-977bf1f2598a",
+          "20add445-c10b-43c8-a915-6d1454e2a70b",
+          "f2adf56a-836c-46a0-b4ab-fd6ce83f953d",
+          "8a7cebd4-5ff8-4f06-8167-1fe5aeb95b53",
+          "0e5a84eb-a7f3-49bc-a5e2-a6022f90d0af"
+        ],
+        "settings": {
+          "image": "shopify:\/\/shop_images\/shipper-box_2x_e5c70f6b-ab97-4855-929d-11e0321abab2.png",
+          "pretext": "INTRODUCING OUR",
+          "reviews": "4.82(1,731 reviews)",
+          "product_breadcrumb": false,
+          "padding_top": 20,
+          "padding_bottom": 0,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "page-testimonial": {
+        "type": "page-testimonial",
+        "settings": {
+          "bg": "#ffffff",
+          "logo": "shopify:\/\/shop_images\/Fullstack-Logo-bw.png",
+          "image": "shopify:\/\/shop_images\/zach2.png",
+          "caption": "<p><strong>Zach Walters,<\/strong> Business Manager<\/p>",
+          "quote": "<p>We needed a packaging partner who understood how sensitive and important our lead times are. Fatbox was one of the few who were able to deliver.<\/p>",
+          "padding_top": 20,
+          "padding_bottom": 20,
+          "animation": "none"
+        }
+      },
+      "1610648348bee938bf": {
+        "type": "index__heading",
+        "disabled": true,
+        "settings": {
+          "preheading": "",
+          "title": "How it Works1",
+          "subheading": "",
+          "preheading_color": "rgba(0,0,0,0)",
+          "heading_color": "rgba(0,0,0,0)",
+          "subheading_color": "rgba(0,0,0,0)",
+          "background": "rgba(0,0,0,0)",
+          "gradient": "rgba(0,0,0,0)",
+          "gradient_rotation": 0,
+          "heading_alignment": "center",
+          "vertical_spacing": "medium",
+          "width": "standard",
+          "padding_top": 0,
+          "padding_bottom": 0,
+          "padding_left": 0,
+          "padding_right": 0,
+          "animation": "none",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "mailer-faq": {
+        "type": "mailer-faq",
+        "blocks": {
+          "85ca690d-df07-43a8-ac29-8e562cb7afe9": {
+            "type": "content",
+            "settings": {
+              "title": "Can I order a sample of the Mailer Bag?",
+              "answer": "<p>We do offer a sample pack for $19 that includes one of each of our four products: 1 Mailer Bag,  1 Product Box, 1 E-commerce Box and 1  Shipper box.<\/p>"
+            }
+          },
+          "20a7cd78-2921-48ca-900b-53a92bc8674a": {
+            "type": "content",
+            "settings": {
+              "title": "Are your Mailer Bags recyclable?",
+              "answer": "<p>Yes! Our mailer bags are made from recyclable, low-density polyethylene, and is identified by recycling code #4.<\/p>"
+            }
+          },
+          "9e567d7f-38c7-4a88-9eb5-a11cdb117ada": {
+            "type": "content",
+            "settings": {
+              "title": "Is a Mailer Bag the exact same as a Poly Bag?",
+              "answer": "<p>Yes it’s 100% identical. We call our poly bag a Mailer Bag.<\/p>"
+            }
+          },
+          "b00e0656-bd13-44bd-89bf-c77055d6150b": {
+            "type": "content",
+            "settings": {
+              "title": "Can I print on both sides?",
+              "answer": "<p>With Mailer Bags and a 3,000 minimum order quantity, yes!<\/p>"
+            }
+          },
+          "e5583c5e-d24b-4a2f-b780-7a04f2f370d8": {
+            "type": "content",
+            "settings": {
+              "title": "Do you offer other sizes or colors?",
+              "answer": "<p>With 3,000 units or more, we have unlimited sizes and colors. Contact us through<a href=\"\/pages\/customquote\" title=\"Fatbox - Get a Quote with Fatbox Pro\"> Fatbox Pro page for more info!<\/a><\/p>"
+            }
+          },
+          "864fa4f7-0877-47c0-92a4-72142c701957": {
+            "type": "content",
+            "settings": {
+              "title": "What resolution should my artwork be?",
+              "answer": "<p>We highly recommend a minimum of 300 DPI images.<\/p>"
+            }
+          },
+          "774d3f29-2b23-45c5-9b04-ba511bbf94f8": {
+            "type": "content",
+            "settings": {
+              "title": "How much does a Mailer Bag weigh?",
+              "answer": "<p>Our Mailer Bag weights 0.03 - 0.04 ounces.<\/p>"
+            }
+          },
+          "0ecedab4-2372-43f3-a00a-dd9bfd578447": {
+            "type": "content",
+            "settings": {
+              "title": "Do I need anything to seal the Mailer bag?",
+              "answer": "<p>No, every Mailer Bag uses a self-adhesive strip that peels off and can easily seal the contents.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "85ca690d-df07-43a8-ac29-8e562cb7afe9",
+          "20a7cd78-2921-48ca-900b-53a92bc8674a",
+          "9e567d7f-38c7-4a88-9eb5-a11cdb117ada",
+          "b00e0656-bd13-44bd-89bf-c77055d6150b",
+          "e5583c5e-d24b-4a2f-b780-7a04f2f370d8",
+          "864fa4f7-0877-47c0-92a4-72142c701957",
+          "774d3f29-2b23-45c5-9b04-ba511bbf94f8",
+          "0ecedab4-2372-43f3-a00a-dd9bfd578447"
+        ],
+        "settings": {
+          "title": "FAQ",
+          "width": "standard",
+          "padding_top": 56,
+          "padding_bottom": 56,
+          "animation": "none",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "pro-faq": {
+        "type": "pro-faq",
+        "blocks": {
+          "9d29f622-f79f-4d65-84fc-27997e67fbc6": {
+            "type": "content",
+            "settings": {
+              "title": "What is the MOQ for access to Fatbox Pro?",
+              "answer": "<p>2,000 or more units<\/p>"
+            }
+          },
+          "35a2792b-266e-4314-975b-ad8787f9c08a": {
+            "type": "content",
+            "settings": {
+              "title": "What's the difference between Fatbox Pro and the rest of Fatbox?",
+              "answer": "<p>Fatbox Pro is specifically for enterprise accounts with special needs. If you are ordering 2,000 units or more per month, you&#x27;ll get full access to all our services, materials, and discount prices. For smaller orders, please use FatDesigner™ and enjoy our most popular custom<\/p>"
+            }
+          },
+          "b2737eda-9edf-4954-9444-e721ee0ae652": {
+            "type": "content",
+            "settings": {
+              "title": "Do you charge for die lines?",
+              "answer": "<p>Outside of edge cases, we will not charge you for dielines or nickel and dime you with extra fees.<\/p>"
+            }
+          },
+          "dbabad29-78b8-43de-ad0a-f834753cfb35": {
+            "type": "content",
+            "settings": {
+              "title": "What turn times can I expect?",
+              "answer": "<p>Since we are a US based provider, we can print most packages within 10 days. <\/p><p>Due to the nature of custom packages at higher volumes, there may be exceptions (material shortages, holiday timelines, etc)<\/p>"
+            }
+          },
+          "71486f0c-69a9-4eca-a9bc-ff8705077a9c": {
+            "type": "content",
+            "settings": {
+              "title": "Can you do retail and display packages?",
+              "answer": "<p>Yes we can handle any display stands or retail ready packages, as well as assist with design and engineering.<\/p>"
+            }
+          },
+          "e5196848-88a7-44f5-bcef-403b5c7d3fd8": {
+            "type": "content",
+            "settings": {
+              "title": "What is FatDesigner™ and can I use it for my enterprise orders?",
+              "answer": "<p>FatDesigner™ lets anyone order custom packages with as little as 1 package, and it&#x27;s intended for lower volume orders (&lt;2,000 units). Enterprise accounts can still use FatDesigner™ to create their design, but cannot checkout and buy. Simply save your design in FatDesigner and contact your account manager and they can pull the design for you.<\/p><p><br\/><\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "9d29f622-f79f-4d65-84fc-27997e67fbc6",
+          "35a2792b-266e-4314-975b-ad8787f9c08a",
+          "b2737eda-9edf-4954-9444-e721ee0ae652",
+          "dbabad29-78b8-43de-ad0a-f834753cfb35",
+          "71486f0c-69a9-4eca-a9bc-ff8705077a9c",
+          "e5196848-88a7-44f5-bcef-403b5c7d3fd8"
+        ],
+        "settings": {
+          "title": "FAQ",
+          "width": "standard",
+          "padding_top": 56,
+          "padding_bottom": 56,
+          "animation": "none",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "pro-richtext": {
+        "type": "pro-richtext",
+        "settings": {
+          "title": "Request a custom quote today",
+          "heading_font": "open_sans_n4",
+          "heading_color": "#ffffff",
+          "heading_alignment": "center",
+          "heading_size": 30,
+          "text": "<p>No package is too complex. Submit a quote for your packaging needs and talk to a package specialist today!<\/p>",
+          "text_font": "open_sans_n4",
+          "text_color": "rgba(0,0,0,0)",
+          "text_alignment": "left",
+          "text_size": 14,
+          "columns": 1,
+          "button_label": "Request Quote Now",
+          "button_link": "#top-form",
+          "button_alignment": "center",
+          "button_style": "button--primary",
+          "background": "#eeeeee",
+          "gradient": "#c0c0c0",
+          "gradient_rotation": 180,
+          "width": "wide",
+          "padding_top": 20,
+          "padding_bottom": 0,
+          "padding_left": 0,
+          "padding_right": 0,
+          "animation": "none",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "product-box-faq": {
+        "type": "product-box-faq",
+        "blocks": {
+          "55261a3e-6485-4718-b74e-273d73dedc33": {
+            "type": "content",
+            "settings": {
+              "title": "What is a product box?",
+              "answer": "<p>Product boxes are small boxes to hold cosmetics, accessories, health and beauty products and more. They are made of durable and sturdy card stock that come matte white. Product boxes are retail ready to be on a shelf, but for shipping they need additional protection such as a shipper box or mailer box. <\/p>"
+            }
+          },
+          "3b23c137-a051-45e3-bcc2-86455c63659d": {
+            "type": "content",
+            "settings": {
+              "title": "Can I print on the inside of a Product Box?",
+              "answer": "<p>Within FatDesigner™ we only offer one sided printing. For double sided printing and unlimited finishes, please check out <a href=\"\/pages\/customquote\" title=\"Fatbox - Get a Quote with Fatbox Pro\">Fatbox Pro<\/a>.<\/p>"
+            }
+          },
+          "6b5f8217-8fc3-4a40-9f52-d6d4781dc48d": {
+            "type": "content",
+            "settings": {
+              "title": "What material do you use for the Product Box?",
+              "answer": "<p>Our premium card stock in 16pt thickness through FatDesigner™ and we have many other options available through <a href=\"\/pages\/customquote\" title=\"Fatbox - Get a Quote with Fatbox Pro\">Fatbox Pro<\/a>.<\/p>"
+            }
+          },
+          "3a503052-4b8f-4d97-8b2c-9eb148f521bc": {
+            "type": "content",
+            "settings": {
+              "title": "Is the product box glossy or matte?",
+              "answer": "<p>Our premium cardstock is matte be default, by adding our FatFinish™ it becomes glossy.<\/p>"
+            }
+          },
+          "ac7969b2-46b7-4dc0-9f16-36377beb2aa4": {
+            "type": "content",
+            "settings": {
+              "title": "What’s the benefit of using Glossy FatFinish?",
+              "answer": "<p>FatFinish™ will add a glossy layer to our premium card stock. This will add a high-end shine and protect and preserve the ink and colors from the elements. If you want to add a protective layer but maintain a matte look, we offer other finishes within our <a href=\"\/pages\/customquote\" title=\"Fatbox - Get a Quote with Fatbox Pro\">Fatbox Pro program<\/a>. <\/p>"
+            }
+          },
+          "1633ed6a-0895-4df5-8029-17c4c1aec8ad": {
+            "type": "content",
+            "settings": {
+              "title": "Do you offer Embossing, Soft Touch and other finishes?",
+              "answer": "<p>Absolutely but only within <a href=\"\/pages\/customquote\" title=\"Fatbox - Get a Quote with Fatbox Pro\">Fatbox Pro<\/a>. For our self-serve customers using FatDesigner™, our Glossy FatFinish is our only premium finish.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "55261a3e-6485-4718-b74e-273d73dedc33",
+          "3b23c137-a051-45e3-bcc2-86455c63659d",
+          "6b5f8217-8fc3-4a40-9f52-d6d4781dc48d",
+          "3a503052-4b8f-4d97-8b2c-9eb148f521bc",
+          "ac7969b2-46b7-4dc0-9f16-36377beb2aa4",
+          "1633ed6a-0895-4df5-8029-17c4c1aec8ad"
+        ],
+        "settings": {
+          "title": "FAQ",
+          "width": "standard",
+          "padding_top": 56,
+          "padding_bottom": 56,
+          "animation": "none",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "ecommerce-faq": {
+        "type": "ecommerce-faq",
+        "blocks": {
+          "f32ab467-ee50-42b9-ae1f-e5cbe5b606dd": {
+            "type": "content",
+            "settings": {
+              "title": "What is an E-Commerce Box?",
+              "answer": "<p>Our E-Commerce box is made from corrugated paperboard and designed for storing and shipping your products. Using a self-locking flap, it’s very easy to assemble and requires no tape or glue to remain closed. Sometimes this package is referred to as a “mailer box”.<\/p>"
+            }
+          },
+          "55fd6cee-1d56-4662-a1cf-f668dc05b047": {
+            "type": "content",
+            "settings": {
+              "title": "What's the minimum order quantity?",
+              "answer": "<p>With E-Commerce Boxes, our minimum is 1 (one).<\/p>"
+            }
+          },
+          "e46cd833-0203-4258-95b9-aaefd26fb958": {
+            "type": "content",
+            "settings": {
+              "title": "Can I order a custom sized box?",
+              "answer": "<p>Within FatDesigner™ our box sizes are limited to our default options.  For unlimited options, see our<a href=\"\/pages\/customquote\" title=\"Fatbox - Get a Quote with Fatbox Pro\"> Fatbox Pro program<\/a>.<\/p>"
+            }
+          },
+          "d7a4d418-361c-4855-bc5e-d195879e5ecb": {
+            "type": "content",
+            "settings": {
+              "title": "How do I get customer inserts to hold my product in my E-Commerce Box?",
+              "answer": "<p>That’s available with <a href=\"\/pages\/customquote\" title=\"Fatbox - Get a Quote with Fatbox Pro\">Fatbox Pro<\/a> only with 2,000 or more units.<\/p>"
+            }
+          },
+          "6bc9ae18-bd48-4c57-9cc0-03762dd18f18": {
+            "type": "content",
+            "settings": {
+              "title": "What’s the inside of the box look like?",
+              "answer": "<p>Our E-Commerce box comes in White Board (matte white), Kraft Board (natural cardboard) or Glossy FatFinish (glossy white outside \/ matte white inside). Whichever material you select for the outside will be on the inside, except for Glossy FatFinish™ which will be matte white inside by default.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "f32ab467-ee50-42b9-ae1f-e5cbe5b606dd",
+          "55fd6cee-1d56-4662-a1cf-f668dc05b047",
+          "e46cd833-0203-4258-95b9-aaefd26fb958",
+          "d7a4d418-361c-4855-bc5e-d195879e5ecb",
+          "6bc9ae18-bd48-4c57-9cc0-03762dd18f18"
+        ],
+        "settings": {
+          "title": "FAQ",
+          "width": "standard",
+          "padding_top": 56,
+          "padding_bottom": 56,
+          "animation": "none",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "shipper-faq": {
+        "type": "shipper-faq",
+        "blocks": {
+          "f38f0020-7539-469b-806b-e1a4876f5459": {
+            "type": "content",
+            "settings": {
+              "title": "What is a Shipper Box?",
+              "answer": "<p>Our Shipper Box is a premium corrugated paperboard designed for shipping your products. We recommend enclosing your products in a separate package that can be stored inside the Shipper Box.<\/p>"
+            }
+          },
+          "f4f7da54-138b-41e0-a863-c7dd0d500c43": {
+            "type": "content",
+            "settings": {
+              "title": "What's the minimum order quantity?",
+              "answer": "<p>With Shipper Boxes our MOQ is 1!<\/p>"
+            }
+          },
+          "65fcf6ab-fd23-41a1-a268-966f185a9939": {
+            "type": "content",
+            "settings": {
+              "title": "Is your Shipper Box recyclable?",
+              "answer": "<p>Absolutely, our Shipper Box is made from paperboard and is 99% biodegradable.<\/p>"
+            }
+          },
+          "46d7981f-70d3-4326-9ddc-8c8cd5ac5484": {
+            "type": "content",
+            "settings": {
+              "title": "Do you offer different materials for the Shipper Box?",
+              "answer": "<p>Yes we have 2 materials we offer: Kraft and White board. Kraft is the most eco-friendly and cost efficient, while white board offers superior colors. Note that any color on Kraft will look muted, similar to a colored pencil drawn on brown paper.<\/p>"
+            }
+          },
+          "91a4665c-5773-459a-9c0c-b2c1460fee2c": {
+            "type": "content",
+            "settings": {
+              "title": "What resolution should my artwork be?",
+              "answer": "<p>Any images should be 300DPI or greater. Please note that on Kraft we recommend sticking with 1 or 2 main colors, such as black, white, or green. This is because all colors on Kraft will appear muted, similar to drawing a colored pencil on brown paper.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "f38f0020-7539-469b-806b-e1a4876f5459",
+          "f4f7da54-138b-41e0-a863-c7dd0d500c43",
+          "65fcf6ab-fd23-41a1-a268-966f185a9939",
+          "46d7981f-70d3-4326-9ddc-8c8cd5ac5484",
+          "91a4665c-5773-459a-9c0c-b2c1460fee2c"
+        ],
+        "settings": {
+          "title": "FAQ",
+          "width": "standard",
+          "padding_top": 56,
+          "padding_bottom": 56,
+          "animation": "none",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "1612989710a36bb478": {
+        "type": "design-template",
+        "blocks": {
+          "b64d6d7f-1d25-4e77-9c8b-3e179dd233e0": {
+            "type": "first-tab",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/444fatbox__prod2_2x-Recovered_6bcaebdc-541c-4f6a-a50b-e172ef9c751f.png",
+              "url": "https:\/\/join.fatbox.com\/earlybird"
+            }
+          },
+          "b009dc0e-9021-4a1b-b392-3b79b15abb9d": {
+            "type": "first-tab",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/PB-3_thumbnail-min.jpg",
+              "url": "https:\/\/join.fatbox.com\/earlybird"
+            }
+          },
+          "c6003f5a-77b7-40dd-a667-cc92c3029b2f": {
+            "type": "first-tab",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/PB-1_thumbnail-min.jpg",
+              "url": "https:\/\/join.fatbox.com\/earlybird"
+            }
+          },
+          "737d6734-fae7-4e2f-8915-a4cde4c9f41c": {
+            "type": "first-tab",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/PB-4_thumbnail-min.jpg",
+              "url": "https:\/\/join.fatbox.com\/earlybird"
+            }
+          },
+          "5525b403-cb1b-4fa9-90e2-81f9868ea013": {
+            "type": "first-tab",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/PB-7_thumbnail-min.jpg",
+              "url": "https:\/\/join.fatbox.com\/earlybird"
+            }
+          },
+          "76983f1d-e972-45ab-b02e-7c5c65bbb2c0": {
+            "type": "first-tab",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/PB-5_thumbnail-min.jpg",
+              "url": "https:\/\/join.fatbox.com\/earlybird"
+            }
+          },
+          "53cf19ac-cace-48a4-8e69-d2613ee9a829": {
+            "type": "first-tab",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/PB-2_thumbnail-min.jpg",
+              "url": "https:\/\/join.fatbox.com\/earlybird"
+            }
+          },
+          "12dd5417-2a49-43dd-9d58-687c888c0dbc": {
+            "type": "first-tab",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/PB-6_thumbnail-min_eadc2849-35fd-4a58-9e3c-c5321e953929.jpg",
+              "url": "https:\/\/join.fatbox.com\/earlybird"
+            }
+          },
+          "875d0df9-b70e-42aa-9e39-1382b2aec168": {
+            "type": "second-tab",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/FBX_Mailer_6-min.jpg",
+              "url": "https:\/\/join.fatbox.com\/earlybird"
+            }
+          },
+          "f3f172d9-6452-4c72-88d6-28a82aced850": {
+            "type": "second-tab",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/FBX_Mailer_3-min_8bf15709-0308-45a2-9876-bb30f29bef51.jpg",
+              "url": "https:\/\/join.fatbox.com\/earlybird"
+            }
+          },
+          "dc64ffca-cfba-4ac6-a787-b0e940da9a4a": {
+            "type": "second-tab",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/FBX_Mailer_4-min.jpg",
+              "url": "https:\/\/join.fatbox.com\/earlybird"
+            }
+          },
+          "c6825c00-96cc-4fbf-b6a7-e9aa068d364f": {
+            "type": "second-tab",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/FBX_Mailer_7-min.jpg",
+              "url": "https:\/\/join.fatbox.com\/earlybird"
+            }
+          },
+          "85d0e98e-79fe-4b9e-a374-f9896be4c98e": {
+            "type": "second-tab",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/FBX_Mailer_2-min_3b133add-2652-49b8-aa35-cac5005131be.jpg",
+              "url": "https:\/\/join.fatbox.com\/earlybird"
+            }
+          },
+          "f62cd872-6030-4a06-a6b2-72b4f66068ce": {
+            "type": "second-tab",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/FBX_Mailer_9-min_38a686fc-1052-4027-ae19-7573607e78f1.jpg",
+              "url": "https:\/\/join.fatbox.com\/earlybird"
+            }
+          },
+          "14f75899-efa2-418b-9536-0767563506c0": {
+            "type": "second-tab",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/LM_Mailer-min.jpg",
+              "url": "https:\/\/join.fatbox.com\/earlybird"
+            }
+          },
+          "f8c9eae1-a649-44d2-89e4-d0751d67d800": {
+            "type": "second-tab",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/MLB_Mailer-min.jpg",
+              "url": "https:\/\/join.fatbox.com\/earlybird"
+            }
+          },
+          "8d19068f-85d5-4bf9-9b10-8fdd833a2523": {
+            "type": "third-tab",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/FBX_Ecommerce_3-min.jpg",
+              "url": "https:\/\/join.fatbox.com\/earlybird"
+            }
+          },
+          "2a87c1bd-f100-4c63-b459-b7b599b6170d": {
+            "type": "third-tab",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/FBX_Ecommerce_5-min.jpg",
+              "url": "https:\/\/join.fatbox.com\/earlybird"
+            }
+          },
+          "cd099470-2ede-48da-b474-8fe389bfa4e8": {
+            "type": "third-tab",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Ecomm-1_thumbnail-min.png",
+              "url": "https:\/\/join.fatbox.com\/earlybird"
+            }
+          },
+          "1e338d64-b887-495b-acdf-5465174eff0a": {
+            "type": "third-tab",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Ecomm-2_thumbnail-min.png",
+              "url": "https:\/\/join.fatbox.com\/earlybird"
+            }
+          },
+          "a15a7978-5e2f-481d-a854-aa9471a2a4da": {
+            "type": "third-tab",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Ecomm-3_thumbnail-min.png",
+              "url": "https:\/\/join.fatbox.com\/earlybird"
+            }
+          },
+          "2da843f3-93d3-47b0-8a8a-daaa339b8ce8": {
+            "type": "third-tab",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Ecomm-4_thumbnail-min.png",
+              "url": "https:\/\/join.fatbox.com\/earlybird"
+            }
+          },
+          "68ad7483-5cbb-4a1b-a76d-731c7de26071": {
+            "type": "third-tab",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Ecomm-5_thumbnail-min.png",
+              "url": "https:\/\/join.fatbox.com\/earlybird"
+            }
+          },
+          "0b0364ad-848c-46cf-b1d4-5eca6780ab2b": {
+            "type": "third-tab",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/MLB_Ecommerce-min.jpg",
+              "url": "https:\/\/join.fatbox.com\/earlybird"
+            }
+          },
+          "231d8857-d87d-455f-a2a7-d6f66f7eb599": {
+            "type": "fourth-tab",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/FBX_Shipper_2-min.jpg",
+              "url": "https:\/\/join.fatbox.com\/earlybird"
+            }
+          },
+          "af797738-3897-4db1-8ed4-9e57b97951b0": {
+            "type": "fourth-tab",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/FBX_Shipper_1-min.jpg",
+              "url": "https:\/\/join.fatbox.com\/earlybird"
+            }
+          },
+          "70f80e10-f716-43f4-9792-2cef7ffa1086": {
+            "type": "fourth-tab",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Shipper-4_thumbnail-min.png",
+              "url": "https:\/\/join.fatbox.com\/earlybird"
+            }
+          },
+          "83e0e142-7bdd-426b-a78a-5339d2661886": {
+            "type": "fourth-tab",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Shipper-2_thumbnail-min.png",
+              "url": "https:\/\/join.fatbox.com\/earlybird"
+            }
+          },
+          "9ecf7b29-90eb-4b4b-87de-6693cde78859": {
+            "type": "fourth-tab",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Shipper-6_thumbnail-min.png",
+              "url": "https:\/\/join.fatbox.com\/earlybird"
+            }
+          },
+          "8f6c206f-0d47-40dd-a663-8138632c822e": {
+            "type": "fourth-tab",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Shipper-3_thumbnail-min.png",
+              "url": "https:\/\/join.fatbox.com\/earlybird"
+            }
+          },
+          "2b96b515-2d1f-44b0-8553-539b905a2753": {
+            "type": "fourth-tab",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Shipper-1_thumbnail-min.png",
+              "url": "https:\/\/join.fatbox.com\/earlybird"
+            }
+          },
+          "e3ef28a2-df19-41a0-94d7-82c46e6452ef": {
+            "type": "fourth-tab",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Shipper-5_thumbnail-min.png",
+              "url": "https:\/\/join.fatbox.com\/earlybird"
+            }
+          }
+        },
+        "block_order": [
+          "b64d6d7f-1d25-4e77-9c8b-3e179dd233e0",
+          "b009dc0e-9021-4a1b-b392-3b79b15abb9d",
+          "c6003f5a-77b7-40dd-a667-cc92c3029b2f",
+          "737d6734-fae7-4e2f-8915-a4cde4c9f41c",
+          "5525b403-cb1b-4fa9-90e2-81f9868ea013",
+          "76983f1d-e972-45ab-b02e-7c5c65bbb2c0",
+          "53cf19ac-cace-48a4-8e69-d2613ee9a829",
+          "12dd5417-2a49-43dd-9d58-687c888c0dbc",
+          "875d0df9-b70e-42aa-9e39-1382b2aec168",
+          "f3f172d9-6452-4c72-88d6-28a82aced850",
+          "dc64ffca-cfba-4ac6-a787-b0e940da9a4a",
+          "c6825c00-96cc-4fbf-b6a7-e9aa068d364f",
+          "85d0e98e-79fe-4b9e-a374-f9896be4c98e",
+          "f62cd872-6030-4a06-a6b2-72b4f66068ce",
+          "14f75899-efa2-418b-9536-0767563506c0",
+          "f8c9eae1-a649-44d2-89e4-d0751d67d800",
+          "8d19068f-85d5-4bf9-9b10-8fdd833a2523",
+          "2a87c1bd-f100-4c63-b459-b7b599b6170d",
+          "cd099470-2ede-48da-b474-8fe389bfa4e8",
+          "1e338d64-b887-495b-acdf-5465174eff0a",
+          "a15a7978-5e2f-481d-a854-aa9471a2a4da",
+          "2da843f3-93d3-47b0-8a8a-daaa339b8ce8",
+          "68ad7483-5cbb-4a1b-a76d-731c7de26071",
+          "0b0364ad-848c-46cf-b1d4-5eca6780ab2b",
+          "231d8857-d87d-455f-a2a7-d6f66f7eb599",
+          "af797738-3897-4db1-8ed4-9e57b97951b0",
+          "70f80e10-f716-43f4-9792-2cef7ffa1086",
+          "83e0e142-7bdd-426b-a78a-5339d2661886",
+          "9ecf7b29-90eb-4b4b-87de-6693cde78859",
+          "8f6c206f-0d47-40dd-a663-8138632c822e",
+          "2b96b515-2d1f-44b0-8553-539b905a2753",
+          "e3ef28a2-df19-41a0-94d7-82c46e6452ef"
+        ],
+        "settings": {
+          "title": "Design templates to get started with fatdesigner&trade;",
+          "link1": "Product Box",
+          "link2": "Mailer Bag",
+          "link3": "Ecommerce Box",
+          "link4": "Shipper Box",
+          "cta": "https:\/\/join.fatbox.com\/earlybird"
+        }
+      },
+      "1613517349219441d0": {
+        "type": "index__html",
+        "settings": {
+          "html_content": "<div id=\"custom-package\"><\/div>",
+          "width": "standard",
+          "padding_top": 0,
+          "padding_bottom": 0,
+          "padding_left": 0,
+          "padding_right": 0,
+          "animation": "none",
+          "css_class": "",
+          "custom_css": ""
+        }
+      }
+    },
+    "content_for_index": [
+      "1605667119299d4fdc",
+      "1613517349219441d0",
+      "16068532277568a7af",
+      "1605754288255ce720",
+      "1605911228f1068a9e",
+      "1610648348bee938bf",
+      "16073928536f75613a",
+      "16061744273b1e55d8",
+      "1606172961c59ff539",
+      "1612989710a36bb478",
+      "1605919330fdfd97d4",
+      "1607473070a5ae08f3",
+      "16057545314e7e7791",
+      "1605758048833a9403",
+      "16057564338841997e"
+    ]
+  }
+}

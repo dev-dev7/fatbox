@@ -1,0 +1,57 @@
+<div class="section page-width container">
+
+<div class="coll-container">
+   {% if block.settings.title != blank %}
+    <div class="container">
+      {% render 'heading',
+              title: block.settings.title,
+              heading_tag: 'h2',
+              context: 'featured-collection',
+              text_alignment: 'center'
+              
+      %}
+    </div>
+  {% endif %}
+	<ul class="tabs2">
+		<li class="tab-link current" data-tab="tab-1">{{block.settings.collection | replace: '-', ' '}}</li>
+		<li class="tab-link" data-tab="tab-2">{{block.settings.collection2 | replace: '-', ' '}}</li>
+		<li class="tab-link" data-tab="tab-3">{{block.settings.collection3 | replace: '-', ' '}}</li>
+		<li class="tab-link" data-tab="tab-4">{{block.settings.collection4 | replace: '-', ' '}}</li>
+	</ul>
+
+
+{% include 'include-featured-collection' %}
+{% include 'include-feat-coll-1' %}
+{% include 'include-feat-coll-3' %}
+  {% include 'include-feat-coll-4' %}
+</div>
+  
+  <h4 class="fat__CTA" ><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+  <g id="Add" transform="translate(-606 -4257)">
+    <circle id="Ellipse_81" data-name="Ellipse 81" cx="11" cy="11" r="11" transform="translate(606 4257)"/>
+    <path id="Path_178" data-name="Path 178" d="M9.167,4.167H5.833V.833a.833.833,0,0,0-1.667,0V4.167H.833a.833.833,0,0,0,0,1.667H4.167V9.167a.833.833,0,0,0,1.667,0V5.833H9.167a.833.833,0,0,0,0-1.667Z" transform="translate(612 4263)" fill="#fff"/>
+  </g>
+</svg>
+    See all templates in <a href="#">FatDesigner</a><span class="sup"><sup>(&trade;)</sup></span></h4>
+</div>
+<script>
+  $(document).ready(function(){
+	
+	$('ul.tabs2 li').click(function(){
+		var tab_id = $(this).attr('data-tab');
+
+		$('ul.tabs2 li').removeClass('current');
+		$('.tab-content').removeClass('current');
+
+		$(this).addClass('current');
+		$("#"+tab_id).addClass('current');
+	})
+
+})
+</script>
+<style>
+  #shopify-section-{{section.id}} {
+   background:#F1F3F5;
+      
+  }
+</style>

@@ -1,0 +1,57 @@
+
+  <div class="testimonials container" {% if blocks.size > 2 %}data-testimonial-slider{% endif %}>
+ 
+
+      {% comment %} Content settings {% endcomment %}
+      {%- assign image = block.settings.image -%}
+     {%- assign logo = block.settings.logo -%}
+      {%- assign quote = block.settings.quote -%}
+      {%- assign text = block.settings.text -%}
+          {%- assign caption = block.settings.caption -%}
+      {%- assign info_text = block.settings.info_text -%}
+      {%- assign info_background = block.settings.info_background -%}
+      {% comment %} End content settings {% endcomment %}
+
+      {% comment %} Is the color set to transparent? {% endcomment %}
+      {%- assign info_text_alpha = info_text | color_extract: 'alpha' -%}
+      {%- assign info_background_alpha = info_background | color_extract: 'alpha' -%}
+
+      <div id="shopify-section-{{ block.id }}"
+          class="testimonial-block">
+                 
+                 
+        <style>
+            .block--{{ block.id }} .testimonial__name {
+              color: {%- if info_text_alpha != 0 -%}{{ info_text }}{%- endif -%};
+              background-color: {%- if info_background_alpha != 0 -%}{{ info_background }}{% else %}{{ settings.shop_bg_color }}{%- endif -%};
+            }
+        </style>
+        <div class="fat__box">
+        <div class="fat__one">
+       <img src="{{logo | img_url:'original'}}"/>
+           <span class="img-title"><img src="{{ image | img_url:'thumbnail'}}"/>
+          {{caption}}</span>
+        </div>
+        <div class="fat__two">
+          <div class="quote-block">
+     
+
+                 {{ quote }}
+          </div>
+              
+        </div>
+      </div>
+    </div>
+   
+  </div>
+
+
+{% comment %}JavaScript{% endcomment %}
+<script
+  type="application/json"
+  data-section-id="{{ section.id }}"
+  data-section-data
+>
+  {
+  }
+</script>

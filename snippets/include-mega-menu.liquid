@@ -1,0 +1,351 @@
+{% comment %} Advanced {% endcomment %}
+{% assign css_class = section.settings.css_class %}
+{% assign custom_css = section.settings.custom_css %}
+
+{% comment %}
+  This section gets dynamically removed from parent
+  section so we manually assign the section id in the CSS selector
+{% endcomment %}
+{% style %}
+  .mega-menu__{{ section.id }} .mega-menu {
+    background-color: {{ section.settings.mega_menu_background_color }} !important;
+    color: {{ section.settings.mega_menu_text_color }};
+  }
+
+  .mega-menu__{{ section.id }} .mega-menu__banner {
+    background-color: {{ section.settings.bottom_banner_bg }};
+    color: {{ section.settings.bottom_banner_text }};
+  }
+
+  .mega-menu__{{ section.id }} .mega-menu__banner a {
+    color: {{ section.settings.bottom_banner_text }};
+  }
+
+  .mega-menu__{{ section.id }} .mega-menu__banner.has-link:hover {
+    background-color: {{ section.settings.bottom_banner_bg | color_darken: 05 }};
+  }
+
+  {% if section.settings.enable_mega_menu_border %}
+    .mega-menu__{{ section.id }} .mega-menu__block {
+      border-left: 1px solid {{ settings.border_color }};
+    }
+
+    .mega-menu__{{ section.id }} .mega-menu__block:first-child {
+      border-left: 0;
+    }
+  {% endif %}
+
+  {%- if custom_css != blank -%}
+    {%- assign declarations = custom_css | split: '}' -%}
+    {%- for declaration in declarations -%}
+      .mega-menu__{{ id }} {{ declaration }} }
+    {%- endfor -%}
+  {%- endif -%}
+
+{% endstyle %}
+
+<div class="mega-menu {{ css_class }} mega-menu--header-{{ settings.header_layout }}" data-parent-link="{{ section.settings.parent_link | downcase | replace: ' ', '-' }}">
+
+  <div class="container has-no-side-gutter">
+    {% for block in section.blocks %}
+
+      {% if block.type == "featured_promo" %}
+        {% assign block_text_alpha = block.settings.text_color | color_extract: 'alpha' %}
+        {% style %}
+          .block__{{ block.id }} {
+            background-color: {{ block.settings.bgr_color }};
+            color: {{ block.settings.text_color }};
+          }
+
+          .block__{{ block.id }} .mega-menu__content p {
+            color: {% if block_text_alpha != 0 %}{{ block.settings.text_color }}{% else %}{{ settings.regular_color }}{% endif %};
+          }
+
+        {% endstyle %}
+      {% endif %}
+
+      <div class="column
+                  mega-menu__block
+                  block__{{ block.id }}
+                  block__{{ block.type | replace: '_', '-' }}
+                  {% render 'column-width', value: section.blocks.size %}
+                  medium-down--one-half"
+                  {{ block.shopify_attributes }}>
+
+        {% if block.type == 'menu' %}
+          {% comment %} Menu {% endcomment %}
+          <div class="mega-menu__content">
+            {% if block.settings.menu_1 != blank %}
+              {% render 'mega-menu__linklist',
+                      menu_link: block.settings.menu_1,
+                      link_setting: block.settings.menu_1_link
+              %}
+            {% else %}
+              <p class="menu__heading">{{ 'homepage.onboarding.menu_title' | t }}</p>
+              <p>{{ 'homepage.onboarding.no_content' | t }}</p>
+            {% endif %}
+          </div>
+
+        {% elsif block.type == 'image' %}
+          {% comment %} Image and menu {% endcomment %}
+          <div class="mega-menu__content custom-img-content">
+            {% if block.settings.image_link != blank %}
+              <a href="{{ block.settings.image_link }}">
+            {% endif %}
+
+              {% if block.settings.image != nil %}
+                <img src="{{block.settings.image | img_url:"original"}}"/>
+              {% else %}
+                {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+              {% endif %}
+
+            {% if block.settings.image_link != blank %}
+              </a>
+            {% endif %}
+          </div>
+          <div class="mega-menu__content content custom-fatbox">
+            {% if block.settings.image_caption %}
+              {{ block.settings.image_caption }}
+            {% endif %}
+          </div>
+
+        {% elsif block.type == 'html' %}
+          {% comment %} Custom HTML {% endcomment %}
+          <div class="mega-menu__content custom-fatbox">
+            {{ block.settings.html_content }}
+          </div>
+
+        {% elsif block.type == 'featured_promo' %}
+          {% comment %} Featured promotion {% endcomment %}
+          
+
+          {% if block.settings.richtext != blank %}
+            <div class="mega-menu__content custom-fatbox">
+               <svg xmlns="http://www.w3.org/2000/svg" width="53.969" height="54.059" viewBox="0 0 53.969 54.059">
+  <g id="Layer_2" data-name="Layer 2" transform="translate(-17.25 -122.265)">
+    <g id="Layer_1" data-name="Layer 1" transform="translate(18 123.06)">
+      <path id="Path_1615" data-name="Path 1615" d="M13,21.9,32.391,15.06,51.781,21.9V44.716L32.391,51.56,13,44.716Z" transform="translate(0.687 0.909)" fill="none" stroke="#282828" stroke-miterlimit="10" stroke-width="1.5"/>
+      <path id="Path_1616" data-name="Path 1616" d="M13,21.06,32.391,27.9,51.781,21.06" transform="translate(0.687 1.752)" fill="none" stroke="#282828" stroke-miterlimit="10" stroke-width="1.5"/>
+      <line id="Line_41" data-name="Line 41" y2="23" transform="translate(33 29)" fill="none" stroke="#282828" stroke-miterlimit="10" stroke-width="1.5"/>
+      <path id="Path_1617" data-name="Path 1617" d="M14.687,35.552,1,30.716V7.9L20.391,1.06,39.781,7.9V19.31" transform="translate(-1 -1.06)" fill="none" stroke="#282828" stroke-miterlimit="10" stroke-width="1.5"/>
+      <path id="Path_1618" data-name="Path 1618" d="M1,7.06,20.391,13.9,39.781,7.06" transform="translate(-1 -0.216)" fill="none" stroke="#282828" stroke-miterlimit="10" stroke-width="1.5"/>
+      <line id="Line_42" data-name="Line 42" y2="7" transform="translate(20 13)" fill="none" stroke="#282828" stroke-miterlimit="10" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>
+              <div class="half-w-text"> {{ block.settings.richtext | newline_to_br  }}</div>
+              <div class="full-w-text">{{ block.settings.richtext2 | newline_to_br  }}</div>
+              {% if block.settings.button_label != blank %}
+            
+              {% render 'button',
+                      label: block.settings.button_label,
+                      href: block.settings.promo_link,
+                      type: "link",
+                      style: block.settings.button_style
+              %}
+          
+          {% endif %}
+            </div>
+          {% endif %}
+
+          
+
+        {% elsif block.type == 'featured_product' %}
+          {% comment %} Featured product {% endcomment %}
+          <div class="mega-menu__content">
+            {% if block.settings.featured_product != blank %}
+
+              {% assign product = all_products[block.settings.featured_product] %}
+              {%- assign collection_handles = product.collections | map: 'handle' -%}
+
+              {% comment %} Product image {% endcomment %}
+              <a href="{{ product.url }}" class="mega-menu__image {% if settings.stickers_enabled %}has-thumbnail-sticker{% endif %}">
+                {% if settings.stickers_enabled %}
+                  {% render 'product-thumbnail__sticker',
+                          product: product,
+                          collection_handles: collection_handles
+                  %}
+                {% endif %}
+
+                {% render 'image-element',
+                        image: product.featured_image,
+                        alt: product.featured_image.alt,
+                        additional_classes: 'mega-menu__image'
+                %}
+              </a>
+
+              {% comment %} Product title {% endcomment %}
+              <p class="menu__heading mega-menu__content">
+                <a href="{{ product.url }}">{{ product.title }}</a>
+              </p>
+
+              {% comment %} Price / availability {% endcomment %}
+              {% if collection_handles contains 'coming-soon' %}
+                <span>{{ 'collections.general.coming_soon' | t }}</span>
+              {% else %}
+                <span class="price {% if product.compare_at_price_max > product.price %}sale{% endif %}">
+                  {% if product.available %}
+                    {% if product.price_varies and product.price_min > 0 %}
+                      <small><em>{{ 'products.general.from' | t }}</em></small>
+                    {% endif %}
+                    {% if product.price_min > 0 %}
+                      <span class="money">
+                        {% render 'price-element', price: product.price_min %}
+                      </span>
+                    {% else %}
+                      {{ settings.free_price_text }}
+                    {% endif %}
+                    {% if product.compare_at_price_max > product.price %}
+                      <span class="was-price">
+                        <span class="money">
+                          {% render 'price-element', price: product.compare_at_price_max %}
+                        </span>
+                      </span>
+                    {% endif %}
+                  {% else %}
+                    <span class="sold-out">{{ 'products.product.sold_out' | t }}</span>
+                  {% endif %}
+                </span>
+              {% endif %}
+
+            {% else %}
+
+              {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg placeholder-svg--product' }}
+
+              <p class="menu__heading mega-menu__content">
+                <a href="{{ product.url }}">{{ 'homepage.onboarding.product_title' | t }}</a>
+              </p>
+              <p>
+                <span class="price">
+                  <span class="money">$49.00</span>
+                </span>
+              </p>
+
+            {% endif %}
+
+            {% if block.settings.richtext_bottom != blank %}
+              <div class="mega-menu__content content">
+                {{ block.settings.richtext_bottom }}
+              </div>
+            {% endif %}
+
+          </div>
+
+        {% elsif block.type == 'mixed' %}
+          {% comment %} Mixed {% endcomment %}
+          {% if block.settings.richtext_top != blank %}
+            <div class="mega-menu__content">
+              <p class="menu__heading">{{ block.settings.richtext_top }}</p>
+            </div>
+          {% endif %}
+
+          {% if block.settings.image_top != nil %}
+            <div class="mega-menu__content">
+              {% if block.settings.image_link_top != blank %}
+                <a href="{{ block.settings.image_link_top }}">
+              {% endif %}
+                {% render 'image-element',
+                        image: block.settings.image_top,
+                        alt: block.settings.image_top.alt,
+                        additional_classes: 'mega-menu__image'
+                %}
+              {% if block.settings.image_link_top != blank %}
+                </a>
+              {% endif %}
+            </div>
+          {% endif %}
+
+          {% if block.settings.image_caption_top != blank %}
+            <div class="mega-menu__content">
+              {{ block.settings.image_caption_top }}
+            </div>
+          {% endif %}
+
+          {% if block.settings.menu_1 != blank %}
+            <div class="mega-menu__content">
+              {% render 'mega-menu__linklist',
+                      menu_link: block.settings.menu_1,
+                      link_setting: block.settings.menu_1_link
+              %}
+            </div>
+          {% endif %}
+
+          {% if block.settings.menu_2 != blank %}
+            <div class="mega-menu__content">
+              {% render 'mega-menu__linklist',
+                      menu_link: block.settings.menu_2,
+                      link_setting: block.settings.menu_2_link
+              %}
+            </div>
+          {% endif %}
+
+          {% if block.settings.menu_3 != blank %}
+            <div class="mega-menu__content">
+              {% render 'mega-menu__linklist',
+                      menu_link: block.settings.menu_3,
+                      link_setting: block.settings.menu_3_link
+              %}
+            </div>
+          {% endif %}
+
+          {% if block.settings.menu_4 != blank %}
+            <div class="mega-menu__content">
+              {% render 'mega-menu__linklist',
+                      menu_link: block.settings.menu_4,
+                      link_setting: block.settings.menu_4_link
+              %}
+            </div>
+          {% endif %}
+
+          {% if block.settings.image_bottom != nil %}
+            <div class="mega-menu__content">
+              {% if block.settings.image_link_bottom != blank %}
+                <a href="{{ block.settings.image_link_bottom }}">
+              {% endif %}
+                {% render 'image-element',
+                        image: block.settings.image_bottom,
+                        alt: block.settings.image_bottom.alt,
+                        additional_classes: 'mega-menu__image'
+                %}
+              {% if block.settings.image_link_bottom != blank %}
+                </a>
+              {% endif %}
+            </div>
+          {% endif %}
+
+          {% if block.settings.richtext_bottom != blank %}
+            <div class="mega-menu__content">
+              {{ block.settings.richtext_bottom }}
+            </div>
+          {% endif %}
+
+        {% elsif block.type == 'empty_column' %}
+          {% comment %} Empty column - nothing to see here {% endcomment %}
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+
+  {% if section.settings.show_mega_bottom_bar %}
+    <div class="mega-menu__banner {% if section.settings.mega_bottom_bar_link != blank %}has-link{% endif %} is-{{ section.settings.size }}">
+      {% if section.settings.mega_bottom_bar_link != blank %}
+        <a class="mega-menu__banner-link" href="{{ section.settings.mega_bottom_bar_link }}">
+      {% endif %}
+      <div class="container">
+          <div class="one-whole column is-flex is-justify-center is-align-center">
+           <svg xmlns="http://www.w3.org/2000/svg" width="20.004" height="20" viewBox="0 0 20.004 20">
+  <path id="USA_Flag" data-name="USA Flag" d="M18.457,0a2.03,2.03,0,0,0-.828.18,11.273,11.273,0,0,1-4.652,1.184C10.395,1.363,8.895.016,5.914.016A14.64,14.64,0,0,0,1.25.922v-.3A.625.625,0,0,0,0,.625V19.688A.313.313,0,0,0,.313,20H.938a.313.313,0,0,0,.313-.312V15.766a13.216,13.216,0,0,1,4.473-.859c3.172,0,5.383,1.344,8.559,1.344a13.365,13.365,0,0,0,4.832-.977A1.334,1.334,0,0,0,20,14.055V1.3A1.416,1.416,0,0,0,18.457,0ZM10,2.121c2.277.684,4.449.852,8.137-.8.367-.164.613-.02.613.219V3.586c-3.859,1.629-5.984,1.105-8.75.629ZM10,5.48a21.3,21.3,0,0,0,3.859.469A13.319,13.319,0,0,0,18.75,4.922V7.328A13.963,13.963,0,0,1,10,7.484ZM1.25,2.234a13.885,13.885,0,0,1,4.664-.969,9.528,9.528,0,0,1,2.836.473V7.207a14.246,14.246,0,0,0-7.5.406Zm0,6.684a13.833,13.833,0,0,1,8.609-.184,14.79,14.79,0,0,0,8.895-.094V10.77a13.834,13.834,0,0,1-8.609.184,15.039,15.039,0,0,0-8.895.1ZM14.277,15c-2.953,0-5.2-1.344-8.559-1.344a14.108,14.108,0,0,0-4.473.773V12.355a13.82,13.82,0,0,1,8.605-.184,14.778,14.778,0,0,0,8.895-.094v1.965A11.45,11.45,0,0,1,14.277,15ZM3.75,2.5a.625.625,0,1,0,.625.625A.627.627,0,0,0,3.75,2.5ZM6.563,3.75a.625.625,0,1,0-.625-.625A.627.627,0,0,0,6.563,3.75ZM3.75,4.688a.625.625,0,1,0,.625.625A.627.627,0,0,0,3.75,4.688Zm2.813,1.25a.625.625,0,1,0-.625-.625A.627.627,0,0,0,6.563,5.938Z" fill="#ccc"/>
+</svg>
+
+            <p class="mega-menu__sticker-text">
+              {{ section.settings.mega_bottom_bar_text }}
+            </p>
+          </div>
+      </div>
+      {% if section.settings.mega_bottom_bar_link != blank %}
+        </a>
+      {% endif %}
+    </div>
+  {% endif %}
+
+</div>

@@ -1,0 +1,275 @@
+<style>
+.index #shopify-section-{{ section.id }} { 
+    background:#F1F3F5;
+   margin-top:200px;
+   margin-bottom:100px;
+   padding-bottom:100px;
+   padding-top:100px;
+   
+  }
+  
+  @media  (max-width: 769px){
+    #shopify-section-{{ section.id }} { 
+   
+   margin-top:20px;
+   padding-top:20px;
+   
+  }
+    
+  }
+  #shopify-section-{{section.id}} .fat__CTA  {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20px;
+  }
+</style>
+
+
+<div class="section page-width container">
+
+<div class="coll-container">
+   {% if section.settings.title != blank %}
+    <div class="container">
+      {% render 'heading',
+              title: section.settings.title,
+              heading_tag: 'h2',
+              context: 'featured-collection',
+              text_alignment: 'center'
+              
+      %}
+    </div>
+  {% endif %}
+<ul class="tabs2">
+		<li class="tab-link current" data-tab="tab-1">{{section.settings.link1 }}</li>
+		<li class="tab-link" data-tab="tab-2">{{section.settings.link2}}</li>
+		<li class="tab-link" data-tab="tab-3">{{section.settings.link3}}</li>
+		<li class="tab-link" data-tab="tab-4">{{section.settings.link4}}</li>
+	</ul>
+   
+
+	<div id="tab-1" class="tab-content current">    <div class="container">
+ {% for block in section.blocks %}
+   
+          {% case block.type %}
+
+            {% when 'first-tab' %}
+       
+            {% include 'snippet_first-section' %}
+          
+          {% endcase %}
+   
+          {% endfor %}
+  
+    </div> 
+  </div>
+  
+  
+  	<div id="tab-2" class="tab-content">    <div class="container">
+ {% for block in section.blocks %}
+   
+          {% case block.type %}
+
+            {% when 'second-tab' %}
+       
+            {% include 'snippet_second-section' %}
+          
+          {% endcase %}
+   
+          {% endfor %}
+  
+    </div> 
+  </div>
+  <div id="tab-3" class="tab-content">    <div class="container">
+ {% for block in section.blocks %}
+   
+          {% case block.type %}
+
+            {% when 'third-tab' %}
+       
+            {% include 'snippet_third-section' %}
+          
+          {% endcase %}
+   
+          {% endfor %}
+  
+    </div> 
+  </div>
+  <div id="tab-4" class="tab-content">    <div class="container">
+ {% for block in section.blocks %}
+   
+          {% case block.type %}
+
+            {% when 'fourth-tab' %}
+       
+            {% include 'snippet_fourth-section' %}
+          
+          {% endcase %}
+   
+          {% endfor %}
+  
+    </div> 
+  </div>
+ 
+  
+  </div>
+</div>
+
+   
+      <h4 class="fat__CTA" ><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+  <g id="Add" transform="translate(-606 -4257)">
+    <circle id="Ellipse_81" data-name="Ellipse 81" cx="11" cy="11" r="11" transform="translate(606 4257)"/>
+    <path id="Path_178" data-name="Path 178" d="M9.167,4.167H5.833V.833a.833.833,0,0,0-1.667,0V4.167H.833a.833.833,0,0,0,0,1.667H4.167V9.167a.833.833,0,0,0,1.667,0V5.833H9.167a.833.833,0,0,0,0-1.667Z" transform="translate(612 4263)" fill="#fff"/>
+  </g>
+</svg>
+  See more templates in <a href="{{section.settings.cta}}">FatDesigner</a><span class="sup"><sup>(&trade;)</sup></span></h4>
+
+<script>
+  $(document).ready(function(){
+	
+	$('ul.tabs2 li').click(function(){
+		var tab_id = $(this).attr('data-tab');
+
+		$('ul.tabs2 li').removeClass('current');
+		$('.tab-content').removeClass('current');
+
+		$(this).addClass('current');
+		$("#"+tab_id).addClass('current');
+	})
+
+})
+</script>
+
+
+
+{% schema %}
+{
+  "name": "Design Template",
+  "class": "page-details design-template",
+  "max_blocks": 32,
+  "settings": [
+ {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Design templates to get started with fatdesigner"
+    },
+    {
+      "type": "text",
+      "label":"link 1 name",
+"id":"link1"
+      
+    },
+    {
+      "type": "text",
+      "label":"link 2 name",
+"id":"link2"
+      
+    },
+   {
+      "type": "text",
+      "label":"link 3 name",
+"id":"link3"
+      
+    },
+   {
+      "type": "text",
+      "label":"link 4 name",
+"id":"link4"
+      
+    },
+ {
+      "type": "url",
+      "label":"call to action at bottom link",
+"id":"cta"
+      
+    }
+    
+  ],
+  "blocks": [
+
+    {
+              "type": "first-tab",
+              "name": "First Tab",
+     
+              "settings": [
+                  {
+                  "id": "image",
+                  "type": "image_picker",
+                  "label": "Image"
+                },
+{
+          "type": "url",
+          "id": "url",
+          "label": "Link",
+          "info": "external url"
+        }
+              ]
+            },
+    {
+              "type": "second-tab",
+              "name": "Second Tab",
+              "settings": [
+                  {
+                  "id": "image",
+                  "type": "image_picker",
+                  "label": "Image"
+                },
+{
+          "type": "url",
+          "id": "url",
+          "label": "Link",
+          "info": "external url"
+        }
+              ]
+            },
+    {
+              "type": "third-tab",
+              "name": "Third Tab",
+              "settings": [
+                  {
+                  "id": "image",
+                  "type": "image_picker",
+                  "label": "Image"
+                },
+{
+          "type": "url",
+          "id": "url",
+          "label": "Link",
+          "info": "external url"
+        }
+              ]
+            },
+{
+              "type": "fourth-tab",
+              "name": "Fourth Tab",
+              "settings": [
+                  {
+                  "id": "image",
+                  "type": "image_picker",
+                  "label": "Image"
+                },
+{
+          "type": "url",
+          "id": "url",
+          "label": "Link",
+          "info": "external url"
+        }
+              ]
+            }
+],
+  "presets": [
+    {
+      "name": "Design Template",
+      "category": "Image"
+     
+      
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

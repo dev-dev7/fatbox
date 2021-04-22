@@ -1,0 +1,48 @@
+
+ {%- assign object = block -%}
+{%- assign blocks = section.blocks -%}
+
+  {%- assign loop = "1,2,3,4,5,6,7,8" | split: ',' -%}
+
+ {% for item in loop %}
+  {% capture index %}{{ forloop.index }}{% endcapture %}
+{% capture image %}image{{ index }}{% endcapture %}
+        {% capture link %}url{{ index }}{% endcapture %}
+
+{%- assign image = block.settings[image] -%}
+{%- assign url = block.settings[link] -%}
+<div id="index-{{forloop.index}}" class='item-tabbed'>
+
+<a class='item-tabbed-element' href="{{block.settings[link]}}">{% render 'image-element',
+                    image: image
+                    alt: img.alt,
+                    stretch_width: true,
+            max_height:400
+  %}
+</a>
+  
+
+ <div class="overlay-fat {% if forloop.index == 1 %} toggled {% endif %}">
+    {% if forloop.index == 1 %}
+                <span>Start from</span>
+   <p>Blank</p>
+   {% endif%}
+   <a class="overlay-hover btn-white" href="{{block.settings.url}}">Customize</a>
+            </div>
+
+
+</div>
+  <!-- Cool stuff with our popular_product object -->
+{% endfor %}
+<script>
+  $(document).ready(function() {
+  $(".item-tabbed")
+    .mouseenter(function() {
+      $(this).find('.overlay-fat').addClass('visible-now');
+    })
+    .mouseleave(function() {
+      $(this).find('.overlay-fat').removeClass('visible-now');
+    });
+});
+  
+</script>

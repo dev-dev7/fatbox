@@ -1,0 +1,139 @@
+{% comment %}
+** Logos - dynamic **
+- Draggable section
+- Uses blocks
+{% endcomment %}
+
+{% comment %} Assign object as block or section {% endcomment %}
+{% if type == 'block' %}
+  {%- assign object = block -%}
+{% else %}
+  {%- assign object = section -%}
+{% endif %}
+
+{% comment %} Content settings {% endcomment %}
+{%- assign blocks = section.blocks -%}
+{% comment %} End content settings {% endcomment %}
+
+{% if type == 'block' %}
+  {%- assign loop = "1,2,3" | split: ',' -%}
+{% else %}
+  {%- assign loop = blocks -%}
+{% endif %}
+
+{% comment %} Is the color set to transparent? {% endcomment %}
+{%- assign background_alpha = object.settings.background | color_extract: 'alpha' -%}
+{%- assign gradient_alpha = object.settings.gradient | color_extract: 'alpha' -%}
+
+{% comment %} Section specific CSS {% endcomment %}
+{% capture section_css -%}
+  .section {
+    background-image: linear-gradient({{ object.settings.gradient_rotation }}deg, rgba(255,255,255,0), {{ object.settings.gradient }});
+    background-color: {%- if background_alpha != 0 -%}{{ object.settings.background }}{%- endif -%};
+  }
+{%- endcapture -%}
+
+{% style %}
+  #shopify-section-{{ object.id }} {
+    padding-top: {{ object.settings.padding_top }}px;
+    padding-bottom: {{ object.settings.padding_bottom }}px;
+    padding-left: {{ object.settings.padding_left }}px;
+    padding-right: {{ object.settings.padding_right }}px;
+    {% if object.settings.width == 'wide' %}
+      width: 100%;
+    {% elsif object.settings.width == 'half' %}
+      width: 50%;
+    {% endif %}
+  }
+  {% render 'css-loop',
+          css: section_css,
+          id: object.id
+  %}
+  {% render 'css-loop',
+          css: object.settings.custom_css,
+          id: object.id
+  %}
+{% endstyle %}
+
+{% comment %} HTML markup {% endcomment %}
+<section class="section
+                {{ object.settings.css_class }}
+                is-width-{{ object.settings.width }}
+                {% if background_alpha != 0 or gradient_alpha != 0  %}
+                  has-background
+                {% endif %}
+                "
+                {% if object.settings.animation != "none" %}
+                  data-scroll-class="{{ object.settings.animation }}"
+                {% endif %}>
+  <div class="container
+              has-column-padding-bottom
+              is-justify-center
+              is-align-center
+              small-down--has-limit
+             
+              logo-list__wrapper
+              ">
+    
+          <div class="first-column logo-list__item
+            small-down--one-half
+            column
+           
+           
+              one-third
+            "
+          >
+           
+           
+            
+             <img src="{{block.settings.image1}}">
+           
+          
+            <h2> {{block.settings.link1}} </h2>
+            <p> {{block.settings.text1}}</p>
+           
+            
+            
+          </div>
+     <div class="second-column logo-list__item
+            small-down--one-half
+            column
+           
+           
+              one-third
+            "
+            >
+           
+           
+            
+             <img src="{{block.settings.image2}}">
+           
+          
+            <h2> {{block.settings.link2}} </h2>
+            <p> {{block.settings.text2}}</p>
+           
+            
+            
+          </div>
+        <div class="logo-list__item
+            small-down--one-half
+            column
+           
+           
+              one-third
+            "
+          >
+           
+           
+            
+             <img src="{{block.settings.image3}}">
+           
+          
+            <h2> {{block.settings.link3}} </h2>
+            <p> {{block.settings.text3}}</p>
+           
+            
+            
+          </div>
+  </div>
+</section>

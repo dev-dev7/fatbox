@@ -1,0 +1,548 @@
+{% comment %}
+** Footer - promotional - static **
+- Static section
+- Uses blocks
+{% endcomment %}
+
+{% assign id = section.id %}
+{% comment %} Advanced {% endcomment %}
+{% assign css_class = section.settings.css_class %}
+{% assign custom_css = section.settings.custom_css %}
+
+{%- assign locale_selector = false -%}
+{%- assign currency_selector = false -%}
+
+{%- if section.settings.show_currency_selector == true and shop.enabled_currencies.size > 1 -%}
+  {%- assign currency_selector = true -%}
+{%- endif -%}
+
+{%- if section.settings.show_locale_selector == true and shop.published_locales.size > 1 -%}
+  {%- assign locale_selector = true -%}
+{%- endif -%}
+
+{% comment %} Section specific CSS {% endcomment %}
+{% capture section_css -%}
+  .footer__promo-container {
+    background-color: {{ section.settings.promo_background }};
+    color: {{ section.settings.promo_text }};
+  }
+{%- endcapture -%}
+{% style %}
+  {% render 'css-loop',
+          css: section_css,
+          id: id
+  %}
+  {% render 'css-loop',
+          css: custom_css,
+          id: id
+  %}
+{% endstyle %}
+
+{% comment %} HTML markup {% endcomment %}
+<footer class="fb__footer footer__container {{ css_class }}">
+  <div class="container footer__promo has-no-side-gutter is-flex-{{ section.settings.promo_position }}">
+    <div class="footer__content {% if section.settings.enable_promo %} two-thirds {% else %} one-whole {% endif %} column medium-down--one-whole has-padding-top has-padding-bottom">
+      <div class="footer__wrap container equal-columns--outside-trim">
+       <div class="fb__container">
+        
+        {% for block in section.blocks %}
+          <div class="fb__block--{{ block.type | downcase | replace: '_', '-' }}"
+                      {{ block.shopify_attributes }}>
+           
+            {% if block.type == 'logo' %}
+              {% comment %} Logo {% endcomment %}
+             
+ {% elsif block.type == 'text' %}
+              {% comment %} Text {% endcomment %}
+             <a class="footer__logo-wrapper is-{{ block.settings.size }}" href="{{ shop.url }}" title="{{ shop.name }}">
+                  {% if block.settings.logo %}
+                      {% render 'image-element',
+                              image: block.settings.logo,
+                              alt: block.settings.logo.alt,
+                              additional_classes: 'footer__logo'
+                      %}
+                  {% else %}
+                    <h2 class="footer__heading text-align-center">{{ shop.name }}</h2>
+                  {% endif %}
+                </a>
+                 
+              <p class="footer__heading">{{ block.settings.title }}</p>
+            <div class="content-heading"> {{ block.settings.content }}</div>
+             {% render 'social-icons' %}
+            {% elsif block.type == 'link_list' %}
+              {% comment %} Menu {% endcomment %}
+              <div class="container custom-container">
+                <div class="first-menu menu-link one-third medium-down--one-whole column link-list__block">
+                  {% render 'footer__menu', menu_link: block.settings.menu_1 %}
+                </div>
+                {% if block.settings.menu_2 != blank %}
+                  <div class="second-menu menu-link one-third medium-down--one-whole column link-list__block">
+                    {% render 'footer__menu', menu_link: block.settings.menu_2 %}
+                  </div>
+                {% endif %}
+                {% if block.settings.menu_3 != blank %}
+                  <div class="menu-link one-third medium-down--one-whole column link-list__block">
+                    {% render 'footer__menu', menu_link: block.settings.menu_3 %}
+                  </div>
+                {% endif %}
+              </div>
+
+           
+           
+              
+
+         {% endif %}
+             
+
+             
+          </div>
+        {% endfor %}
+     
+      </div>
+        
+        <section class="footer__extra-content has-padding-top has-padding-bottom">
+        
+            {% if locale_selector or currency_selector or settings.show_multiple_currencies == true %}
+              <div class="footer-menu__disclosure footer-promotional__disclosure">
+                {% render 'localization-switcher',
+                  additional_classes: 'footer-menu__disclosure is-hidden-medium is-hidden-mobile-only',
+                  id: 'footer__selector-form',
+                  currency_selector: currency_selector,
+                  locale_selector: locale_selector,
+                  show_currency: section.settings.show_currency_selector
+                %}
+                {% render 'localization-switcher-mobile',
+                  additional_classes: 'selectors-form--mobile is-hidden-desktop-only',
+                  currency_selector: currency_selector,
+                  locale_selector: locale_selector,
+                  show_currency: settings.show_currency_selector
+                %}
+              </div>
+            {% endif %}
+<div class="footer-many-icons">
+  <svg xmlns="http://www.w3.org/2000/svg" width="343.901" height="143.006" viewBox="0 0 343.901 143.006">
+  <g id="shiplabelsAsset_2" data-name="shiplabelsAsset 2" style="isolation: isolate">
+    <g id="Layer_2" data-name="Layer 2">
+      <g id="icons">
+        <g id="Group_313" data-name="Group 313" opacity="0.9" style="mix-blend-mode: multiply;isolation: isolate">
+          <path id="Path_2169" data-name="Path 2169" d="M58.132,0H6.074A6.074,6.074,0,0,0,0,6.074V61.6a6.074,6.074,0,0,0,6.074,6.074H58.132A6.074,6.074,0,0,0,64.206,61.6V6.074A6.074,6.074,0,0,0,58.132,0Zm4.338,61.6a4.338,4.338,0,0,1-4.338,4.338H6.074A4.338,4.338,0,0,1,1.735,61.6V6.074A4.338,4.338,0,0,1,6.074,1.735H58.132a4.338,4.338,0,0,1,4.338,4.338Z" fill="#2b2b2b"/>
+          <path id="Path_2170" data-name="Path 2170" d="M12.78,48.944a17.249,17.249,0,0,1,8.312-2.985h0V30.151c-4.859-.833-8.572-4.911-8.572-7.826V7.54h5.206L18.8,9.484v.121h-2.95s-.1,0,0,.139l6.039,12.147-2.915-10.5v-.121h3.366s.087,0,0-.121L20.294,7.679V7.557H33V22.342c0,2.915-3.714,6.941-8.572,7.826V45.907a17.249,17.249,0,0,1,8.312,2.985.1.1,0,0,1,0,.174h-19.9a.1.1,0,0,1-.052-.121Z" transform="translate(9.206 5.544)" fill="#2b2b2b"/>
+        </g>
+        <g id="Group_314" data-name="Group 314" transform="translate(69.932)" opacity="0.9" style="mix-blend-mode: multiply;isolation: isolate">
+          <path id="Path_2171" data-name="Path 2171" d="M98.432,0H46.374A6.074,6.074,0,0,0,40.3,6.074V61.6a6.074,6.074,0,0,0,6.074,6.074H98.432a6.074,6.074,0,0,0,6.074-6.074V6.074A6.074,6.074,0,0,0,98.432,0Zm4.338,61.6a4.356,4.356,0,0,1-4.338,4.338H46.374A4.338,4.338,0,0,1,42.035,61.6V6.074a4.338,4.338,0,0,1,4.338-4.338H98.432a4.356,4.356,0,0,1,4.338,4.338Z" transform="translate(-40.3)" fill="#2b2b2b" style="mix-blend-mode: multiply;isolation: isolate"/>
+          <path id="Path_2172" data-name="Path 2172" d="M62.831,46.576c-5.05.4-8.676-.607-10.62-3.679-2.429-3.7-.538-6.074-3.661-10.585h0c2.95-.4,4.217,2.6,5.1,1.458v-.087c-1.44-3.158-2.048-6.108-.937-8.676a9.18,9.18,0,0,0,.954-4.876l.1-.1c1.059.347.954,3.471,1.839,5.484s2.568,3.176,2.881,2.638c-2.273-4.182,0-8.069-2.169-10.707,4.2-.191,3.766,4.026,6.074,3.245v-.1C60.8,15.792,64.567,9.926,70.241,8.33v.087c-2.343,3.9-3.21,7.41-1.249,8.555,1.336.781,4.894-.469,5.4-3.471h.121c2.811,2.655-1.458,9.666,0,10.759s2.325.451,3.366-.85h.191c1.475,1.891-1.527,6.716-.139,7.809.764.607,3.783-4.286,6.108-1.978v.226c-3.176,1.874-1.978,5.848-2.1,8.156-.26,5.362-4.772,8.59-11.106,9.7a.087.087,0,0,1,0-.174c3.471-3.124,1.336-6.8,5.015-8.867V38.09c-2.881-.816-4.234,3.3-5.952,2.69v-.139A5.1,5.1,0,0,0,70.71,34.9h-.156a3.193,3.193,0,0,1-2.134,1.857l-.1-.1c-1.371-1.579,1.909-5.206-.677-9.856h-.174c.85,4.755-3.679,6.941-3.766,9.787h-.156c-1.215-.816-.764-2.742-.607-3.471,0,0,0-.121-.139,0-2.308,2.256-2.534,4.39-.972,6.473V39.7s-.85.469-2.759-1.909a.1.1,0,0,0-.191,0c-1.024,5.379,3.714,6.559,4.13,8.676Z" transform="translate(-34.234 6.125)" fill="#2b2b2b" style="mix-blend-mode: multiply;isolation: isolate"/>
+        </g>
+        <rect id="Rectangle_207" data-name="Rectangle 207" width="35.678" height="6.108" rx="0.05" transform="translate(224.044 48.554)" fill="#2b2b2b" opacity="0.9" style="mix-blend-mode: multiply;isolation: isolate"/>
+        <path id="Path_2175" data-name="Path 2175" d="M146.046,19.962,137.474,7.52h-.1l-8.59,12.442v.1h5.588V41.549h6.039V20.066h5.518S146.081,20,146.046,19.962Z" transform="translate(94.691 5.529)" fill="#2b2b2b" opacity="0.9" style="mix-blend-mode: multiply;isolation: isolate"/>
+        <path id="Path_2176" data-name="Path 2176" d="M157.287,19.935l-8.52-12.39a.1.1,0,0,0-.156,0l-8.52,12.39v.139h5.466V41.487a.087.087,0,0,0,0,.087h5.952a.087.087,0,0,0,.087-.087V20.074h5.692Z" transform="translate(103.008 5.522)" fill="#2b2b2b" opacity="0.9" style="mix-blend-mode: multiply;isolation: isolate"/>
+        <path id="Path_2177" data-name="Path 2177" d="M179.022,0H126.964a6.074,6.074,0,0,0-6.074,6.074V61.6a6.074,6.074,0,0,0,6.074,6.074h52.059A6.074,6.074,0,0,0,185.1,61.6V6.074A6.074,6.074,0,0,0,179.022,0Zm4.338,61.6a4.338,4.338,0,0,1-4.338,4.338H126.964a4.338,4.338,0,0,1-4.338-4.338V6.074a4.338,4.338,0,0,1,4.338-4.338h52.059a4.338,4.338,0,0,1,4.338,4.338Z" transform="translate(88.89)" fill="#2b2b2b" opacity="0.9" style="mix-blend-mode: multiply;isolation: isolate"/>
+        <g id="Group_318" data-name="Group 318" transform="translate(139.847 75.329)" opacity="0.9" style="mix-blend-mode: multiply;isolation: isolate">
+          <path id="Path_2182" data-name="Path 2182" d="M110.513,61.4l-1.024,3.071a.1.1,0,0,1-.139,0l-3.158-.677a.121.121,0,0,1,0-.226l1.111-.625-4.911-8.676L96.284,64.987a.121.121,0,0,1-.156,0l-1.735-1.006a.121.121,0,0,1,0-.156l7.08-12.442a1.128,1.128,0,0,1,.972-.573h0a1.145,1.145,0,0,1,.972.573l5.9,10.325,1.111-.625a.162.162,0,1,1,.087.312Z" transform="translate(-70.462 -37.969)" fill="#2b2b2b"/>
+          <path id="Path_2183" data-name="Path 2183" d="M94.447,61.059l1.093.642L89.554,72.026a1.163,1.163,0,0,0,0,1.145h0a1.111,1.111,0,0,0,.972.555h14.316a.121.121,0,0,0,.121-.1V71.453a.121.121,0,0,0-.1-.121H92.521l5-8.555,1.093.642a.121.121,0,0,0,.174-.139L97.8,60.191a.1.1,0,0,0-.139,0l-3.158.659a.107.107,0,1,0-.052.208Z" transform="translate(-74.11 -31.09)" fill="#2b2b2b"/>
+          <path id="Path_2184" data-name="Path 2184" d="M102.27,75.022V73.755h11.887a1.145,1.145,0,0,0,.989-.573h0a1.128,1.128,0,0,0,0-1.145L107.91,59.682a.121.121,0,0,0-.156,0l-1.735,1.024a.139.139,0,0,0,0,.156l6.2,10.672h-9.926V70.267a.121.121,0,0,0-.208,0L99.91,72.662v.156l2.152,2.412a.147.147,0,0,0,.208-.208Z" transform="translate(-66.384 -31.466)" fill="#2b2b2b"/>
+          <path id="Path_2185" data-name="Path 2185" d="M98.177,66.755c.087,0,.191-.208.33-.33l.486-.451c.33-.278.607-.555.868-.8a5.2,5.2,0,0,0,.659-.781,3.574,3.574,0,0,0,.434-.85,3.106,3.106,0,0,0,0-2.048,2.1,2.1,0,0,0-.538-.833,2.134,2.134,0,0,0-.85-.521A3.106,3.106,0,0,0,98.35,60a2.881,2.881,0,0,0-1.111.208,2.447,2.447,0,0,0-.85.573,2.6,2.6,0,0,0-.573.885,3.94,3.94,0,0,0-.26,1.163v.174h1.735v-.156a1.284,1.284,0,0,1,.312-.885.816.816,0,0,1,.642-.278.833.833,0,0,1,.625.226.92.92,0,0,1,.226.677,1.736,1.736,0,0,1-.121.711,2.448,2.448,0,0,1-.364.607,6,6,0,0,1-.573.607h0l-.677.625c-.33.295-.59.555-.833.8a4.234,4.234,0,0,0-.607.8,3.124,3.124,0,0,0-.382.85,3.281,3.281,0,0,0-.139.972v.121h5.726V66.946H98Z" transform="translate(-69.7 -31.216)" fill="#2b2b2b"/>
+          <path id="Path_2186" data-name="Path 2186" d="M104.847,64.454a6.4,6.4,0,0,1-.677,3.262,2.62,2.62,0,0,1-4.338,0,6.421,6.421,0,0,1-.677-3.28,6.49,6.49,0,0,1,.677-3.3,2.586,2.586,0,0,1,4.338,0,6.49,6.49,0,0,1,.677,3.314Zm-1.944-1.3a3.471,3.471,0,0,0-.191-.885.868.868,0,0,0-.347-.5.555.555,0,0,0-.416-.139.607.607,0,0,0-.416.139.989.989,0,0,0-.295.469,3.471,3.471,0,0,0-.174.885v1.3a12.321,12.321,0,0,0,0,1.267,3.47,3.47,0,0,0,.174.885,1.041,1.041,0,0,0,.295.469.711.711,0,0,0,.85,0,1.215,1.215,0,0,0,.295-.469,4.425,4.425,0,0,0,.174-.885V64.419C102.851,63.933,102.938,63.5,102.9,63.152Z" transform="translate(-66.948 -31.24)" fill="#2b2b2b"/>
+          <path id="Path_2187" data-name="Path 2187" d="M99.563,72.458a2.187,2.187,0,0,0-.26-.59,1.736,1.736,0,0,0-.434-.451,1.978,1.978,0,0,0-.538-.278A3.473,3.473,0,0,0,97.671,71h-3.4v6.82h1.735V75.408h.833a3.21,3.21,0,0,0,2.065-.573,2.03,2.03,0,0,0,.746-1.735,2.655,2.655,0,0,0-.087-.642Zm-1.735,1.18a.642.642,0,0,1-.26.226,1.232,1.232,0,0,1-.382.1h-1.18V72.388h1.267a.9.9,0,0,1,.4.087.642.642,0,0,1,.226.208,1.041,1.041,0,0,1,0,.451,1.076,1.076,0,0,1-.087.5Z" transform="translate(-70.531 -23.123)" fill="#2b2b2b"/>
+          <path id="Path_2188" data-name="Path 2188" d="M101.043,71.044v-.1H99.307L96.93,77.76h1.735l.521-1.544h2.082l.521,1.544h1.735Zm-1.527,3.731.607-1.961.625,1.961Z" transform="translate(-68.575 -23.167)" fill="#2b2b2b"/>
+          <path id="Path_2189" data-name="Path 2189" d="M106.206,72.458a2.828,2.828,0,0,0-.243-.59,2.151,2.151,0,0,0-.434-.451,2.082,2.082,0,0,0-.555-.278,3.47,3.47,0,0,0-.642-.139H101v6.82h1.735V75.408h.85a3.28,3.28,0,0,0,2.065-.573,2.065,2.065,0,0,0,.729-1.735A2.655,2.655,0,0,0,106.206,72.458Zm-1.961,1.18a.5.5,0,0,1-.243.226,1.232,1.232,0,0,1-.382.1h-1.2V72.388h1.215a.971.971,0,0,1,.4.087.642.642,0,0,1,.226.208,1.041,1.041,0,0,1,.087.451.85.85,0,0,1-.1.5Z" transform="translate(-65.583 -23.123)" fill="#2b2b2b"/>
+          <path id="Path_2190" data-name="Path 2190" d="M138.722,43.41H86.664a6.074,6.074,0,0,0-6.074,6.074v55.529a6.074,6.074,0,0,0,6.074,6.074h52.059a6.074,6.074,0,0,0,6.074-6.074V49.484a6.074,6.074,0,0,0-6.074-6.074Zm4.338,61.6a4.338,4.338,0,0,1-4.338,4.338H86.664a4.338,4.338,0,0,1-4.338-4.338V49.484a4.338,4.338,0,0,1,4.338-4.338h52.059a4.338,4.338,0,0,1,4.338,4.338Z" transform="translate(-80.59 -43.41)" fill="#2b2b2b"/>
+        </g>
+        <g id="Group_319" data-name="Group 319" transform="translate(69.932 75.329)" opacity="0.9" style="mix-blend-mode: multiply;isolation: isolate">
+          <path id="Path_2191" data-name="Path 2191" d="M64.93,86.985h-.156l-6.056-8.676a.486.486,0,0,1,0-.486L64.9,69.147h.156v3.627h5.622s.1,0,0-.139l-4.928-8.8a.434.434,0,0,1,.174-.625l8.52-4.789a.486.486,0,0,1,.642.191L80.7,68.591a1.388,1.388,0,0,1,0,1.354L73.311,82.994a1.44,1.44,0,0,1-1.128.694H65.034a.087.087,0,0,0,0,.087Z" transform="translate(-26.806 -32.41)" fill="#2b2b2b"/>
+          <path id="Path_2192" data-name="Path 2192" d="M77.017,57.73a.087.087,0,0,1-.121,0l-3.609-6.2a1.423,1.423,0,0,0-1.18-.625H57.27a1.406,1.406,0,0,0-1.2.659l-5.813,9.909a.486.486,0,0,0,.156.659l8.329,4.928a.538.538,0,0,0,.746-.191L64.7,58.2h.139l2.829,4.772v.121l-3.176,1.735a.087.087,0,1,0,0,.174l10.551,1.041a.5.5,0,0,0,.434-.243L79.9,56.272l-.121-.1Z" transform="translate(-33.028 -37.895)" fill="#2b2b2b"/>
+          <path id="Path_2193" data-name="Path 2193" d="M49.742,62.111v.121l-3.471,6.212a1.406,1.406,0,0,0,0,1.336l7.41,12.859a1.388,1.388,0,0,0,1.163.694l11.453.1a.451.451,0,0,0,.486-.451l.121-9.77a.469.469,0,0,0-.469-.469l-10.1-.087a.087.087,0,0,1,0-.139l2.707-4.841h.1l3.141,1.857a.087.087,0,0,0,.121-.121l-4.338-9.683a.469.469,0,0,0-.434-.243l-10.568.885v.156Z" transform="translate(-36.033 -31.587)" fill="#2b2b2b"/>
+          <path id="Path_2194" data-name="Path 2194" d="M98.432,43.41H46.374A6.074,6.074,0,0,0,40.3,49.484v55.529a6.074,6.074,0,0,0,6.074,6.074H98.432a6.074,6.074,0,0,0,6.074-6.074V49.484a6.074,6.074,0,0,0-6.074-6.074Zm4.338,61.6a4.356,4.356,0,0,1-4.338,4.338H46.374a4.338,4.338,0,0,1-4.338-4.338V49.484a4.338,4.338,0,0,1,4.338-4.338H98.432a4.356,4.356,0,0,1,4.338,4.338Z" transform="translate(-40.3 -43.41)" fill="#2b2b2b"/>
+        </g>
+        <g id="Group_321" data-name="Group 321" transform="translate(0 75.329)" opacity="0.9" style="mix-blend-mode: multiply;isolation: isolate">
+          <path id="Path_2208" data-name="Path 2208" d="M25.987,50.958a20.824,20.824,0,1,0,15.6,5.606,20.824,20.824,0,0,0-15.6-5.606ZM27.81,85.23h-.486v4.737h-.087c-2.343-.469-10.1-5.4-10.1-10.256s7.722-9.423,10.1-9.891h.087v4.217s0,.087.087,0c2.395-.469,11.47-5.206,11.418-10.013S29.562,54.533,27.41,54.1h-.087v4.269h-.1c-9.232,0-14.42,6.941-15.826,14.143a20.546,20.546,0,0,0,1.163,12.147A20.476,20.476,0,0,1,8.1,71.886c0-10.863,8.121-19.661,18.134-19.661H27.81A16.537,16.537,0,0,1,44.347,68.762a14.072,14.072,0,0,1,0,1.492,12.722,12.722,0,0,1-.226,1.631,4.544,4.544,0,0,1-.208.937A16.537,16.537,0,0,1,27.81,85.23Z" transform="translate(4.779 -37.891)" fill="#2b2b2b"/>
+          <path id="Path_2209" data-name="Path 2209" d="M58.132,43.41H6.074A6.074,6.074,0,0,0,0,49.484v55.529a6.074,6.074,0,0,0,6.074,6.074H58.132a6.074,6.074,0,0,0,6.074-6.074V49.484a6.074,6.074,0,0,0-6.074-6.074Zm4.338,61.6a4.338,4.338,0,0,1-4.338,4.338H6.074a4.338,4.338,0,0,1-4.338-4.338V49.484a4.338,4.338,0,0,1,4.338-4.338H58.132a4.338,4.338,0,0,1,4.338,4.338Z" transform="translate(0 -43.41)" fill="#2b2b2b"/>
+        </g>
+        <g id="Group_322" data-name="Group 322" transform="translate(209.78 75.329)" opacity="0.9" style="mix-blend-mode: multiply;isolation: isolate">
+          <path id="Path_2210" data-name="Path 2210" d="M159.847,66.894l-5.779-2.117v-.121l3.8-3.366v-.121L149.782,56.5H149.7l-4.269,3.471h-.087l-4.234-3.332h-.087l-8.572,4.789v.1L136.681,65v.121l-5.5,2.447v.121l8.034,4.581h0l6.091-2.62h0l6.16,2.186L159.778,67Zm-14.559,2.481h0l-7.514-4.217v-.121l7.635-4.234h0l7.34,4.147v.121Z" transform="translate(-113.324 -33.785)" fill="#2b2b2b"/>
+          <path id="Path_2211" data-name="Path 2211" d="M134.425,66.067l2.152,1.18h0L142.39,64.8h.1v8.676h-.1l-8-4.373V66.136Z" transform="translate(-110.964 -27.682)" fill="#2b2b2b"/>
+          <path id="Path_2212" data-name="Path 2212" d="M139.774,64.731l5.518,1.944h0l1.839-.972h.1v3.644L139.774,73.6h-.1V64.8S139.739,64.714,139.774,64.731Z" transform="translate(-107.081 -27.734)" fill="#2b2b2b"/>
+          <path id="Path_2213" data-name="Path 2213" d="M162.879,73.61l5.761.711a20.824,20.824,0,1,1-.9-9.128h.087l1.388-.33.087.1-3.349,5.206h0l-5.414-3.089v-.121l1.423-.347a.1.1,0,0,0,0-.1,14.906,14.906,0,1,0,.781,6.941Z" transform="translate(-116.286 -37.881)" fill="#2b2b2b"/>
+          <path id="Path_2214" data-name="Path 2214" d="M179.022,43.41H126.964a6.074,6.074,0,0,0-6.074,6.074v55.529a6.074,6.074,0,0,0,6.074,6.074h52.059a6.074,6.074,0,0,0,6.074-6.074V49.484a6.074,6.074,0,0,0-6.074-6.074Zm4.338,61.6a4.338,4.338,0,0,1-4.338,4.338H126.964a4.338,4.338,0,0,1-4.338-4.338V49.484a4.338,4.338,0,0,1,4.338-4.338h52.059a4.338,4.338,0,0,1,4.338,4.338Z" transform="translate(-120.89 -43.41)" fill="#2b2b2b"/>
+        </g>
+        <g id="Group_324" data-name="Group 324" transform="translate(139.847)" opacity="0.9" style="mix-blend-mode: multiply;isolation: isolate">
+          <path id="Path_2221" data-name="Path 2221" d="M138.722,0H86.664A6.074,6.074,0,0,0,80.59,6.074V61.6a6.074,6.074,0,0,0,6.074,6.074h52.059A6.074,6.074,0,0,0,144.8,61.6V6.074A6.074,6.074,0,0,0,138.722,0Zm4.338,61.6a4.338,4.338,0,0,1-4.338,4.338H86.664A4.338,4.338,0,0,1,82.325,61.6V6.074a4.338,4.338,0,0,1,4.338-4.338h52.059a4.338,4.338,0,0,1,4.338,4.338Z" transform="translate(-80.59)" fill="#2b2b2b"/>
+        </g>
+        <g id="Group_325" data-name="Group 325" transform="translate(153.886 13.077)" opacity="0.9" style="mix-blend-mode: multiply;isolation: isolate">
+          <path id="Path_2222" data-name="Path 2222" d="M102.862,13.688a1.284,1.284,0,0,0,1.735-.416,7.827,7.827,0,0,0,.451-2.742h-.1a7.739,7.739,0,0,0-2.395,1.406,1.3,1.3,0,0,0,.312,1.753Z" transform="translate(-78.637 -5.334)" fill="#2b2b2b"/>
+          <path id="Path_2223" data-name="Path 2223" d="M100.788,10.719a1.319,1.319,0,0,0,1.735-.434,7.739,7.739,0,0,0,.451-2.724.087.087,0,0,0-.121,0,7.722,7.722,0,0,0-2.377,1.423,1.3,1.3,0,0,0,.312,1.735Z" transform="translate(-80.156 -7.536)" fill="#2b2b2b"/>
+          <path id="Path_2224" data-name="Path 2224" d="M105.632,12.7a1.319,1.319,0,0,0,1.735-.416,7.826,7.826,0,0,0,.451-2.742H107.7a7.34,7.34,0,0,0-2.377,1.406,1.3,1.3,0,0,0,.312,1.753Z" transform="translate(-76.6 -6.062)" fill="#2b2b2b"/>
+          <path id="Path_2225" data-name="Path 2225" d="M107.89,12.991h0V11.88h-2.082v1.111A19.973,19.973,0,0,0,88.68,24.86l.121.087a4.651,4.651,0,0,1,3.7-1.839,4.6,4.6,0,0,1,3.471,1.735h.1a4.6,4.6,0,0,1,7.115,0h.1a4.772,4.772,0,0,1,2.325-1.51.087.087,0,0,1,.1.087V41.484a2.169,2.169,0,1,1-4.338,0H99.005a4.442,4.442,0,1,0,8.867,0V23.368a.087.087,0,0,1,.1-.087,4.651,4.651,0,0,1,2.308,1.51h.121a4.581,4.581,0,0,1,7.1,0h.121a4.6,4.6,0,0,1,3.471-1.735,4.651,4.651,0,0,1,3.7,1.839h.139A19.973,19.973,0,0,0,107.89,12.991Z" transform="translate(-88.68 -4.341)" fill="#2b2b2b"/>
+          <path id="Path_2226" data-name="Path 2226" d="M102.862,13.688a1.284,1.284,0,0,0,1.735-.416,7.827,7.827,0,0,0,.451-2.742h-.1a7.739,7.739,0,0,0-2.395,1.406,1.3,1.3,0,0,0,.312,1.753Z" transform="translate(-78.637 -5.334)" fill="#2b2b2b"/>
+          <path id="Path_2227" data-name="Path 2227" d="M100.788,10.719a1.319,1.319,0,0,0,1.735-.434,7.739,7.739,0,0,0,.451-2.724.087.087,0,0,0-.121,0,7.722,7.722,0,0,0-2.377,1.423,1.3,1.3,0,0,0,.312,1.735Z" transform="translate(-80.156 -7.536)" fill="#2b2b2b"/>
+          <path id="Path_2228" data-name="Path 2228" d="M105.632,12.7a1.319,1.319,0,0,0,1.735-.416,7.826,7.826,0,0,0,.451-2.742H107.7a7.34,7.34,0,0,0-2.377,1.406,1.3,1.3,0,0,0,.312,1.753Z" transform="translate(-76.6 -6.062)" fill="#2b2b2b"/>
+          <path id="Path_2229" data-name="Path 2229" d="M107.89,12.991h0V11.88h-2.082v1.111A19.973,19.973,0,0,0,88.68,24.86l.121.087a4.651,4.651,0,0,1,3.7-1.839,4.6,4.6,0,0,1,3.471,1.735h.1a4.6,4.6,0,0,1,7.115,0h.1a4.772,4.772,0,0,1,2.325-1.51.087.087,0,0,1,.1.087V41.484a2.169,2.169,0,1,1-4.338,0H99.005a4.442,4.442,0,1,0,8.867,0V23.368a.087.087,0,0,1,.1-.087,4.651,4.651,0,0,1,2.308,1.51h.121a4.581,4.581,0,0,1,7.1,0h.121a4.6,4.6,0,0,1,3.471-1.735,4.651,4.651,0,0,1,3.7,1.839h.139A19.973,19.973,0,0,0,107.89,12.991Z" transform="translate(-88.68 -4.341)" fill="#2b2b2b"/>
+        </g>
+        <g id="Group_326" data-name="Group 326" transform="translate(279.695 75.329)" opacity="0.9" style="mix-blend-mode: multiply;isolation: isolate">
+          <path id="Path_2230" data-name="Path 2230" d="M219.312,43.41H167.254a6.091,6.091,0,0,0-6.074,6.074v55.529a6.091,6.091,0,0,0,6.074,6.074h52.059a6.074,6.074,0,0,0,6.074-6.074V49.484a6.074,6.074,0,0,0-6.074-6.074Zm4.338,61.6a4.338,4.338,0,0,1-4.338,4.338H167.254a4.356,4.356,0,0,1-4.338-4.338V49.484a4.356,4.356,0,0,1,4.338-4.338h52.059a4.338,4.338,0,0,1,4.338,4.338Z" transform="translate(-161.18 -43.41)" fill="#2b2b2b"/>
+          <circle id="Ellipse_240" data-name="Ellipse 240" cx="3.349" cy="3.349" r="3.349" transform="translate(31.582 13.032)" fill="#2b2b2b"/>
+          <path id="Path_2231" data-name="Path 2231" d="M182.54,62.08H170.393a.382.382,0,0,0-.382.434l.538,3.106.139.8.364,2.082.139.8.347,2.082.139.816.364,2.082.139.8.347,2.082.139.8.364,2.082.139.8.538,3.193a.364.364,0,0,0,.364.312h8.763a.364.364,0,0,0,.364-.312l.555-3.193.139-.8.347-2.082.139-.8.364-2.082.139-.8.347-2.082.139-.816.364-2.082.139-.8.347-2.082.139-.8.538-3.106a.382.382,0,0,0-.382-.434Zm-1.059,1.562-.191,1.978h-5.553l-.208-1.944ZM176.016,68.5l-.208-2.082h5.4L181,68.5Zm4.911.8-.208,2.082h-4.408L176.1,69.3Zm-9.405-3.679-.33-1.944h3.471l.191,1.978Zm.5,2.881-.364-2.082h3.245l.208,2.082Zm.486,2.881-.347-2.082H175.2l.208,2.082Zm.5,2.9-.364-2.082h2.829l.208,2.082Zm.139.8h2.6l.208,2.082h-2.5Zm.486,2.881h2.412l.191,2.082H174Zm.833,4.824-.33-1.944h2.186l.191,1.944Zm5.119,0h-2.169l-.191-1.944h2.551Zm.26-2.742h-2.69l-.208-2.082h3.106Zm.295-2.881h-3.21l-.191-2.082h3.661Zm-3.471-2.881-.208-2.082h4.251l-.208,2.082Zm5.952,8.5h-2.048l.191-1.944h2.186Zm.469-2.742h-2.239l.208-2.082h2.395Zm.5-2.881h-2.464l.208-2.082h2.534Zm.486-2.881H181.43l.191-2.082h2.829Zm.5-2.9h-2.967l.208-2.082h3.019Zm.486-2.881h-3.089l.208-2.082h3.245Zm-2.933-2.881.191-1.978H185.8l-.33,1.978Z" transform="translate(-154.689 -29.682)" fill="#2b2b2b"/>
+          <path id="Path_2232" data-name="Path 2232" d="M177.624,64.324a.469.469,0,0,1-.208,0l-5.31-2.794a.451.451,0,0,1-.243-.347.434.434,0,0,1,.139-.4l2.429-2.412c.1,0,.191-.174.347-.139a.521.521,0,0,1,.347.174l1.267,1.51,2.1-2.5a.434.434,0,0,1,.469-.139.451.451,0,0,1,.33.347l.625,2.794a.434.434,0,0,1,0,.33l-1.822,3.332A.468.468,0,0,1,177.624,64.324Zm-4.546-3.332,4.356,2.256,1.614-2.794-.382-1.735-1.839,2.186a.486.486,0,0,1-.364.174h0a.451.451,0,0,1-.347-.174L174.8,59.361Z" transform="translate(-153.33 -33.228)" fill="#2b2b2b"/>
+          <path id="Path_2233" data-name="Path 2233" d="M201.94,69.046,194.079,55.06l-21.9,1.024.711.92,13.084.764,2.256,10.724V89.506h3.228V72.517H193.4V89.506h3.037V68.491l-1.319-7.5,6.282,8.867Z" transform="translate(-153.092 -34.844)" fill="#2b2b2b"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
+
+          </div>
+            <div style="" class="footer__credits one-whole column">
+              {% assign menu = linklists[section.settings.menu_1] %}
+  
+  
+            
+              <p class="fat-footer-cta">LOVE YOUR BOX<span>.</span></p>
+             
+                <p class="copy-content">&copy; 2020 Fatbox. All rights reserved. </p>
+             
+            </div>
+            {% if section.settings.display_payment_methods %}
+              <div class="footer__payment-methods payment-methods one-whole column">
+                {% for type in shop.enabled_payment_types %}
+                  {{ type | payment_type_svg_tag: class:'payment-icon' }}
+                {% endfor %}
+              </div>
+            {% endif %}
+        
+        </section>
+      </div>
+    </div>
+    {% if section.settings.enable_promo %}
+      <aside class="one-third  is-align-center column medium-down--one-whole footer__promo-container card-content">
+        <div class="footer__promo-image">
+          {% if section.settings.promo_link %}
+            <a href="{{ section.settings.promo_link }}">
+          {% endif %}
+            {% if section.settings.promo_image %}
+              {% render 'image-element',
+                      image: section.settings.promo_image,
+                      alt: section.settings.promo_image.alt
+              %}
+            {% else %}
+              {{ 'collection-1' | placeholder_svg_tag: 'placeholder-svg' }}
+            {% endif %}
+          {% if section.settings.promo_link %}
+            </a>
+          {% endif %}
+        </div>
+        <div class="footer__promo-content container text-align-center">
+          <div class="one-whole column">
+            {% if section.settings.richtext != blank %}
+              <div class="has-padding-top">
+                {{ section.settings.richtext }}
+              </div>
+            {% endif %}
+
+            {% if section.settings.button_label != blank %}
+              <div class="has-padding-top">
+                {% render 'button',
+                        label: section.settings.button_label,
+                        href: section.settings.promo_link,
+                        type: "link",
+                        style: section.settings.button_style
+                %}
+              </div>
+            {% endif %}
+
+          </div>
+        </div>
+      </aside>
+    {% endif %}
+  </div>
+</footer>
+
+{% schema %}
+{
+  "name": "Footer",
+  "class": "footer footer--promotional",
+  "max_blocks": 7,
+  "settings": [
+{
+          "type": "link_list",
+          "id": "menu_1",
+          "label": "Bottom Menu",
+          
+          "default": "footer"
+        },
+    {
+      "type": "richtext",
+      "id": "copyright_text",
+      "label": "Copyright text"
+    },
+    {
+      "type": "checkbox",
+      "id": "display_designed_by",
+      "label": "Show theme designer credits",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "display_shopify",
+      "label": "Show Powered by Shopify",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "display_payment_methods",
+      "label": "Show payment method icons",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Language selector",
+      "info": "To add a language, go to your [language settings.](/admin/settings/languages)"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_locale_selector",
+      "label": "Show language selector",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Currency selector",
+      "info": "To add a currency, go to your [payment settings.](/admin/settings/payments)"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_currency_selector",
+      "label": "Show currency selector",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Promotion"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_promo",
+      "label": "Enable promotion",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "promo_background",
+      "label": "Background",
+      "default": "#EEEEEE"
+    },
+    {
+      "type": "color",
+      "id": "promo_text",
+      "label": "Text",
+      "default": "#000000"
+    },
+    {
+      "type": "select",
+      "id": "promo_position",
+      "label": "Position",
+      "options": [
+        {
+          "value": "row-reverse",
+          "label": "Left"
+        },
+        {
+          "value": "row",
+          "label": "Right"
+        }
+      ],
+      "default": "row-reverse"
+    },
+    {
+      "type": "image_picker",
+      "id": "promo_image",
+      "label": "Image",
+      "info": "800 x 500px recommended"
+    },
+    {
+      "type": "richtext",
+      "id": "richtext",
+      "label": "Text",
+      "default": "<p>Use this area for promotional information.</p>"
+    },
+    {
+      "type": "url",
+      "id": "promo_link",
+      "label": "Link"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label",
+      "default": "Shop now"
+    },
+    {
+      "type": "select",
+      "id": "button_style",
+      "label": "Button Style",
+      "options": [
+        {
+          "value": "button--primary",
+          "label": "Primary"
+        },
+        {
+          "value": "button--secondary",
+          "label": "Secondary"
+        },
+        {
+          "value": "button--link-style",
+          "label": "Link style"
+        }
+      ],
+      "default": "button--primary"
+    },
+    {
+      "type": "header",
+      "content": "Advanced",
+      "info": "[Learn more](https://help.outofthesandbox.com/hc/en-us/articles/360022329373)"
+    },
+    {
+      "type": "text",
+      "id": "css_class",
+      "label": "CSS Class"
+    },
+    {
+      "type": "textarea",
+      "id": "custom_css",
+      "label": "Custom CSS"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "name": "Custom HTML",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "html_content",
+          "label": "HTML",
+          "default": "<h2 class='footer__heading'>Your own custom HTML</h2>"
+        }
+      ]
+    },
+    {
+      "type": "logo",
+      "name": "Logo",
+      "settings": [
+       
+      ]
+    },
+    {
+      "type": "link_list",
+      "name": "Menus",
+      "settings": [
+        {
+          "type": "link_list",
+          "id": "menu_1",
+          "label": "Menu 1",
+          "info": "This menu won't show drop-down items.",
+          "default": "footer"
+        },
+        {
+          "type": "link_list",
+          "id": "menu_2",
+          "label": "Menu 2",
+          "info": "This menu won't show drop-down items."
+        },
+        {
+          "type": "link_list",
+          "id": "menu_3",
+          "label": "Menu 3",
+          "info": "This menu won't show drop-down items."
+        }
+      ]
+    },
+   
+    {
+      "type": "text",
+      "name": "Text",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Title"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Text",
+          "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+        },
+ {
+          "type": "image_picker",
+          "id": "logo",
+          "label": "Logo",
+          "info": "500 x 200px recommended"
+        },
+        {
+          "type": "select",
+          "id": "size",
+          "label": "Logo size",
+          "default": "small",
+          "options": [
+            {
+              "value": "small",
+              "label": "Small"
+            },
+            {
+              "value": "medium",
+              "label": "Medium"
+            },
+            {
+              "value": "large",
+              "label": "Large"
+            }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "alignment",
+          "label": "Alignment",
+          "options": [
+            {
+              "value": "start",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "end",
+              "label": "Right"
+            }
+          ],
+          "default": "start"
+        }
+      ]
+    },
+    {
+      "type": "social",
+      "name": "Social icons",
+      "limit": 1,
+      "settings": [
+      ]
+    }
+  ],
+  "default": {
+    "blocks": [
+      {
+        "type": "logo"
+      },
+      {
+        "type": "link_list",
+        "settings": {
+          "menu_1": "main-menu"
+        }
+      },
+      {
+        "type": "text"
+      }
+    ]
+  }
+}
+{% endschema %}

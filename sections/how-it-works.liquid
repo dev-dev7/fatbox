@@ -1,0 +1,198 @@
+
+    <div id="section-kit-include" class="LM3-vB">
+ <div class="col-md-11" id="lm3-scroll">
+        <div id="index" class="row modun-row LM3-modun-1">
+          <div class="col-md-6 col-sm-7 col-xs-12">
+            <div class="content-inner text-right">
+              <label>01</label>
+              <img src="{{section.settings.svg}}">
+              <h3>{{section.settings.title}}</h3>
+              <p>{{section.settings.subtitle}}</p>
+              
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-5 col-xs-12">
+            <img class="product-icl-image lazyloaded" src="{{section.settings.image1 | img_url:"original"}}" alt="{{section.settings.image1.alt}}">
+
+          </div>
+        </div>
+        <div id="page1" class="row modun-row LM3-modun-2">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="content-inner text-left">
+              <label>02</label>
+              <img src="{{section.settings.svg2}}">
+             <h3>{{section.settings.title2}}</h3>
+              <p>{{section.settings.subtitle2}}</p>
+              
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-5 col-xs-12">
+            <img class="product-icl-image lazyloaded" src="{{section.settings.image2 | img_url:"original"}}" alt="{{section.settings.image2.alt}}">
+
+          </div>
+        </div>
+        <div id="page2" class="row modun-row LM3-modun-3">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="content-inner text-left">
+              <label>03</label>
+              <img src="{{section.settings.svg3}}">
+                    <h3>{{section.settings.title3}}</h3>
+              <p>{{section.settings.subtitle3}}</p>
+              
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-5 col-xs-12">
+            <img class="product-icl-image lazyloaded" src="{{section.settings.image3 | img_url:"original"}}" alt="{{section.settings.image3.alt}}">
+
+          </div>
+            </div>
+     
+        <div id="page3" class="row modun-row LM3-modun-4">
+          <div class="col-lg-6 col-md-5 col-sm-5 col-xs-12">
+            <div class="content-inner text-right">
+              <label>04</label>
+              <img src="{{section.settings.svg4}}">
+                   <h3>{{section.settings.title4}}</h3>
+              <p>{{section.settings.subtitle4}}</p>
+              
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-5 col-xs-12">
+            <img class="product-icl-image lazyloaded" src="{{section.settings.image4 | img_url:"original"}}" alt="{{section.settings.image4.alt}}">
+
+          </div>
+          </div>
+      </div>
+</div>
+
+
+  {{ 'custom-master.css' | asset_url | stylesheet_tag }}
+
+
+
+{% schema %}
+{
+  "name": "how it works",
+  "class": "icon-with-text-column",
+ 
+  "settings": [
+  {
+          "type": "image_picker",
+          "id": "image1",
+          "label": "Image 1"
+          
+        },
+ {
+          "type": "url",
+          "id": "svg",
+          "label": "icon svg url 1"
+          
+        },
+    {
+          "type": "text",
+          "id": "title",
+          "label": "Title 1",
+          "default": "Design Online With FatDesigner"
+        },
+{
+          "type": "text",
+          "id": "subtitle",
+          "label": "subTitle 1",
+          "default": "Excepteur sint occaecat cupidatat non proident, sunt culpa qui officia deserunt fume mollit anim id est lorum."
+        },
+ {
+          "type": "image_picker",
+          "id": "image2",
+          "label": "Image 2"
+          
+        },
+ {
+          "type": "url",
+          "id": "svg2",
+          "label": "icon svg url 2"
+          
+        },
+  {
+          "type": "text",
+          "id": "title2",
+          "label": "Title 2",
+          "default": "100% Recyclable"
+        },
+{
+          "type": "text",
+          "id": "subtitle2",
+          "label": "subTitle 2",
+          "default": "Excepteur sint occaecat cupidatat non proident, sunt culpa qui officia deserunt fume mollit anim id est lorum."
+        },
+ {
+          "type": "image_picker",
+          "id": "image3",
+          "label": "Image 3"
+          
+        },
+ {
+          "type": "url",
+          "id": "svg3",
+          "label": "icon svg url 3"
+          
+        },
+ {
+          "type": "text",
+          "id": "title3",
+          "label": "Title 3",
+          "default": "Digital CMYK Printing"
+        },
+{
+          "type": "text",
+          "id": "subtitle3",
+          "label": "subTitle 3",
+          "default": "Excepteur sint occaecat cupidatat non proident, sunt culpa qui officia deserunt fume mollit anim id est lorum."
+        },
+ {
+          "type": "image_picker",
+          "id": "image4",
+          "label": "Image 4"
+          
+        },
+ {
+          "type": "url",
+          "id": "svg4",
+          "label": "icon svg url 4"
+          
+        },
+{
+          "type": "text",
+          "id": "title4",
+          "label": "Title 4",
+          "default": "Fast Turnaround Times"
+        },
+{
+          "type": "text",
+          "id": "subtitle4",
+          "label": "subTitle 4",
+          "default": "Excepteur sint occaecat cupidatat non proident, sunt culpa qui officia deserunt fume mollit anim id est lorum."
+        },
+ 
+    
+    
+    {
+      "type": "text",
+      "id": "css_class",
+      "label": "CSS Class"
+    },
+    {
+      "type": "textarea",
+      "id": "custom_css",
+      "label": "Custom CSS"
+    }
+  ],
+
+  "presets": [
+    {
+      "name": "How it works",
+      "category": "Text"
+     
+    }
+  ]
+}
+{% endschema %}

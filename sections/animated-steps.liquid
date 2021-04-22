@@ -1,0 +1,499 @@
+<style>
+ #shopify-section-{{ section.id }} { 
+    background:#F7F8FA;
+  }
+</style>
+{{ 'animate.scss.css' | asset_url | stylesheet_tag }}
+ 
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+            integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js"
+            integrity="sha512-judXDFLnOTJsUwd55lhbrX3uSoSQSOZR6vNrsll+4ViUFv+XOIr/xaIK96soMj6s5jVszd7I97a0H+WhgFwTEg=="
+            crossorigin="anonymous"></script>
+
+<div class="text-center is-center section page-width container">
+
+    <!--  left  -->
+    <h2 class="fatbox__h1 image-with-text-overlay__heading banner__heading title">
+                <span>{{ section.settings.title }}</span>
+              </h2>
+  </div>
+
+
+
+<div id="main" class="bg-gray-100 flex flex-row ">
+
+  <!--  left  -->
+
+  <div class="w-1/2 flex flex-row pl-16 pr-48 space-x-12">
+
+    <div class="flex flex-col justify-center space-y-24 pt-20">
+
+      <span id="step-1-number" class="block text-5xl font-bold">1</span>
+
+      <span id="step-2-number" class="block text-5xl font-bold text-white">2</span>
+
+      <span id="step-3-number" class="block text-5xl font-bold text-white">3</span>
+
+    </div>
+
+    <div class="flex flex-col content-center justify-center space-y-10">
+
+      <div class="bg-white rounded w-1 relative" style="height: 400px;">
+
+        <div id="slider" class="bg-black rounded w-1 h-48 absolute" style="top: 0;"></div>
+
+      </div>
+
+    </div>
+
+    <div class="flex flex-col content-center justify-center space-y-10 pt-24">
+
+      <div>
+        <span onclick="goToStep(1)" class="block text-2xl font-extrabold mb-4 cursor-pointer"> {{section.settings.step1}}</span>
+
+        <p id="step-1-text" class="text-sm">{{section.settings.step1text}}</p>
+      </div>
+
+      <div>
+        <span onclick="goToStep(2)" id="step-2-label" class="block text-2xl font-extrabold mb-4 cursor-pointer">{{section.settings.step2}}</span>
+
+        <p id="step-2-text" class="block text-sm opacity-0">{{section.settings.step2text}}.</p>
+      </div>
+
+      <div>
+        <span onclick="goToStep(3)" id="step-3-label" class="block text-2xl font-extrabold mb-4 cursor-pointer"> {{section.settings.step3}}</span>
+
+        <p id="step-3-text" class="block text-sm" style="opacity: 0">{{section.settings.step3text}}</p>
+      </div>
+
+    </div>
+
+  </div>
+  <!--  right  -->
+
+  <div class="w-full lg-w-12 flex flex-col justify-center pt-32">
+
+    <div class="relative px-10 md-px-0 ">
+
+      <div id="background" class="h-96 bg-white rounded-lg"></div>
+      <img id="sidebar-menu" class="absolute w-24" src="{{'sidebar-menu.png' | asset_img_url: '300x'}}" alt="Sidebar menu" />
+      <img id="sidebar-menu-2" class="opacity-0 absolute w-24" src="{{'sidebar-menu-2.png' | asset_img_url: '300x'}}" alt="Sidebar menu 2" />
+      <div id="product-box-wrapper" class="absolute bg-purple-500 w-56 h-56 rounded-lg pt-6">
+        <span id="product-box-title" class="display-block text-white text-sm font-semibold">Product Box</span>
+      </div>
+      <img id="product-box-colored" class="absolute display-block ml-14" src="{{'product-white.png' | asset_img_url: "350x"}}" alt="Product box colored">
+      <img id="product-box-colored2" class="none-show absolute  ml-14" src="https://cdn.shopify.com/s/files/1/0482/1843/9847/files/group-3.png?v=1606952690" alt="Product box colored">
+
+      <div id="ecommerce-box" class="absolute bg-purple-500 w-40 h-40 rounded-lg text-center pt-6">
+        <span class="display-block text-white text-sm font-semibold">E-commerce Box</span>
+
+        <img class="display-block mt-4 ml-4 w-32" src="{{'ecommerce-box.png' | asset_img_url}}" alt="E-commerce box">
+      </div>
+
+      <div id="checkout-button" class="opacity-0 absolute bg-green-300 rounded-lg h-20 flex flex-col justify-center px-6 display-block font-semibold">
+        <svg style="    margin-right: 5px;
+                    margin-bottom: 5px;" xmlns="http://www.w3.org/2000/svg" width="16.5" height="19.833" viewBox="0 0 16.5 19.833">
+          <g id="bag-20_1_" data-name="bag-20 (1)" transform="translate(-2.25 -0.25)">
+            <path id="Path_172" data-name="Path 172" d="M18,19.333H3V6H18Z" fill="none" stroke="#000" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1.5"/>
+            <path id="Path_173" data-name="Path 173" d="M8,9V5a4.012,4.012,0,0,1,4-4h0a4.012,4.012,0,0,1,4,4V9" transform="translate(-1.5)" fill="none" stroke="#000" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1.5"/>
+          </g>
+        </svg>
+        Checkout
+      </div>
+      <div id="buy-button" class="opacity-0 absolute bg-black text-white rounded-lg h-20 flex flex-col justify-center px-8 display-block capitalize font-semibold">Buy now</div>
+      <img id="cursor-pointer" class="absolute"  src="{{'cursor-pointer.png' | asset_img_url}}" alt="Cursor pointer" />
+
+      <div id="invoice" class="opacity-0 absolute right-0 w-96 pl-24 mr-10">
+        <span class="text-md font-semibold">Product Box</span>
+        <span class="text-md font-semibold float-right" style="    position: absolute;
+                                                               right: -5rem;">$3.25</span>
+
+        <div id="invoice-item-1" style="width: 276px;
+                                        height: 18px;" class="bg-gray-100 w-304 h-5 mt-4 mb-2 rounded"></div>
+        <div id="invoice-item-2" class="bg-gray-100 w-304 h-5 mb-2 rounded ml-6"></div>
+        <div id="invoice-item-3" class="bg-gray-100 w-204 h-5 mb-2 rounded ml-12"></div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<script>
+  function goToStep(step) {
+    //controller.scrollTo('#' + step)    
+    if(step === 2) {
+      $('#sidebar-menu-2').stop(true,false).animate({ 'opacity': '1' }, {duration:6000});
+      $('#buy-button, #slider,#invoice-item-3, #sidebar-menu-2, #invoice-item-2, #invoice, #step-3-number, #step-3-label, #step-3-text, #step-1-number, #step-1-text, #step-2-label, #step-2-text, #step-2-number, #background, #sidebar-menu, #sidebar-menu-2, #product-box-wrapper, #product-box-title, #product-box-colored, #product-box-colored2, #checkout-button, #ecommerce-box, #cursor-pointer').removeClass('active-step-1 active-step-3').addClass('active-step-2');
+    } else if(step === 3) {
+      $('#buy-button, #slider,#invoice-item-3, #sidebar-menu-2, #invoice-item-2, #invoice, #step-3-number, #step-3-label, #step-3-text, #step-1-number, #step-1-text, #step-2-label, #step-2-text, #step-2-number, #background, #sidebar-menu, #sidebar-menu-2, #product-box-wrapper, #product-box-title, #product-box-colored, #product-box-colored2, #checkout-button, #ecommerce-box, #cursor-pointer').removeClass('active-step-1 active-step-2').addClass('active-step-3');
+    } else {
+      $('#buy-button, #slider,#invoice-item-3, #sidebar-menu-2, #invoice-item-2, #invoice, #step-3-number, #step-3-label, #step-3-text, #step-1-number, #step-1-text, #step-2-label, #step-2-text, #step-2-number, #background, #sidebar-menu, #sidebar-menu-2, #product-box-wrapper, #product-box-title, #product-box-colored, #product-box-colored2, #checkout-button, #ecommerce-box, #cursor-pointer').removeClass('active-step-2 active-step-3').addClass('active-step-1');
+    }
+  }
+</script>
+
+
+{% schema %}
+ {
+     
+      "name": "Image with text",
+ "max_blocks": 20,
+     
+ "settings": [
+
+    {
+      "type": "header",
+      "content": "Advanced",
+      "info": "[Learn more](https://help.outofthesandbox.com/hc/en-us/articles/360022329373)"
+    },
+{
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "HOW IT WORKS"
+        },
+
+{
+          "type": "text",
+          "id": "step1",
+          "label": "step 1",
+          "default": "Select package type"
+        },
+{
+          "type": "text",
+          "id": "step1text",
+          "label": "step 1 text",
+          "default": "this text is now customizable"
+        },
+
+{
+          "type": "text",
+          "id": "step2",
+          "label": "step 2",
+          "default": "Design your package"
+        },
+{
+          "type": "text",
+          "id": "step2text",
+          "label": "step 2 text",
+          "default": "this text is now customizable"
+        },
+{
+          "type": "text",
+          "id": "step3",
+          "label": "step 3",
+          "default": "Checkout and buy"
+        },
+{
+          "type": "text",
+          "id": "step3text",
+          "label": "step 3 text",
+          "default": "this text is now customizable"
+        },
+    {
+      "type": "text",
+      "id": "css_class",
+      "label": "CSS Class"
+    },
+    {
+      "type": "textarea",
+      "id": "custom_css",
+      "label": "Custom CSS"
+    }
+  ],
+  "blocks": [
+   {
+      "type": "image_with_text",
+      "name": "Image with text",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Image"
+        },
+        {
+          "type": "select",
+          "id": "image_position",
+          "label": "Image position",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ]
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image",
+          "info": "1024 x 1024px recommended"
+        },
+        {
+          "type": "select",
+          "id": "image_crop",
+          "label": "Image cropping",
+          "default": "none",
+          "info": "Only applied when text area is taller than the image.",
+          "options": [
+            {
+              "value": "none",
+              "label": "None"
+            },
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ]
+        },
+        {
+          "type": "url",
+          "id": "image_link",
+          "label": "Link"
+        },
+        {
+          "type": "header",
+          "content": "Text"
+        },
+{
+          "type": "url",
+          "id": "svg",
+          "label": "icon svg link"
+          
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Heading text here"
+        },
+        {
+          "type": "select",
+          "id": "heading_size",
+          "label": "Base size",
+          "options": [
+            {
+              "value": "small",
+              "label": "Small"
+            },
+            {
+              "value": "regular",
+              "label": "Regular"
+            },
+            {
+              "value": "large",
+              "label": "Large"
+            }
+          ],
+          "default": "regular"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text",
+          "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "Button label",
+          "default": "View all"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Button link"
+        },
+        {
+          "type": "select",
+          "id": "button_style",
+          "label": "Button style",
+          "options": [
+            {
+              "value": "button--primary",
+              "label": "Primary"
+            },
+            {
+              "value": "button--secondary",
+              "label": "Secondary"
+            },
+            {
+              "value": "button--link-style",
+              "label": "Link style"
+            }
+          ],
+          "default": "button--primary"
+        },
+        {
+          "type": "header",
+          "content": "Text layout"
+        },
+        {
+          "type": "select",
+          "id": "alignment",
+          "label": "Alignment",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ],
+          "default": "left"
+        },
+        {
+          "type": "select",
+          "id": "vertical_position",
+          "label": "Vertical position",
+          "options": [
+            {
+              "value": "start",
+              "label": "Top"
+            },
+            {
+              "value": "center",
+              "label": "Middle"
+            },
+            {
+              "value": "end",
+              "label": "Bottom"
+            }
+          ],
+          "default": "center"
+        },
+        {
+          "type": "header",
+          "content": "Colors"
+        },
+        {
+          "type": "color",
+          "id": "background",
+          "label": "Background",
+          "default": "rgba(0,0,0,0)"
+        },
+        {
+          "type": "color",
+          "id": "text_color",
+          "label": "Text",
+          "default": "rgba(0,0,0,0)"
+        },
+        {
+          "type": "header",
+          "content": "Layout"
+        },
+        {
+          "type": "select",
+          "id": "width",
+          "label": "Width",
+          "default": "standard",
+          "options": [
+            {
+              "value": "standard",
+              "label": "Standard"
+            },
+            {
+              "value": "wide",
+              "label": "Wide"
+            }
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "show_gutter",
+          "label": "Show gutter",
+          "default": true
+        },
+        {
+          "type": "range",
+          "id": "padding_top",
+          "label": "Top spacing",
+          "min": 0,
+          "max": 80,
+          "default": 20,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "padding_bottom",
+          "label": "Bottom spacing",
+          "min": 0,
+          "max": 80,
+          "default": 20,
+          "unit": "px"
+        },
+        {
+          "type": "select",
+          "id": "animation",
+          "label": "Animation",
+          "default": "none",
+          "options": [
+            {
+              "value": "none",
+              "label": "None"
+            },
+            {
+              "value": "fadeIn",
+              "label": "Fade in"
+            },
+            {
+              "value": "fadeInDown",
+              "label": "Fade in down"
+            },
+            {
+              "value": "fadeInLeft",
+              "label": "Fade in left"
+            },
+            {
+              "value": "fadeInRight",
+              "label": "Fade in right"
+            },
+            {
+              "value": "slideInLeft",
+              "label": "Slide in left"
+            },
+            {
+              "value": "slideInRight",
+              "label": "Slide in right"
+            },
+            {
+              "value": "zoomIn",
+              "label": "Zoom in"
+            }
+          ]
+        }
+      ]
+}
+],
+  "presets": [
+    {
+      "name": "Animated steps",
+      "category": "Text"
+     
+    }
+  ]
+}
+    
+{% endschema %}

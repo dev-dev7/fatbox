@@ -1,0 +1,431 @@
+
+   
+    <!--  left  -->
+  
+
+<div id="main-mobile">
+
+ <h2 class="fatbox__h1 image-with-text-overlay__heading banner__heading title">
+                <span>{{ section.settings.title }}</span>
+              </h2>
+  <div class="naccs">
+  <div class="grid-1">
+   <div class="gc gc--1-of-3">
+    <div class="menu">
+     <div class="step1-a active"><span>{{section.settings.step1}}</span></div>
+     <div class="step2-a"><span>{{section.settings.step2}}</span></div>
+     <div class="step3-a"><span>{{section.settings.step3}}</span></div>
+    </div>
+   </div>
+   <div class="gc gc--2-of-3">
+    <ul class="nacc">
+     <li class="active">
+      <div>
+        <p>{{section.settings.step1text}}</p>
+<img src="{{'step-1_2x.png' | asset_img_url:'original' }}">       
+       </div>
+     </li>
+     <li>
+      <div>
+       <p>{{section.settings.step2text}}</p>
+     
+        <img src="{{'group-2.png' | asset_img_url:'original' }}">   
+       
+       </div>
+     </li>
+     <li>
+      <div>
+        <p>{{section.settings.step3text}}</p>
+        <img src="{{'step3_2x.png' | asset_img_url:'original' }}">   
+
+       
+       </div>
+     </li>
+    </ul>
+   </div>
+  </div>
+ </div>
+</div>
+<style>
+
+
+
+ 
+</style>
+<script>
+  // Acc
+$(document).on("click", ".naccs .menu div", function() {
+	var numberIndex = $(this).index();
+
+	if (!$(this).is("active")) {
+		$(".naccs .menu div").removeClass("active");
+		$(".naccs ul li").removeClass("active");
+
+		$(this).addClass("active");
+		$(".naccs ul").find("li:eq(" + numberIndex + ")").addClass("active");
+
+		var listItemHeight = $(".naccs ul")
+			.find("li:eq(" + numberIndex + ")")
+			.innerHeight();
+		$(".naccs ul").height(listItemHeight + "px");
+	}
+});
+
+</script>
+{% schema %}
+ {
+     
+      "name": "Image with text",
+ "max_blocks": 20,
+     
+ "settings": [
+    {
+      "type": "header",
+      "content": "Advanced",
+      "info": "[Learn more](https://help.outofthesandbox.com/hc/en-us/articles/360022329373)"
+    },
+{
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "HOW IT WORKS"
+        },
+
+{
+          "type": "text",
+          "id": "step1",
+          "label": "step 1",
+          "default": "Select package type"
+        },
+{
+          "type": "text",
+          "id": "step1text",
+          "label": "step 1 text",
+          "default": "this text is now customizable"
+        },
+
+{
+          "type": "text",
+          "id": "step2",
+          "label": "step 2",
+          "default": "Design your package"
+        },
+{
+          "type": "text",
+          "id": "step2text",
+          "label": "step 2 text",
+          "default": "this text is now customizable"
+        },
+{
+          "type": "text",
+          "id": "step3",
+          "label": "step 3",
+          "default": "Checkout and buy"
+        },
+{
+          "type": "text",
+          "id": "step3text",
+          "label": "step 3 text",
+          "default": "this text is now customizable"
+        },
+    {
+      "type": "text",
+      "id": "css_class",
+      "label": "CSS Class"
+    },
+    {
+      "type": "textarea",
+      "id": "custom_css",
+      "label": "Custom CSS"
+    }
+  ],
+  "blocks": [
+   {
+      "type": "image_with_text",
+      "name": "Image with text",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Image"
+        },
+        {
+          "type": "select",
+          "id": "image_position",
+          "label": "Image position",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ]
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image",
+          "info": "1024 x 1024px recommended"
+        },
+        {
+          "type": "select",
+          "id": "image_crop",
+          "label": "Image cropping",
+          "default": "none",
+          "info": "Only applied when text area is taller than the image.",
+          "options": [
+            {
+              "value": "none",
+              "label": "None"
+            },
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ]
+        },
+        {
+          "type": "url",
+          "id": "image_link",
+          "label": "Link"
+        },
+        {
+          "type": "header",
+          "content": "Text"
+        },
+{
+          "type": "url",
+          "id": "svg",
+          "label": "icon svg link"
+          
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Heading text here"
+        },
+        {
+          "type": "select",
+          "id": "heading_size",
+          "label": "Base size",
+          "options": [
+            {
+              "value": "small",
+              "label": "Small"
+            },
+            {
+              "value": "regular",
+              "label": "Regular"
+            },
+            {
+              "value": "large",
+              "label": "Large"
+            }
+          ],
+          "default": "regular"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text",
+          "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "Button label",
+          "default": "View all"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Button link"
+        },
+        {
+          "type": "select",
+          "id": "button_style",
+          "label": "Button style",
+          "options": [
+            {
+              "value": "button--primary",
+              "label": "Primary"
+            },
+            {
+              "value": "button--secondary",
+              "label": "Secondary"
+            },
+            {
+              "value": "button--link-style",
+              "label": "Link style"
+            }
+          ],
+          "default": "button--primary"
+        },
+        {
+          "type": "header",
+          "content": "Text layout"
+        },
+        {
+          "type": "select",
+          "id": "alignment",
+          "label": "Alignment",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ],
+          "default": "left"
+        },
+        {
+          "type": "select",
+          "id": "vertical_position",
+          "label": "Vertical position",
+          "options": [
+            {
+              "value": "start",
+              "label": "Top"
+            },
+            {
+              "value": "center",
+              "label": "Middle"
+            },
+            {
+              "value": "end",
+              "label": "Bottom"
+            }
+          ],
+          "default": "center"
+        },
+        {
+          "type": "header",
+          "content": "Colors"
+        },
+        {
+          "type": "color",
+          "id": "background",
+          "label": "Background",
+          "default": "rgba(0,0,0,0)"
+        },
+        {
+          "type": "color",
+          "id": "text_color",
+          "label": "Text",
+          "default": "rgba(0,0,0,0)"
+        },
+        {
+          "type": "header",
+          "content": "Layout"
+        },
+        {
+          "type": "select",
+          "id": "width",
+          "label": "Width",
+          "default": "standard",
+          "options": [
+            {
+              "value": "standard",
+              "label": "Standard"
+            },
+            {
+              "value": "wide",
+              "label": "Wide"
+            }
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "show_gutter",
+          "label": "Show gutter",
+          "default": true
+        },
+        {
+          "type": "range",
+          "id": "padding_top",
+          "label": "Top spacing",
+          "min": 0,
+          "max": 80,
+          "default": 20,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "padding_bottom",
+          "label": "Bottom spacing",
+          "min": 0,
+          "max": 80,
+          "default": 20,
+          "unit": "px"
+        },
+        {
+          "type": "select",
+          "id": "animation",
+          "label": "Animation",
+          "default": "none",
+          "options": [
+            {
+              "value": "none",
+              "label": "None"
+            },
+            {
+              "value": "fadeIn",
+              "label": "Fade in"
+            },
+            {
+              "value": "fadeInDown",
+              "label": "Fade in down"
+            },
+            {
+              "value": "fadeInLeft",
+              "label": "Fade in left"
+            },
+            {
+              "value": "fadeInRight",
+              "label": "Fade in right"
+            },
+            {
+              "value": "slideInLeft",
+              "label": "Slide in left"
+            },
+            {
+              "value": "slideInRight",
+              "label": "Slide in right"
+            },
+            {
+              "value": "zoomIn",
+              "label": "Zoom in"
+            }
+          ]
+        }
+      ]
+}
+],
+  "presets": [
+    {
+      "name": "Animated steps",
+      "category": "Text"
+     
+    }
+  ]
+}
+    
+{% endschema %}

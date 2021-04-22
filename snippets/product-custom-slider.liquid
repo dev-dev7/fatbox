@@ -1,0 +1,235 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+
+<div class="product-slideshow">
+
+  <h3 class="fatbox__h3">{{block.settings.title}}</h3>
+
+{% comment %}
+** Slideshow classic - dynamic **
+- Draggable section
+- Uses blocks
+{% endcomment %}
+
+{% comment %} Content settings {% endcomment %}
+{%- assign blocks = section.blocks -%}
+{% comment %} End content settings {% endcomment %}
+
+{% comment %} Section specific CSS {% endcomment %}
+{% style %}
+
+{% endstyle %}
+
+{% comment %} HTML markup {% endcomment %}
+
+ 
+  <div class="my-slider2">
+     
+    
+
+ 
+      {%- assign image = block.settings.image -%}
+     {%- assign image2 = block.settings.image2 -%}
+     {%- assign image3 = block.settings.image3 -%}
+      {%- assign image4 = block.settings.image4 -%}
+       {%- assign image5 = block.settings.image5 -%}
+          {%- assign image6 = block.settings.image6 -%}
+     
+      
+
+   <div id="shopify-section-{{ block.id }}" class="">
+
+       
+        
+
+
+        {% if image != blank %}
+          {% render 'image-element',
+                  image: image,
+                  alt: image.alt,
+                  stretch_width: true
+                 
+          %}
+        {% else %}
+          {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
+        {% endif %}
+
+        
+
+        
+      </div>
+         <div id="shopify-section-{{ block.id }}" class="">
+
+       
+        
+
+
+        {% if image2 != blank %}
+          {% render 'image-element',
+                  image: image2,
+                  alt: image2.alt,
+                  stretch_width: true,
+                
+          %}
+        {% else %}
+          {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
+        {% endif %}
+
+        
+
+        
+      </div>
+          <div id="shopify-section-{{ block.id }}" class="">
+
+       
+        
+
+
+        {% if image3 != blank %}
+          {% render 'image-element',
+                  image: image3,
+                  alt: image3.alt,
+                  stretch_width: true,
+                
+          %}
+        {% else %}
+          {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
+        {% endif %}
+
+        
+
+        
+      </div>
+          <div id="shopify-section-{{ block.id }}" class="">
+
+       
+        
+
+
+        {% if image4 != blank %}
+          {% render 'image-element',
+                  image: image4,
+                  alt: image4.alt,
+                  stretch_width: true,
+                
+          %}
+        {% else %}
+          {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
+        {% endif %}
+
+        
+
+        
+      </div>
+          <div id="shopify-section-{{ block.id }}" class="">
+
+       
+        
+
+
+        {% if image5 != blank %}
+          {% render 'image-element',
+                  image: image5,
+                  alt: image5.alt,
+                  stretch_width: true,
+                
+          %}
+        {% else %}
+          {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
+        {% endif %}
+
+        
+
+        
+      </div>
+  </div>
+     <ul class="controls" id="customize-controls" aria-label="Carousel Navigation" tabindex="0">
+        <li class="prev" data-controls="prev" aria-controls="customize" tabindex="-1">
+  <svg style="transform:rotate(180deg); -webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);" xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62">
+  <g id="Arrow" transform="translate(-930 -7074)" opacity="0.996">
+    <g id="Ellipse_86" data-name="Ellipse 86" transform="translate(930 7074)" fill="none" stroke="#000" stroke-width="2">
+      <circle cx="31" cy="31" r="31" stroke="none"/>
+      <circle cx="31" cy="31" r="30" fill="none"/>
+    </g>
+    <g id="arrow-right_2_" data-name="arrow-right (2)" transform="translate(955.5 7099)">
+      <line id="Line_11" data-name="Line 11" x1="11" transform="translate(0.5 6)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_185" data-name="Path 185" d="M7.5,2l4,4-4,4" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>
+
+
+
+
+        </li>
+        <li class="next" data-controls="next" aria-controls="customize" tabindex="-1">
+           <svg xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62">
+  <g id="Arrow" transform="translate(-930 -7074)" opacity="0.996">
+    <g id="Ellipse_86" data-name="Ellipse 86" transform="translate(930 7074)" fill="none" stroke="#000" stroke-width="2">
+      <circle cx="31" cy="31" r="31" stroke="none"/>
+      <circle cx="31" cy="31" r="30" fill="none"/>
+    </g>
+    <g id="arrow-right_2_" data-name="arrow-right (2)" transform="translate(955.5 7099)">
+      <line id="Line_11" data-name="Line 11" x1="11" transform="translate(0.5 6)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_185" data-name="Path 185" d="M7.5,2l4,4-4,4" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>
+
+        </li>
+    </ul>
+ 
+</div>
+
+<style>
+  .product-slideshow {
+    position:relative;
+  }
+</style>
+<script>
+    var slider = tns({
+    container: '.my-slider2',
+    items: 2,
+    slideBy: 1,
+    gutter: 12,
+    
+          controlsContainer: "#customize-controls",
+
+       nav: false,
+
+    autoplay: false,
+		loop: true,
+		rewind: true,
+      responsive: {
+        640: {
+            items: 2,
+        },
+        
+        768: {
+            items: 2,
+        }
+      }
+   
+  
+  });
+
+</script>
+<style>
+  .tns-inner {
+ position: relative;
+    padding-right: 50px;
+}
+  .tns-outer {
+    width:80%;
+    margin:0 auto;
+  }
+  .tns-ovh {
+    overflow: visible;
+}
+   @media only screen and (max-width: 768px) {
+    .tns-inner {
+ position: relative;
+
+} 
+   }
+</style>

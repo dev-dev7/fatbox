@@ -1,0 +1,246 @@
+{% comment %}
+  Snippet can be used in section or block
+  eg. {% include 'include-one-image-with-text' %}
+{% endcomment %}
+
+{% comment %}Assign object as block or section{% endcomment %}
+{% if type == 'block' %}
+  {% assign object = block %}
+{% else %}
+  {% assign object = section %}
+{% endif %}
+
+{% assign id = object.id %}
+{% assign image_position = object.settings.image_position %}
+{% assign image_crop = object.settings.image_crop %}
+{% comment %} Layout {% endcomment %}
+{% assign show_gutter = object.settings.show_gutter %}
+{% assign width = object.settings.width %}
+{% assign padding_top = object.settings.padding_top %}
+{% assign padding_bottom = object.settings.padding_bottom %}
+{% assign animation = object.settings.animation %}
+{% comment %}Is the color set to transparent?{% endcomment %}
+{% assign text_color = object.settings.text_color%}
+{% assign background_color =  object.settings.background %}
+{% comment %} Advanced {% endcomment %}
+{% assign css_class = object.settings.css_class %}
+{% assign custom_css = object.settings.custom_css %}
+
+{% comment %} Is the color set to transparent? {% endcomment %}
+{% assign background_alpha = background_color | color_extract: 'alpha' %}
+{% assign text_alpha = text_color | color_extract: 'alpha' %}
+
+{% comment %}Section specific CSS{% endcomment %}
+{% capture section_css -%}
+  .image-with-text__text-column {
+    background-color: {{ background_color }};
+  }
+
+  .image-with-text__heading {
+    color: {% if text_alpha != 0 %}{{ text_color }}{% else %}{{ settings.heading_color }}{% endif %};
+  }
+
+  .image-with-text__text {
+    color: {% if text_alpha != 0 %}{{ text_color }}{% else %}{{ settings.regular_color }}{% endif %};
+  }
+{%- endcapture -%}
+
+{% comment %} Section specific CSS {% endcomment %}
+{% style %}
+  #shopify-section-{{ id }} {
+position:relative;
+    padding-top: {{ padding_top }}px;
+    padding-bottom: {{ padding_bottom }}px;
+    {% if width == 'wide' %}
+      width: 100%;
+    {% endif %}
+  }
+
+  #shopify-section-{{ id }}::after {
+content:"";
+background:url('{{'circles-violet.svg' | asset_url}}');
+
+   
+   background-size: 134% 92%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    position: absolute;
+    left: 2px;
+  
+    bottom: -164px;
+    width: 100%;
+    display: block;
+    height: 717px;
+}
+   @media only screen and (max-width:768px) {
+
+ #shopify-section-{{ id }}::after {
+
+background-size: 136% 92%;
+  
+    left: 2px;
+       bottom: -112px;
+    height: 300px;
+
+}
+}
+  {% render 'css-loop',
+          css: section_css,
+          id: id
+  %}
+  {% render 'css-loop',
+          css: custom_css,
+          id: id
+  %}
+{% endstyle %}
+
+{% comment %} HTML markup {% endcomment %}
+<section class="section
+                {{ css_class }}
+                is-width-{{ width }}
+                {% if show_gutter == false %}
+                  has-no-side-gutter
+                  has-background
+                {% else %}
+                  has-gutter-enabled
+                {% endif %}"
+                {% if animation != "none" %}
+                  data-scroll-class="{{ animation }}"
+                {% endif %}>
+  <div class="container ">
+      <div class="product-text-container">
+
+    {% if object.settings.title != blank %}
+            <h3 class="fatbox__h3 image-with-text__heading text-align-{{ object.settings.alignment }} is-{{ object.settings.heading_size }}" >
+              {{ object.settings.title }}
+            </h3>
+    <p> {{ object.settings.text2 }}</p>
+    {% endif %}
+    </div>
+    <div class="image-with-text__container product-box-image pt-60 pb-60
+                is-flex {% if image_position == 'left' %}is-flex-row-reverse{% endif %}
+                is-flex-wrap">
+      <div class="pos-relative-wrapper image-with-text__text-column
+                  image-with-text__column
+                  one-half
+                  medium-down--one-whole
+                  column
+                  has-padding-left
+                  has-padding-right
+                  {% if background_alpha != 0 %}has-background {% endif %}
+                  is-flex
+                  is-flex-wrap
+                  is-justify-{{ object.settings.alignment }}
+                  is-align-{{ object.settings.vertical_position }}">
+        <div class="image-with-text__wrapper">
+          
+    
+
+          {% if object.settings.textA != blank %}
+            <div class="image-with-text__text text-align-{{ object.settings.alignment }} content">
+<svg class="svg-a" xmlns="http://www.w3.org/2000/svg" width="214.338" height="47.527" viewBox="0 0 214.338 47.527">
+  <g id="Group_341" data-name="Group 341" transform="translate(-512.163 -1602.25)">
+    <g id="Layer_2" data-name="Layer 2" transform="translate(511.88 1602)">
+      <g id="Layer_1" data-name="Layer 1">
+        <path id="Path_1633" data-name="Path 1633" d="M31.53,12l-2,4-4,2,4,2,2,4,2-4,4-2-4-2Z" fill="none" stroke="#2b2b2b" stroke-linejoin="round" stroke-width="1.5"/>
+        <path id="Path_1634" data-name="Path 1634" d="M38.53,1l-2,4-4,2,4,2,2,4,2-4,4-2-4-2Z" fill="none" stroke="#2b2b2b" stroke-linejoin="round" stroke-width="1.5"/>
+        <line id="Line_58" data-name="Line 58" y2="2" transform="translate(44.53 13)" fill="none" stroke="#2b2b2b" stroke-miterlimit="10" stroke-width="1.5"/>
+        <line id="Line_59" data-name="Line 59" y2="2" transform="translate(44.53 17)" fill="none" stroke="#2b2b2b" stroke-miterlimit="10" stroke-width="1.5"/>
+        <line id="Line_60" data-name="Line 60" x2="2" transform="translate(45.53 16)" fill="none" stroke="#2b2b2b" stroke-miterlimit="10" stroke-width="1.5"/>
+        <line id="Line_61" data-name="Line 61" x2="2" transform="translate(41.53 16)" fill="none" stroke="#2b2b2b" stroke-miterlimit="10" stroke-width="1.5"/>
+        <path id="Path_1635" data-name="Path 1635" d="M40.53,20V37h-33V12h19" fill="none" stroke="#2b2b2b" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"/>
+        <path id="Path_1636" data-name="Path 1636" d="M36.58,39.91l.37,2.96L4.21,46.94,1.12,22.14l3.83-.48" fill="none" stroke="#2b2b2b" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"/>
+        <path id="Path_1637" data-name="Path 1637" d="M11.53,33l6.76-9,7.24,8" fill="none" stroke="#2b2b2b" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"/>
+        <path id="Path_1638" data-name="Path 1638" d="M23.53,28l3-3,8,8" fill="none" stroke="#2b2b2b" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"/>
+      </g>
+    </g>
+    <path id="Path_2535" data-name="Path 2535" d="M0,0H154" transform="translate(572.5 1626.5)" fill="none" stroke="#2b2b2b" stroke-width="1"/>
+  </g>
+</svg>
+
+
+              {{ object.settings.textA }}
+            </div>
+          {% endif %}
+     {% if object.settings.textB != blank %}
+            <div class="column-b image-with-text__text text-align-{{ object.settings.alignment }} content">
+             <svg class="svg-b" xmlns="http://www.w3.org/2000/svg" width="325.139" height="41.62" viewBox="0 0 325.139 41.62">
+  <g id="Group_342" data-name="Group 342" transform="translate(-444.361 -1744.782)">
+    <line id="Line_93" data-name="Line 93" x2="253" transform="translate(516.5 1770.5)" fill="none" stroke="#2b2b2b" stroke-width="1"/>
+    <g id="Layer_2" data-name="Layer 2" transform="translate(553.193 1594.779) rotate(90)">
+      <g id="Layer_1" data-name="Layer 1" transform="translate(150.003 62.001)">
+        <path id="Path_2397" data-name="Path 2397" d="M10.747,46.373a.8.8,0,0,0,1.441,0L22.857,23.755a.8.8,0,0,0,0-.68L12.19.457a.8.8,0,0,0-1.441,0L.079,23.075a.8.8,0,0,0,0,.68Zm.717-43.709,9.792,20.756L11.473,44.166l-9.8-20.746Z" transform="translate(-0.003 -0.001)" fill="rgba(43,43,43,0.8)"/>
+        <path id="Path_2398" data-name="Path 2398" d="M140.251,8.272a.795.795,0,0,0,1.06-.385l2.466-5.226,9.789,20.76-9.789,20.746-2.593-5.5a.8.8,0,1,0-1.441.679l3.313,7.025a.8.8,0,0,0,1.441,0l10.669-22.618a.805.805,0,0,0,0-.68L144.5.457a.8.8,0,0,0-1.441,0l-3.186,6.755A.8.8,0,0,0,140.251,8.272Z" transform="translate(-122.967 -0.001)" fill="rgba(43,43,43,0.8)"/>
+        <path id="Path_2399" data-name="Path 2399" d="M219.456,8.279a.8.8,0,0,0,1.061-.381l2.469-5.234,9.789,20.756-9.789,20.746-2.491-5.281a.8.8,0,0,0-1.434.68l3.211,6.811a.8.8,0,0,0,1.441,0l10.663-22.62a.793.793,0,0,0,0-.679L223.706.457a.8.8,0,0,0-1.441,0l-3.189,6.762a.8.8,0,0,0,.38,1.06Z" transform="translate(-192.832 -0.001)" fill="rgba(43,43,43,0.8)"/>
+        <path id="Path_2400" data-name="Path 2400" d="M153.486,298.94a.792.792,0,0,0,0,1.127.8.8,0,0,0,1.127,0,.792.792,0,0,0,0-1.127A.828.828,0,0,0,153.486,298.94Z" transform="translate(-134.94 -263.025)" fill="rgba(43,43,43,0.8)"/>
+        <path id="Path_2401" data-name="Path 2401" d="M177.3,298.273a.8.8,0,1,0,1.127,0A.821.821,0,0,0,177.3,298.273Z" transform="translate(-155.912 -262.433)" fill="rgba(43,43,43,0.8)"/>
+        <path id="Path_2402" data-name="Path 2402" d="M165.25,323.358a.795.795,0,0,0,1.359.562.811.811,0,0,0,.239-.562.82.82,0,0,0-.239-.566.836.836,0,0,0-1.127,0A.811.811,0,0,0,165.25,323.358Z" transform="translate(-145.505 -284.03)" fill="rgba(43,43,43,0.8)"/>
+        <path id="Path_2403" data-name="Path 2403" d="M167.482,274.4a.8.8,0,1,0,1.362.566.814.814,0,0,0-.239-.566A.836.836,0,0,0,167.482,274.4Z" transform="translate(-147.266 -241.425)" fill="rgba(43,43,43,0.8)"/>
+        <path id="Path_2404" data-name="Path 2404" d="M178.789,246.942a.818.818,0,0,0-.239.565.8.8,0,0,0,1.593,0,.815.815,0,0,0-.231-.565A.829.829,0,0,0,178.789,246.942Z" transform="translate(-157.216 -217.241)" fill="rgba(43,43,43,0.8)"/>
+        <path id="Path_2405" data-name="Path 2405" d="M204.877,247.626a.79.79,0,0,0,.562-.239.805.805,0,0,0,.239-.562.8.8,0,0,0-.239-.562.826.826,0,0,0-1.127,0,.816.816,0,0,0-.232.566.8.8,0,0,0,.8.8Z" transform="translate(-179.695 -216.642)" fill="rgba(43,43,43,0.8)"/>
+        <path id="Path_2406" data-name="Path 2406" d="M190.821,271.44a.815.815,0,0,0-.231.565.8.8,0,0,0,1.6,0,.814.814,0,0,0-.239-.565A.828.828,0,0,0,190.821,271.44Z" transform="translate(-167.817 -238.811)" fill="rgba(43,43,43,0.8)"/>
+        <path id="Path_2407" data-name="Path 2407" d="M195.469,221.6a.81.81,0,0,0-.239-.565.829.829,0,0,0-1.128,0,.8.8,0,1,0,1.362.565Z" transform="translate(-170.705 -194.433)" fill="rgba(43,43,43,0.8)"/>
+        <path id="Path_2408" data-name="Path 2408" d="M206.074,194.946a.815.815,0,0,0,.565-.239.8.8,0,0,0,0-1.127.828.828,0,0,0-1.127,0,.8.8,0,0,0,.562,1.362Z" transform="translate(-180.752 -170.255)" fill="rgba(43,43,43,0.8)"/>
+        <path id="Path_2409" data-name="Path 2409" d="M230.982,194.067a.792.792,0,0,0,1.127,0,.805.805,0,0,0,.239-.562.818.818,0,0,0-.239-.565.828.828,0,0,0-1.127,0,.81.81,0,0,0-.232.565A.8.8,0,0,0,230.982,194.067Z" transform="translate(-203.178 -169.691)" fill="rgba(43,43,43,0.8)"/>
+        <path id="Path_2410" data-name="Path 2410" d="M218.047,219.446a.8.8,0,0,0,.562-1.366.828.828,0,0,0-1.127,0,.8.8,0,0,0,0,1.127A.789.789,0,0,0,218.047,219.446Z" transform="translate(-191.292 -191.827)" fill="rgba(43,43,43,0.8)"/>
+        <path id="Path_2411" data-name="Path 2411" d="M220.781,167.71a.8.8,0,1,0,1.127,0A.828.828,0,0,0,220.781,167.71Z" transform="translate(-194.193 -147.476)" fill="rgba(43,43,43,0.8)"/>
+        <path id="Path_2412" data-name="Path 2412" d="M181.021,141.654a.8.8,0,0,0,.565-1.362.836.836,0,0,0-1.127,0,.82.82,0,0,0-.239.566.8.8,0,0,0,.8.8Z" transform="translate(-158.686 -123.337)" fill="rgba(43,43,43,0.8)"/>
+        <path id="Path_2413" data-name="Path 2413" d="M207.632,140.636a.8.8,0,1,0,1.362.562.808.808,0,0,0-.239-.562A.822.822,0,0,0,207.632,140.636Z" transform="translate(-182.617 -123.637)" fill="rgba(43,43,43,0.8)"/>
+        <path id="Path_2414" data-name="Path 2414" d="M194.151,166.948a.8.8,0,0,0,.566.239.806.806,0,0,0,.562-.231.818.818,0,0,0,.239-.565.805.805,0,0,0-.239-.562.822.822,0,0,0-1.128,0,.8.8,0,0,0,0,1.123Z" transform="translate(-170.75 -145.818)" fill="rgba(43,43,43,0.8)"/>
+        <path id="Path_2415" data-name="Path 2415" d="M195.781,114.392a.8.8,0,1,0,1.127,0A.836.836,0,0,0,195.781,114.392Z" transform="translate(-172.18 -100.531)" fill="rgba(43,43,43,0.8)"/>
+        <path id="Path_2416" data-name="Path 2416" d="M157.851,86.955a.815.815,0,0,0-.231.565.8.8,0,0,0,1.593,0,.818.818,0,0,0-.239-.565A.829.829,0,0,0,157.851,86.955Z" transform="translate(-138.787 -76.372)" fill="rgba(43,43,43,0.8)"/>
+        <path id="Path_2417" data-name="Path 2417" d="M180.982,89.61a.809.809,0,1,0,1.127,0A.828.828,0,0,0,180.982,89.61Z" transform="translate(-159.153 -78.708)" fill="rgba(43,43,43,0.8)"/>
+        <path id="Path_2418" data-name="Path 2418" d="M170.021,116.154a.8.8,0,0,0,.8-.8.82.82,0,0,0-.239-.566.836.836,0,0,0-1.127,0,.811.811,0,0,0-.232.566.8.8,0,0,0,.8.8Z" transform="translate(-149 -100.884)" fill="rgba(43,43,43,0.8)"/>
+        <path id="Path_2419" data-name="Path 2419" d="M170.819,61.019a.8.8,0,1,0,1.133,0A.828.828,0,0,0,170.819,61.019Z" transform="translate(-150.205 -53.531)" fill="rgba(43,43,43,0.8)"/>
+      </g>
+    </g>
+  </g>
+</svg>
+
+
+              {{ object.settings.textB }}
+            </div>
+          {% endif %}
+          {% if object.settings.button_label != blank %}
+            <div class="buttons is-{{ object.settings.alignment }}">
+              {% render 'button',
+                      label: object.settings.button_label,
+                      href: object.settings.link,
+                      style: object.settings.button_style,
+                      type: "link"
+              %}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+      <div class="image-with-text__image-column
+                  image-with-text__column
+                  one-half
+                  medium-down--one-whole
+                  column
+                  {% if image_crop != 'none' %}
+                    has-image-crop
+                    image-crop--{{ object.settings.image_crop }}
+                  {% endif %}
+                  is-flex
+                  is-flex-wrap
+                  is-align-center">
+        {% if object.settings.image_link %}
+          <a href="{{ object.settings.image_link }}">
+        {% endif %}
+        {% if object.settings.image != blank %}
+            {% render 'image-element',
+                    image: object.settings.image,
+                    alt: object.settings.image.alt,
+                    stretch_width: true
+            %}
+        {% else %}
+          {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+        {% endif %}
+        {% if object.settings.image_link %}
+          </a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>

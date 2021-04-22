@@ -1,0 +1,35 @@
+<div id="index-{{forloop.index}}" class='item-tabbed'>
+
+<a class='item-tabbed-element' href="{{block.settings.url}}">{% if block.settings.image != blank %}{% render 'image-element',
+                    image: block.settings.image,
+                    alt: block.settings.image.alt,
+                    stretch_width: true,
+            max_height:400
+  %}
+{% else %}
+     {{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' }}
+
+  {% endif %}</a>
+  
+ <div class="overlay-fat {% if forloop.index == 1 %} toggled {% endif %}">
+                {% if forloop.index == 1 %}
+   <span>Start from</span>
+   <p>Blank</p>
+{% endif %}
+
+   <a class="overlay-hover btn-white" href="{{block.settings.url}}">Customize</a>
+            </div>
+</div>
+
+<script>
+  $(document).ready(function() {
+  $(".item-tabbed")
+    .mouseenter(function() {
+      $(this).find('.overlay-fat').addClass('visible-now');
+    })
+    .mouseleave(function() {
+      $(this).find('.overlay-fat').removeClass('visible-now');
+    });
+});
+  
+</script>
